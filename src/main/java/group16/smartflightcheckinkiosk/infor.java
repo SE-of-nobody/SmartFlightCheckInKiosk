@@ -1,3 +1,4 @@
+package group16.smartflightcheckinkiosk;
 import java.util.Scanner;
 import java.lang.Integer;
 

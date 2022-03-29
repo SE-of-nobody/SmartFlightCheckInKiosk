@@ -1,9 +1,11 @@
+package group16.smartflightcheckinkiosk;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 
-import com.csvreader.*;
+
 public class readFile {
     public static void readCsvFile(String filePath,infor []Allinfor) {
         try {
