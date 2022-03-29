@@ -5,6 +5,7 @@ import javafx.scene.text.Text;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 public class ChooseLoginController {
+    private ViewAlter viewAlter;
 //    @FXML
 //    private Label Passenger;
 //    @FXML
@@ -21,6 +22,9 @@ public class ChooseLoginController {
     @FXML
     protected void gotostaffLogin() {
         System.out.println("you choose staff");}
+    public void setApp(ViewAlter viewAlter) {
+        this.viewAlter = viewAlter;
+    }
 }
 
 

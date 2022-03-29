@@ -5,6 +5,7 @@ import java.util.ResourceBundle;
 import javafx.fxml.Initializable;
 
 public class BookedFlightController implements Initializable{
+    private ViewAlter viewAlter;
     public BookedFlightController() {
         // TODO Auto-generated constructor stub
     }
@@ -15,10 +16,7 @@ public class BookedFlightController implements Initializable{
 
     }
 
-    public void changeWindow() throws Exception {
-        group16.smartflightcheckinkiosk.BookedFlight bookedflight=new BookedFlight();
-        bookedflight.showWindow();
-
-
+    public void setApp(ViewAlter viewAlter) {
+        this.viewAlter = viewAlter;
     }
 }

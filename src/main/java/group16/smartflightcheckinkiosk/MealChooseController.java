@@ -6,6 +6,7 @@ import java.util.ResourceBundle;
 import javafx.fxml.Initializable;
 
 public class MealChooseController implements Initializable {
+    private ViewAlter viewAlter;
     public MealChooseController() {
         // TODO Auto-generated constructor stub
     }
@@ -16,11 +17,8 @@ public class MealChooseController implements Initializable {
 
     }
 
-    public void changeWindow() throws Exception {
-        group16.smartflightcheckinkiosk.MealChoose mealchoose=new MealChoose();
-        mealchoose.showWindow();
-
-
+    public void setApp(ViewAlter viewAlter) {
+        this.viewAlter = viewAlter;
     }
 
 }

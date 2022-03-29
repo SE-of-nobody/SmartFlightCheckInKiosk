@@ -6,6 +6,7 @@ import java.util.ResourceBundle;
 import javafx.fxml.Initializable;
 
 public class SeatChooseController implements Initializable {
+    private ViewAlter viewAlter;
     public SeatChooseController() {
         // TODO Auto-generated constructor stub
     }
@@ -16,11 +17,8 @@ public class SeatChooseController implements Initializable {
 
     }
 
-    public void changeWindow() throws Exception {
-        group16.smartflightcheckinkiosk.SeatChoose seatchoose=new SeatChoose();
-        seatchoose.showWindow();
-
-
+    public void setApp(ViewAlter viewAlter) {
+        this.viewAlter = viewAlter;
     }
 
 }
