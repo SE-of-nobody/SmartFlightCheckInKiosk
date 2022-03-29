@@ -19,7 +19,9 @@ public class Staff {
     }
 
     void CheckStaff(){
-        String csvFile = "D:\\test\\1.csv";
+        String csvFile = "
+SmartFlightCheckInKiosk/src/main/resources/group16/smartflightcheckinkiosk/
+Staff.csv";
         String line = "";
         String cvsSplitBy = ",";
         String[] staff= new String[2];
@@ -29,6 +31,7 @@ public class Staff {
             while ((line = br.readLine()) != null) {
                 // use comma as separator
                 staff = line.split(cvsSplitBy);
+                // check the StaffNumber and Password
                 if (staff[0].equals(StaffNumber)&&staff[1].equals(Password)) {
                     break;
                 }
@@ -42,12 +45,15 @@ public class Staff {
         }
     }
 
+    
     void FindFlight(){
         Scanner input=new Scanner(System.in);
         System.out.println("please print the flight");
         FlightNumber=input.next();
 
-        String csvFile = "D:\\test\\2.csv";
+        String csvFile = "
+SmartFlightCheckInKiosk/src/main/resources/group16/smartflightcheckinkiosk/
+Flight.csv";
         String line = "";
         String cvsSplitBy = ",";
         String[] flight= new String[4];
@@ -58,6 +64,7 @@ public class Staff {
 
                 // use comma as separator
                 flight = line.split(cvsSplitBy);
+                // check the FlghtNumber
                 if (flight[0].equals(FlightNumber)) {
                     break;
                 }
