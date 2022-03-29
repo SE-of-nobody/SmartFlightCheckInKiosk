@@ -32,8 +32,8 @@ public class ViewAlter extends Application{
      */
     public void gotoChooseLogin() {
         try {
-            ChooseLoginController main = (ChooseLoginController) replaceSceneContent(StaticResourcesConfig.LOGINCHOOSE_VIEW_PATH);
-            main.setApp(this);
+            ChooseLoginController view = (ChooseLoginController) replaceSceneContent(StaticResourcesConfig.LOGINCHOOSE_VIEW_PATH);
+            view.setApp(this);
         } catch (Exception ex) {
             logger.log(Level.SEVERE, null, ex);
         }
@@ -43,8 +43,8 @@ public class ViewAlter extends Application{
      */
     public void gotoMealChoose() {
         try {
-            MealChooseController main = (MealChooseController) replaceSceneContent(StaticResourcesConfig.MEALCHOOSE_VIEW_PATH);
-            main.setApp(this);
+            MealChooseController view = (MealChooseController) replaceSceneContent(StaticResourcesConfig.MEALCHOOSE_VIEW_PATH);
+            view.setApp(this);
         } catch (Exception ex) {
             logger.log(Level.SEVERE, null, ex);
         }
@@ -54,8 +54,8 @@ public class ViewAlter extends Application{
      */
     public void gotoBookedFlight() {
         try {
-            BookedFlightController main = (BookedFlightController) replaceSceneContent(StaticResourcesConfig.BOOKEDFLIGHT_PATH);
-            main.setApp(this);
+            BookedFlightController view = (BookedFlightController) replaceSceneContent(StaticResourcesConfig.BOOKEDFLIGHT_PATH);
+            view.setApp(this);
         } catch (Exception ex) {
             logger.log(Level.SEVERE, null, ex);
         }
@@ -65,8 +65,8 @@ public class ViewAlter extends Application{
      */
     public void gotoSeatChoose() {
         try {
-            SeatChooseController main = (SeatChooseController) replaceSceneContent(StaticResourcesConfig.SEATCHOOSE_VIEW_PATH);
-            main.setApp(this);
+            SeatChooseController view = (SeatChooseController) replaceSceneContent(StaticResourcesConfig.SEATCHOOSE_VIEW_PATH);
+            view.setApp(this);
         } catch (Exception ex) {
             logger.log(Level.SEVERE, null, ex);
         }
@@ -86,7 +86,7 @@ public class ViewAlter extends Application{
         loader.setLocation(ViewAlter.class.getResource(fxml));
         try {
             AnchorPane page = (AnchorPane) loader.load(in);
-            Scene scene = new Scene(page, StaticResourcesConfig.STAGE_WIDTH, StaticResourcesConfig.STAGE_HEIGHT);
+            Scene scene = new Scene(page);
             stage.setScene(scene);
             stage.sizeToScene();
         } catch (Exception e) {

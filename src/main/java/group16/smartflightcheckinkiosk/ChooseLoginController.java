@@ -10,12 +10,14 @@ public class ChooseLoginController {
 //    private Label Passenger;
 //    @FXML
 //    private Label Staff;
+    /*
     @FXML
     protected void onPassengerClick() {
-        gotoPassengerLogin();}
+        viewAlter.gotoPassengerLogin();}
     @FXML
     protected void onStaffClick() {
-        gotostaffLogin();}
+        viewAlter.gotostaffLogin();}
+    */
     @FXML
     protected void gotoPassengerLogin() {
         System.out.println("you choose passenger");}
