@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group16.smartflightcheckinkiosk.ChooseLoginController">
+   <children>
+      <FlowPane prefHeight="400.0" prefWidth="400.0">
+         <children>
+            <Pane prefHeight="387.0" prefWidth="401.0">
+               <children>
+                  <Text layoutX="127.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log In" wrappingWidth="128.240234375">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="77.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please choose your identity" wrappingWidth="272.890625">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Pane layoutX="39.0" layoutY="194.0" prefHeight="140.0" prefWidth="145.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="140.0" stroke="BLACK" strokeType="INSIDE" width="145.0" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" onMouseClicked="#onPassengerClick" prefHeight="140.0" prefWidth="145.0" text="Passenger">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="213.0" layoutY="194.0" prefHeight="140.0" prefWidth="145.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="140.0" stroke="BLACK" strokeType="INSIDE" width="145.0" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#onStaffClick" prefHeight="140.0" prefWidth="145.0" text="Staff" textAlignment="CENTER">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </FlowPane>
+   </children>
+</AnchorPane>
