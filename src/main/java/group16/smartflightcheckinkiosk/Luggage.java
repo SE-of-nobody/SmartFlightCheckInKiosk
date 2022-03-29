@@ -16,7 +16,9 @@ public class Luggage {
     }
 
     void FindLuggage(String IDNumber){
-        String csvFile = "/Users/mkyong/csv/country.csv";
+        String csvFile = "
+SmartFlightCheckInKiosk/src/main/resources/group16/smartflightcheckinkiosk/
+Luggage.csv";
         String line = "";
         String cvsSplitBy = ",";
         String[] information= new String[4];
