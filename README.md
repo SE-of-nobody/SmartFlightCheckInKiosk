@@ -25,7 +25,7 @@ Attention: MacBook Pro M1 Max (MacOS 12.3) would crash running these codes so a 
 	- Second button: It will ask you to input your surname and ID number. Once you type your surname and ID number and click the ok button, there will be a "Surname: XXX \n ID Number: XXX" message shown on terminal.
 	- Third button: It will ask you to input your ID document in the textfield. You can type anything in the textfield and click the ok button, then there will be the text you just typed shown on terminal.
 
-![731648637661_.pic_hd](/Users/gangruibo/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/cebbe2992dc428ebde32a1ec7a02feae/Message/MessageTemp/cebbe2992dc428ebde32a1ec7a02feae/Image/731648637661_.pic_hd.jpg)
+![pic](https://github.com/FrankGang68/MyRepo/blob/main/Images/GUI.jpeg)
 
 ---
 
