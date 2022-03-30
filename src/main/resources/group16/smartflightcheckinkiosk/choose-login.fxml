@@ -27,7 +27,7 @@
                   <Pane layoutX="39.0" layoutY="194.0" prefHeight="140.0" prefWidth="145.0">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="140.0" stroke="BLACK" strokeType="INSIDE" width="145.0" />
-                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" onMouseClicked="#onPassengerClick" prefHeight="140.0" prefWidth="145.0" text="Passenger">
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" onMouseClicked="#gotoPassengerLogin" prefHeight="140.0" prefWidth="145.0" text="Passenger">
                            <font>
                               <Font size="25.0" />
                            </font>
@@ -37,7 +37,7 @@
                   <Pane layoutX="213.0" layoutY="194.0" prefHeight="140.0" prefWidth="145.0">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="140.0" stroke="BLACK" strokeType="INSIDE" width="145.0" />
-                        <Label alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#onStaffClick" prefHeight="140.0" prefWidth="145.0" text="Staff" textAlignment="CENTER">
+                        <Label alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#gotoStaffLogin" prefHeight="140.0" prefWidth="145.0" text="Staff" textAlignment="CENTER">
                            <font>
                               <Font size="25.0" />
                            </font>

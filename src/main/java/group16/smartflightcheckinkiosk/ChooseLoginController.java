@@ -22,7 +22,7 @@ public class ChooseLoginController {
     protected void gotoPassengerLogin() {
         System.out.println("you choose passenger");}
     @FXML
-    protected void gotostaffLogin() {
+    protected void gotoStaffLogin() {
         System.out.println("you choose staff");}
     public void setApp(ViewAlter viewAlter) {
         this.viewAlter = viewAlter;
