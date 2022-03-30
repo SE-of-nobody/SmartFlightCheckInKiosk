@@ -1,62 +1,45 @@
-# SmartFlightCheckInKiosk
+# README
 
+---
 
-## 2.1Check in
+## 1. Environment：
 
-验证信息的方式有三种
-passengers can get booking information in 3 ways:
-1.booking number
-2.surname and ID number
-3.scan the ID document
+---
 
-After the successful retrieval, the system will show the summary of the booked flight passengers will then choose the seat and type of meal(through a series of screens)
-last screen: ask to scan the ID document and confirm
+JDK 17.0.2
 
-## 2.2额外选项
+JavaFX 17.0.1
 
-座位档次选择及费用（选座，航空餐档次等） 不同档次会有不同的payment
-支付界面（credit card信息输入）
-确认界面（信息核对）
+Attention: MacBook Pro M1 Max (MacOS 12.3) would crash running these codes so a Windows PC is recommended.
 
-## 2.3 Boarding pass
+---
 
-（**Book**)=>{
+## 2. Procedure Flow
 
-**determine** the number of
+---
 
- (1.carry-on baggages 2.check-in baggages)
+1. Run the Main.java:
+	It will show a GUI with three buttons. Three button lead to three different check-in interfaces separately.
+2. Click each button:
+	- First button: It will ask you to input your booking number. Once you type your booking number and click the ok button, there will be a "Booking Number: XXX" message shown on terminal.
+	- Second button: It will ask you to input your surname and ID number. Once you type your surname and ID number and click the ok button, there will be a "Surname: XXX \n ID Number: XXX" message shown on terminal.
+	- Third button: It will ask you to input your ID document in the textfield. You can type anything in the textfield and click the ok button, then there will be the text you just typed shown on terminal.
 
-  }
+![731648637661_.pic_hd](/Users/gangruibo/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/cebbe2992dc428ebde32a1ec7a02feae/Message/MessageTemp/cebbe2992dc428ebde32a1ec7a02feae/Image/731648637661_.pic_hd.jpg)
 
-（**CheckIn**）=>{
-**print**(
+---
 
-1. the boarding pass, 
+## 3. Process:
 
-2. a tag(to attached to the carry-on baggage), 
+---
 
-3. a ticket(上面带有放行李的drop-in-counter序号 )
+1. Functions implemented:
+   - Interface jump control
+   - A basic GUI design
+   - Get input information
 
-)}
+2. Functions not implemented:
+   - Drag CSV file to certain place and read file information
+   - Detail GUI design
+   - Combine with other interfaces
 
-(这部分超过本项目范围**at the drop-in-counter**）=>{
-
-1. check the weight of the baggages
-
-2. pay extra charge of the baggages
-
-   }
-
-## 2.4 Passengers list 
-
-把乘客消息可视化
-
-1. After the closing time of ticket sales, arrange the passenger information according to the seat list and send it to the back-end system.
-2. After the check-in is complete, it is automatically marked in the back-end list.
-3. The passengers who have not completed check-in will be screened forward 15 minutes before the check-in stop to allow broadcast notifications.
-
-## 2.5 Other requirements 
-
-验错和取消
-提示与帮助
-易于添加新的选项/重命名
