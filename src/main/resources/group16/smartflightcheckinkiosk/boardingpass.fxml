@@ -33,7 +33,7 @@
                         <Text layoutX="52.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2.Tag (each for your check-in baggages)" />
                         <Text layoutX="52.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3.tickets for your check-in-baggages (please drop your baggages to the bag-drop-counter and the number of which is on the tickets" wrappingWidth="263.4921875" />
                         <Circle fill="DODGERBLUE" layoutX="330.0" layoutY="329.0" radius="44.0" stroke="BLACK" strokeType="INSIDE" />
-                        <Label alignment="CENTER" layoutX="286.0" layoutY="285.0" prefHeight="88.0" prefWidth="88.0" text="ok" textFill="WHITE" onMouseClicked="#onOKClick">
+                        <Label fx:id="label_ok" alignment="CENTER" layoutX="286.0" layoutY="285.0" prefHeight="88.0" prefWidth="88.0" text="ok" textFill="WHITE" onMouseClicked="#onOKClick">
                             <font>
                                 <Font size="29.0" />
                             </font>
@@ -45,7 +45,7 @@
                             </opaqueInsets>
                         </Label>
                         <Circle fill="#c2c6c9" layoutX="65.0" layoutY="329.0" radius="44.0" stroke="BLACK" strokeType="INSIDE" />
-                        <Label alignment="CENTER" layoutX="21.0" layoutY="285.0" prefHeight="88.0" prefWidth="88.0" text="need help" textFill="WHITE" onMouseClicked="#onHelpClick">
+                        <Label fx:id="label_help" alignment="CENTER" layoutX="21.0" layoutY="285.0" prefHeight="88.0" prefWidth="88.0" text="need help" textFill="WHITE" onMouseClicked="#onHelpClick">
                             <font>
                                 <Font size="16.0" />
                             </font>
