@@ -1,4 +1,4 @@
-package group16.smartflightcheckinkiosk;
+package group16.smartflightcheckinkiosk.Controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -7,24 +7,24 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 
-public class IDdocController {
+public class BooknumController {
 
     @FXML
-    private Label confirm4;
+    private TextField booknumField;
 
     @FXML
-    private TextField id_docField;
+    private Label confirm2;
 
     @FXML
     private Button ok;
 
     @FXML
-    private AnchorPane way3;
+    private AnchorPane way1;
 
     @FXML
     void ok(ActionEvent event) {
-        String ID_doc = id_docField.getText();
-        System.out.println("ID Documnet: " + ID_doc);
+        String BookingNumber = booknumField.getText();
+        System.out.println("Booking Number: " + BookingNumber);
     }
 
 }

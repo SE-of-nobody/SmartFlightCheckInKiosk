@@ -6,6 +6,10 @@ import java.io.InputStream;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import group16.smartflightcheckinkiosk.Controller.BookedFlightController;
+import group16.smartflightcheckinkiosk.Controller.ChooseLoginController;
+import group16.smartflightcheckinkiosk.Controller.MealChooseController;
+import group16.smartflightcheckinkiosk.Controller.SeatChooseController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;

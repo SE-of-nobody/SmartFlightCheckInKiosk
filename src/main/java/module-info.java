@@ -13,4 +13,8 @@ module group16.smartflightcheckinkiosk {
 
     opens group16.smartflightcheckinkiosk to javafx.fxml;
     exports group16.smartflightcheckinkiosk;
+    exports group16.smartflightcheckinkiosk.Controller;
+    opens group16.smartflightcheckinkiosk.Controller to javafx.fxml;
+    exports group16.smartflightcheckinkiosk.Data;
+    opens group16.smartflightcheckinkiosk.Data to javafx.fxml;
 }

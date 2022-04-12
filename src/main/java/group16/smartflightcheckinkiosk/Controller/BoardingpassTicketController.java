@@ -1,14 +1,15 @@
-package group16.smartflightcheckinkiosk;
+package group16.smartflightcheckinkiosk.Controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.text.Text;
 
-public class BoardingpassTagController {
+public class BoardingpassTicketController {
     @FXML
     private Text Surname;
     @FXML
     private Text FlightNumber;
     @FXML
     private Text Tag;
-
+    @FXML
+    private Text CounterNumber;
 }

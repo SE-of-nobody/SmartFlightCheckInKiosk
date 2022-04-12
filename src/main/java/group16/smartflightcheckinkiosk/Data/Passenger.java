@@ -1,4 +1,4 @@
-package group16.smartflightcheckinkiosk;
+package group16.smartflightcheckinkiosk.Data;
 
 public class Passenger {
     private String BookingNumber;

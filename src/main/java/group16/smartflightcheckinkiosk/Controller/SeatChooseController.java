@@ -1,13 +1,17 @@
-package group16.smartflightcheckinkiosk;
+package group16.smartflightcheckinkiosk.Controller;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import group16.smartflightcheckinkiosk.ViewAlter;
+import javafx.fxml.FXML;
+import javafx.scene.control.Label;
 import javafx.fxml.Initializable;
 
-public class MealChooseController implements Initializable {
+public class SeatChooseController implements Initializable {
     private ViewAlter viewAlter;
-    public MealChooseController() {
+
+    public SeatChooseController() {
         // TODO Auto-generated constructor stub
     }
 
@@ -20,5 +24,11 @@ public class MealChooseController implements Initializable {
     public void setApp(ViewAlter viewAlter) {
         this.viewAlter = viewAlter;
     }
+
+    public void A1() { //Allinfor[3].setSeat("A1");
+        System.out.print("assa");
+        //asdsa.changefood();
+    }
+
 
 }

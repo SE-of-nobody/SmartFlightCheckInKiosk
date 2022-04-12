@@ -5,7 +5,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="way2" prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group16.smartflightcheckinkiosk.SurnameController">
+<AnchorPane fx:id="way2" prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group16.smartflightcheckinkiosk.Controller.SurnameController">
    <children>
       <Label fx:id="confirm3" layoutX="25.0" layoutY="26.0" prefHeight="18.0" prefWidth="250.0" text="Please Input Your Surname and ID Number" />
       <Label fx:id="surname" layoutX="31.0" layoutY="71.0" text="Surname:" />

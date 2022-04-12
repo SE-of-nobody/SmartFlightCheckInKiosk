@@ -4,7 +4,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="login" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group16.smartflightcheckinkiosk.LoginController">
+<AnchorPane fx:id="login" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group16.smartflightcheckinkiosk.Controller.LoginController">
    <children>
       <Label fx:id="confirm1" layoutX="55.0" layoutY="80.0" prefHeight="67.0" prefWidth="290.0" text="Choose one way to retrieve the flight information " />
       <Button fx:id="booknum_button" layoutX="125.0" layoutY="189.0" mnemonicParsing="false" onAction="#way1" prefHeight="26.0" prefWidth="150.0" text="Booking Number" />

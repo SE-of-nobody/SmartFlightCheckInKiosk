@@ -1,4 +1,4 @@
-package group16.smartflightcheckinkiosk;
+package group16.smartflightcheckinkiosk.Controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

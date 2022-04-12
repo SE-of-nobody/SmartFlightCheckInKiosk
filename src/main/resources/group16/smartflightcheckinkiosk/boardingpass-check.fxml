@@ -13,7 +13,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 
-<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group16.smartflightcheckinkiosk.BoardingpassCheckController">
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group16.smartflightcheckinkiosk.Controller.BoardingpassCheckController">
     <children>
         <FlowPane prefHeight="400.0" prefWidth="400.0">
             <children>

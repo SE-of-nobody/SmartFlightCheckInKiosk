@@ -1,7 +1,9 @@
-package group16.smartflightcheckinkiosk;
+package group16.smartflightcheckinkiosk.Controller;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import group16.smartflightcheckinkiosk.ViewAlter;
 import javafx.fxml.Initializable;
 
 public class BookedFlightController implements Initializable{
