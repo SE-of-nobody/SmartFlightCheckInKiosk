@@ -1,11 +1,13 @@
 package group16.smartflightcheckinkiosk.Controller;
 
+import group16.smartflightcheckinkiosk.Jumpto;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
 public class SurnameController {
 
@@ -22,20 +24,33 @@ public class SurnameController {
     private Button ok;
 
     @FXML
+    private Button back;
+
+    @FXML
     private Label surname;
 
     @FXML
     private TextField surnameField;
 
     @FXML
-    private AnchorPane way2;
+    private AnchorPane toSurnamePage;
 
     @FXML
-    void ok(ActionEvent event) {
+    void ok(ActionEvent event) throws Exception{
         String Surname = surnameField.getText();
         String IDnumber = id_numField.getText();
         System.out.println("Surname: " + Surname);
         System.out.println("ID Number: " + IDnumber);
+        Jumpto jumpto = new Jumpto();
+        jumpto.set("BookedFlight.fxml", "Booked Flight");
+        Stage stage = new Stage();
+        jumpto.start(stage);
+    }
+    @FXML
+    void back(){
+        Stage stage = (Stage) back.getScene().getWindow();
+        stage.close();
+
     }
 
 }

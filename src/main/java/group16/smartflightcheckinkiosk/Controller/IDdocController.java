@@ -1,11 +1,13 @@
 package group16.smartflightcheckinkiosk.Controller;
 
+import group16.smartflightcheckinkiosk.Jumpto;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
 public class IDdocController {
 
@@ -19,12 +21,26 @@ public class IDdocController {
     private Button ok;
 
     @FXML
-    private AnchorPane way3;
+    private Button back;
 
     @FXML
-    void ok(ActionEvent event) {
+    private AnchorPane toIDdocPage;
+
+    @FXML
+    void ok(ActionEvent event) throws Exception{
         String ID_doc = id_docField.getText();
         System.out.println("ID Documnet: " + ID_doc);
+        Jumpto jumpto = new Jumpto();
+        jumpto.set("BookedFlight.fxml", "Booked Flight");
+        Stage stage = new Stage();
+        jumpto.start(stage);
+
+    }
+    @FXML
+    void back(){
+        Stage stage = (Stage) back.getScene().getWindow();
+        stage.close();
+
     }
 
 }

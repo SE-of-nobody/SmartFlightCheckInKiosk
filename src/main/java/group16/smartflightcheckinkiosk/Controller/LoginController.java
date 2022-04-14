@@ -9,6 +9,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import group16.smartflightcheckinkiosk.Jumpto;
 
 import java.io.IOException;
 
@@ -21,35 +22,35 @@ public class LoginController {
     private Button iddoc_button;
     @FXML
     private Button surname_button;
+    @FXML
+    private Button back;
 
     @FXML
-    void way1(ActionEvent event) throws IOException {
-        FXMLLoader fxml1 = new FXMLLoader(getClass().getResource("BookNum.fxml"));
-        Scene scene = new Scene(fxml1.load());
+    void toBookNumPage(ActionEvent event) throws Exception {
+        Jumpto jumpto = new Jumpto();
+        jumpto.set("BookNum.fxml", "Booking Number");
         Stage stage = new Stage();
-        stage.setTitle("Booking Number");
-        stage.setScene(scene);
-        stage.show();
+        jumpto.start(stage);
     }
 
     @FXML
-    void way2(ActionEvent event) throws IOException {
-        FXMLLoader fxml2 = new FXMLLoader(getClass().getResource("Surname.fxml"));
-        Scene scene = new Scene(fxml2.load());
+    void toSurnamePage(ActionEvent event) throws Exception {
+        Jumpto jumpto = new Jumpto();
+        jumpto.set("Surname.fxml", "Surname & ID Number");
         Stage stage = new Stage();
-        stage.setTitle("Surname & ID Number");
-        stage.setScene(scene);
-        stage.show();
+        jumpto.start(stage);
     }
 
     @FXML
-    void way3(ActionEvent event) throws IOException{
-        FXMLLoader fxml3 = new FXMLLoader(getClass().getResource("IDdoc.fxml"));
-        Scene scene = new Scene(fxml3.load());
+    void toIDdocPage(ActionEvent event) throws Exception{
+        Jumpto jumpto = new Jumpto();
+        jumpto.set("IDdoc.fxml", "ID Documnet");
         Stage stage = new Stage();
-        stage.setTitle("ID Document");
-        stage.setScene(scene);
-        stage.show();
+        jumpto.start(stage);
     }
-
+    @FXML
+    void back(){
+        Stage stage = (Stage) back.getScene().getWindow();
+        stage.close();
+    }
 }

@@ -7,8 +7,9 @@
 <AnchorPane fx:id="login" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group16.smartflightcheckinkiosk.Controller.LoginController">
    <children>
       <Label fx:id="confirm1" layoutX="55.0" layoutY="80.0" prefHeight="67.0" prefWidth="290.0" text="Choose one way to retrieve the flight information " />
-      <Button fx:id="booknum_button" layoutX="125.0" layoutY="189.0" mnemonicParsing="false" onAction="#way1" prefHeight="26.0" prefWidth="150.0" text="Booking Number" />
-      <Button fx:id="surname_button" layoutX="125.0" layoutY="260.0" mnemonicParsing="false" onAction="#way2" prefHeight="26.0" prefWidth="150.0" text="Surname &amp; ID Number" />
-      <Button fx:id="iddoc_button" layoutX="125.0" layoutY="330.0" mnemonicParsing="false" onAction="#way3" prefHeight="26.0" prefWidth="150.0" text="ID Documnet" />
+      <Button fx:id="booknum_button" layoutX="125.0" layoutY="190.0" mnemonicParsing="false" onAction="#toBookNumPage" prefHeight="26.0" prefWidth="150.0" text="Booking Number" />
+      <Button fx:id="surname_button" layoutX="125.0" layoutY="260.0" mnemonicParsing="false" onAction="#toSurnamePage" prefHeight="26.0" prefWidth="150.0" text="Surname &amp; ID Number" />
+      <Button fx:id="iddoc_button" layoutX="125.0" layoutY="330.0" mnemonicParsing="false" onAction="#toIDdocPage" prefHeight="26.0" prefWidth="150.0" text="ID Documnet" />
+      <Button fx:id="back" layoutX="125.0" layoutY="400.0" mnemonicParsing="false" onAction="#back" prefHeight="26.0" prefWidth="150.0" text="Back" />
    </children>
 </AnchorPane>
