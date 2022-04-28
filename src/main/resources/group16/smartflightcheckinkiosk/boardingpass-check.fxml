@@ -33,7 +33,7 @@
                         <Text layoutX="52.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID number:" />
                         <Text layoutX="52.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="booking number:" wrappingWidth="263.4921875" />
                         <Circle fill="DODGERBLUE" layoutX="330.0" layoutY="329.0" radius="44.0" stroke="BLACK" strokeType="INSIDE" />
-                        <Label alignment="CENTER" layoutX="286.0" layoutY="285.0" onMouseClicked="#onNextClick" prefHeight="88.0" prefWidth="88.0" text="Next" textFill="WHITE">
+                        <Label fx:id="back" alignment="CENTER" layoutX="286.0" layoutY="285.0" onMouseClicked="#onNextClick" prefHeight="88.0" prefWidth="88.0" text="Next" textFill="WHITE">
                             <font>
                                 <Font size="29.0" />
                             </font>
@@ -45,7 +45,7 @@
                             </opaqueInsets>
                         </Label>
                         <Circle fill="#c2c6c9" layoutX="65.0" layoutY="329.0" radius="44.0" stroke="BLACK" strokeType="INSIDE" />
-                        <Label alignment="CENTER" layoutX="21.0" layoutY="285.0" onMouseClicked="#onPrevClick" prefHeight="88.0" prefWidth="88.0" text="Prev" textFill="WHITE">
+                        <Label fx:id="next" alignment="CENTER" layoutX="21.0" layoutY="285.0" onMouseClicked="#onPrevClick" prefHeight="88.0" prefWidth="88.0" text="Prev" textFill="WHITE">
                             <font>
                                 <Font size="16.0" />
                             </font>
