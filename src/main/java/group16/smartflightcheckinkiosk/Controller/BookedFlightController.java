@@ -9,6 +9,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 
 public class BookedFlightController implements Initializable{
+    public static String[] userInfo;
     @FXML
     private Label BookingFlight;
     @FXML
@@ -23,15 +24,14 @@ public class BookedFlightController implements Initializable{
     private Label DepatureCity;
     @FXML
     private Label ArrivingCity;
-    private String[] info[];
      public void ChangeText(){
-         BookingFlight.setText(String.valueOf(info[0]));
-         BookingNumber.setText(String.valueOf(info[1]));
-         Surname.setText(String.valueOf(info[2]));
-         DepatureTime.setText(String.valueOf(info[3]));
-         ArrivingTime.setText(String.valueOf(info[4]));
-         DepatureCity.setText(String.valueOf(info[5]));
-         ArrivingCity.setText(String.valueOf(info[6]));
+         BookingFlight.setText(String.valueOf(userInfo[0]));
+         BookingNumber.setText(String.valueOf(userInfo[1]));
+         Surname.setText(String.valueOf(userInfo[2]));
+         DepatureTime.setText(String.valueOf(userInfo[3]));
+         ArrivingTime.setText(String.valueOf(userInfo[4]));
+         DepatureCity.setText(String.valueOf(userInfo[5]));
+         ArrivingCity.setText(String.valueOf(userInfo[6]));
      }
 
     private ViewAlter viewAlter;

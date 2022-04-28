@@ -42,6 +42,7 @@ public class SurnameController {
         System.out.println("Surname: " + Surname);
         System.out.println("ID Number: " + IDnumber);
         Jumpto jumpto = new Jumpto();
+
         jumpto.set("BookedFlight.fxml", "Booked Flight");
         Stage stage = new Stage();
         jumpto.start(stage);

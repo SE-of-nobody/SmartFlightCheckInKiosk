@@ -8,6 +8,9 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class MainMenuController {
+
+
+
     @FXML
     private VBox rootLayout;
     @FXML

@@ -4,11 +4,15 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import group16.smartflightcheckinkiosk.ViewAlter;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
 public class MealChooseController implements Initializable {
+
+    public static String[] userInfo;
     private ViewAlter viewAlter;
     @FXML
     private Label LabelMeal1;
@@ -47,16 +51,13 @@ public class MealChooseController implements Initializable {
         }
     }
     @FXML
-    public int ChooseMeal1() {
-        return 1;
-    }
-    @FXML
-    public int ChooseMeal2() {
-        return 2;
-    }
-    @FXML
-    public int ChooseMeal3() {
-        return 3;
+    public String ButtonClicked(ActionEvent event){
+        Button button = (Button) event.getSource();
+        String ChoosedMeal = (String) button.getId();
+        System.out.println(ChoosedMeal);
+        return ChoosedMeal;
+
+
     }
 
 }
