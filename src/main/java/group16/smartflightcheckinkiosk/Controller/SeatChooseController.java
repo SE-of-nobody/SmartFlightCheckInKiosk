@@ -1,12 +1,18 @@
 package group16.smartflightcheckinkiosk.Controller;
 
+import java.io.InputStream;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import group16.smartflightcheckinkiosk.Jumpto;
 import group16.smartflightcheckinkiosk.ViewAlter;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.fxml.Initializable;
+import javafx.scene.control.ScrollPane;
+import javafx.stage.Stage;
+
 
 public class SeatChooseController implements Initializable {
     private ViewAlter viewAlter;
@@ -22,6 +28,7 @@ public class SeatChooseController implements Initializable {
     }
 
     public void setApp(ViewAlter viewAlter) {
+
         this.viewAlter = viewAlter;
     }
 
@@ -29,6 +36,17 @@ public class SeatChooseController implements Initializable {
         System.out.print("assa");
         //asdsa.changefood();
     }
+
+@FXML
+    void gotoMealChoose(ActionEvent event) throws Exception {
+        Jumpto jumpto = new Jumpto();
+        jumpto.set("MealChoose.fxml", "Meal Choose");
+        Stage stage = new Stage();
+
+        jumpto.start(stage);
+    }
+
+
 
 
 }

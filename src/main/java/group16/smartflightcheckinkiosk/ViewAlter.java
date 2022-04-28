@@ -27,7 +27,7 @@ public class ViewAlter extends Application{
     @Override
     public void start(Stage primaryStage) throws Exception {
         stage = primaryStage;
-        stage.setTitle("XXXX系统");
+        stage.setTitle("FXML Login Sample");
         gotoChooseLogin();
         stage.show();
     }
@@ -36,8 +36,8 @@ public class ViewAlter extends Application{
      */
     public void gotoChooseLogin() {
         try {
-            ChooseLoginController view = (ChooseLoginController) replaceSceneContent(StaticResourcesConfig.LOGINCHOOSE_VIEW_PATH);
-            view.setApp(this);
+            ChooseLoginController chooseLogin = (ChooseLoginController) replaceSceneContent("choose-login.fxml");
+            chooseLogin.setApp(this);
         } catch (Exception ex) {
             logger.log(Level.SEVERE, null, ex);
         }
@@ -47,8 +47,8 @@ public class ViewAlter extends Application{
      */
     public void gotoMealChoose() {
         try {
-            MealChooseController view = (MealChooseController) replaceSceneContent(StaticResourcesConfig.MEALCHOOSE_VIEW_PATH);
-            view.setApp(this);
+            MealChooseController mealchoose = (MealChooseController) replaceSceneContent("MealChoose.fxml");
+            mealchoose.setApp(this);
         } catch (Exception ex) {
             logger.log(Level.SEVERE, null, ex);
         }
@@ -58,19 +58,20 @@ public class ViewAlter extends Application{
      */
     public void gotoBookedFlight() {
         try {
-            BookedFlightController view = (BookedFlightController) replaceSceneContent(StaticResourcesConfig.BOOKEDFLIGHT_PATH);
+            BookedFlightController view = (BookedFlightController) replaceSceneContent("BookedFlight.fxml");
             view.setApp(this);
         } catch (Exception ex) {
             logger.log(Level.SEVERE, null, ex);
         }
     }
+
     /**
      * 跳转到选座
      */
     public void gotoSeatChoose() {
         try {
-            SeatChooseController view = (SeatChooseController) replaceSceneContent(StaticResourcesConfig.SEATCHOOSE_VIEW_PATH);
-            view.setApp(this);
+            SeatChooseController seatchoose = (SeatChooseController) replaceSceneContent("SeatChoose.fxml");
+            seatchoose.setApp(this);
         } catch (Exception ex) {
             logger.log(Level.SEVERE, null, ex);
         }
@@ -83,23 +84,25 @@ public class ViewAlter extends Application{
      * @throws Exception
      */
     private Initializable replaceSceneContent(String fxml) throws Exception {
-
         FXMLLoader loader = new FXMLLoader();
         InputStream in = ViewAlter.class.getResourceAsStream(fxml);
         loader.setBuilderFactory(new JavaFXBuilderFactory());
         loader.setLocation(ViewAlter.class.getResource(fxml));
+        AnchorPane page;
         try {
-            AnchorPane page = (AnchorPane) loader.load(in);
-            Scene scene = new Scene(page);
-            stage.setScene(scene);
-            stage.sizeToScene();
-        } catch (Exception e) {
-            logger.log(Level.SEVERE, "页面加载异常！");
+            page = (AnchorPane) loader.load(in);
         } finally {
             in.close();
         }
-        return (Initializable) loader.getController();
-    }}
+        Scene scene = new Scene(page);
+        stage.setScene(scene);
+        stage.sizeToScene();
+        return (Initializable) loader.getController();}
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+}
 
 
 
