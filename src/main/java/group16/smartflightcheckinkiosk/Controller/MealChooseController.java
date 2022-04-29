@@ -56,8 +56,8 @@ public class MealChooseController implements Initializable {
         String ChoosedMeal = (String) button.getId();
         System.out.println(ChoosedMeal);
         return ChoosedMeal;
-
-
     }
+
+
 
 }
