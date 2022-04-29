@@ -7,6 +7,11 @@ import javafx.stage.Stage;
 
 public class Jumpto extends Application {
     String fxml, title;
+    public void set(String fxml, String title) {
+        this.fxml = fxml;
+        this.title = title;
+    }
+
     @Override
     public void start(Stage stage) throws Exception {
         FXMLLoader root = new FXMLLoader(getClass().getResource(fxml));
@@ -14,9 +19,5 @@ public class Jumpto extends Application {
         stage.setTitle(title);
         stage.setScene(scene);
         stage.show();
-    }
-    public void set(String fxml, String title) {
-        this.fxml = fxml;
-        this.title = title;
     }
 }

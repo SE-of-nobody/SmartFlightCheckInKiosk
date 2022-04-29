@@ -14,7 +14,6 @@ import group16.smartflightcheckinkiosk.Jumpto;
 import java.io.IOException;
 
 public class LoginController {
-    public AnchorPane login;
     public Label confirm;
     @FXML
     private Button booknum_button;
@@ -24,7 +23,6 @@ public class LoginController {
     private Button surname_button;
     @FXML
     private Button back;
-
     @FXML
     void toBookNumPage(ActionEvent event) throws Exception {
         Jumpto jumpto = new Jumpto();
@@ -53,4 +51,5 @@ public class LoginController {
         Stage stage = (Stage) back.getScene().getWindow();
         stage.close();
     }
+
 }

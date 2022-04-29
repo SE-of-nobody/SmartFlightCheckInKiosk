@@ -26,6 +26,8 @@ public class BooknumController {
     @FXML
     private AnchorPane toBookNumPage;
 
+
+
     @FXML
     void ok(ActionEvent event) throws Exception{
         String BookingNumber = booknumField.getText();
@@ -35,6 +37,7 @@ public class BooknumController {
         Stage stage = new Stage();
         Stage stage_old = (Stage) toBookNumPage.getScene().getWindow();
         stage_old.close();
+
         jumpto.start(stage);
     }
     @FXML
@@ -42,5 +45,6 @@ public class BooknumController {
         Stage stage = (Stage) back.getScene().getWindow();
         stage.close();
     }
+
 
 }
