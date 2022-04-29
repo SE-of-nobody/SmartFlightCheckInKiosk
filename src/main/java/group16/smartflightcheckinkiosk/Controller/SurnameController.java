@@ -43,8 +43,10 @@ public class SurnameController {
         System.out.println("ID Number: " + IDnumber);
         Jumpto jumpto = new Jumpto();
 
-        jumpto.set("BookedFlight.fxml", "Booked Flight");
+        jumpto.set("MainMenu.fxml", "Hello");
         Stage stage = new Stage();
+        Stage stage_old = (Stage) toSurnamePage.getScene().getWindow();
+        stage_old.close();
         jumpto.start(stage);
     }
     @FXML

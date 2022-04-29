@@ -31,8 +31,10 @@ public class BooknumController {
         String BookingNumber = booknumField.getText();
         System.out.println("Booking Number: " + BookingNumber);
         Jumpto jumpto = new Jumpto();
-        jumpto.set("BookedFlight.fxml", "Booked Flight");
+        jumpto.set("MainMenu.fxml", "Hello");
         Stage stage = new Stage();
+        Stage stage_old = (Stage) toBookNumPage.getScene().getWindow();
+        stage_old.close();
         jumpto.start(stage);
     }
     @FXML

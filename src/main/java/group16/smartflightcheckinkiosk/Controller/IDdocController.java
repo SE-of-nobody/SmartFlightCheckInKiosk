@@ -31,8 +31,10 @@ public class IDdocController {
         String ID_doc = id_docField.getText();
         System.out.println("ID Documnet: " + ID_doc);
         Jumpto jumpto = new Jumpto();
-        jumpto.set("BookedFlight.fxml", "Booked Flight");
+        jumpto.set("MainMenu.fxml", "Hello");
         Stage stage = new Stage();
+        Stage stage_old = (Stage) toIDdocPage.getScene().getWindow();
+        stage_old.close();
         jumpto.start(stage);
 
     }
