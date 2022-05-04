@@ -33,7 +33,7 @@ public void gotoPassengerLogin() throws Exception {
     @FXML
     public void gotoStaffLogin() throws Exception {
         Jumpto jumpto = new Jumpto();
-        jumpto.set("Surname.fxml", "Surname & ID Number");
+        jumpto.set("StaffLogin.fxml", "Staff Login");
         Stage stage = new Stage();
         jumpto.start(stage);
     }
