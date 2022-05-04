@@ -19,7 +19,7 @@ public class Staff {
     }
 
     void CheckStaff(){
-        String csvFile = "src/main/resources/group16/smartflightcheckinkiosk/Staff.csv";
+        String csvFile = "src/main/resources/group16.smartflightcheckinkiosk/Staff.csv";
         String line = "";
         String cvsSplitBy = ",";
         String[] staff= new String[2];
@@ -49,7 +49,7 @@ public class Staff {
         System.out.println("please print the flight");
         FlightNumber=input.next();
 
-        String csvFile = " src/main/resources/group16/smartflightcheckinkiosk/Flight.csv";
+        String csvFile = " src/main/resources/group16.smartflightcheckinkiosk/Flight.csv";
         String line = "";
         String cvsSplitBy = ",";
         String[] flight= new String[4];
