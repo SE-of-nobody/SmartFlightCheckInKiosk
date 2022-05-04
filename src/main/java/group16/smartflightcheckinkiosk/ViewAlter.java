@@ -76,39 +76,7 @@ public class ViewAlter extends Application{
             logger.log(Level.SEVERE, null, ex);
         }
     }
-    /**
-     * 跳转到EnterFlight页面(从StaffLogin页面)
-     */
-    public void gotoEnterFlight() {
-        try {
-            EnterFlightController view = (EnterFlightController) replaceSceneContent(StaticResourcesConfig.ENTERFLIGHT_PATH);
-            view.setApp(this);
-        } catch (Exception ex) {
-            logger.log(Level.SEVERE, null, ex);
-        }
-    }
-    /**
-     * 跳转到CheckFlight页面(从EnterFlight页面)
-     */
-    public void gotoCheckFlight() {
-        try {
-            StaffLoginController view = (StaffLoginController) replaceSceneContent(StaticResourcesConfig.CHECKFLIGHT_PATH);
-            view.setApp(this);
-        } catch (Exception ex) {
-            logger.log(Level.SEVERE, null, ex);
-        }
-    }
-    /**
-     * 跳转到FlightList页面(从CheckFlight页面)
-     */
-    public void gotoFlightList() {
-        try {
-            StaffLoginController view = (StaffLoginController) replaceSceneContent(StaticResourcesConfig.FLIGHTLIST_PATH);
-            view.setApp(this);
-        } catch (Exception ex) {
-            logger.log(Level.SEVERE, null, ex);
-        }
-    }
+    
 
     /**
      * 替换场景
