@@ -12,7 +12,7 @@ public class StaffLogin extends Application {
     public void start(Stage stage) throws Exception {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("StaffLogin.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("Please enter your staff number");
+        stage.setTitle("Staff Login");
         stage.setScene(scene);
         stage.show();
     }
