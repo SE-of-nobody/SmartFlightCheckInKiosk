@@ -1,5 +1,6 @@
 package group16.smartflightcheckinkiosk;
 
+import group16.smartflightcheckinkiosk.StageManager;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -15,6 +16,10 @@ public class ChooseWays extends Application {
         stage.setTitle("Login");
         stage.setScene(scene);
         stage.show();
+
+        // Store login stage
+        StageManager.STAGE.put("login", stage);
+        StageManager.CONTROLLER.put("chooseWays", this);
     }
 
     public static void main(String[] args) {

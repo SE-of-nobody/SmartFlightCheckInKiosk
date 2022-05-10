@@ -1,6 +1,7 @@
 package group16.smartflightcheckinkiosk.Controller;
 
 import group16.smartflightcheckinkiosk.Jumpto;
+import group16.smartflightcheckinkiosk.StageManager;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -35,9 +36,14 @@ public class BooknumController {
         Jumpto jumpto = new Jumpto();
         jumpto.set("MainMenu.fxml", "Hello");
         Stage stage = new Stage();
+
+        //Close this window
         Stage stage_old = (Stage) toBookNumPage.getScene().getWindow();
         stage_old.close();
-
+        //Close login window
+        StageManager.STAGE.get("login").close();
+        StageManager.STAGE.remove("login");
+        //Open next window
         jumpto.start(stage);
     }
     @FXML
