@@ -29,8 +29,12 @@ public class IDdocController {
 
     @FXML
     void ok(ActionEvent event) throws Exception{
+        //获取csv文件数据，如有需要，可以修改ID_doc的变量类型
         String ID_doc = id_docField.getText();
+        //测试代码，后端代码添加后即可删除
         System.out.println("ID Documnet: " + ID_doc);
+
+        //页面跳转
         Jumpto jumpto = new Jumpto();
         jumpto.set("MainMenu.fxml", "Hello");
         Stage stage = new Stage();
@@ -47,6 +51,7 @@ public class IDdocController {
     }
     @FXML
     void back(){
+        //关闭当前窗口
         Stage stage = (Stage) back.getScene().getWindow();
         stage.close();
 

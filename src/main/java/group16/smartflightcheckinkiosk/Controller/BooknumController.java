@@ -31,8 +31,11 @@ public class BooknumController {
 
     @FXML
     void ok(ActionEvent event) throws Exception{
+        //获取用户输入的Booking Number，存入变量
         String BookingNumber = booknumField.getText();
+        //测试代码，后端代码添加后即可删除
         System.out.println("Booking Number: " + BookingNumber);
+        //页面跳转
         Jumpto jumpto = new Jumpto();
         jumpto.set("MainMenu.fxml", "Hello");
         Stage stage = new Stage();
@@ -48,6 +51,7 @@ public class BooknumController {
     }
     @FXML
     void back() {
+        //关闭当前窗口
         Stage stage = (Stage) back.getScene().getWindow();
         stage.close();
     }

@@ -23,6 +23,7 @@ public class LoginController {
     private Button surname_button;
     @FXML
     private Button back;
+    //以下为跳转到三个不同界面的函数
     @FXML
     void toBookNumPage(ActionEvent event) throws Exception {
         Jumpto jumpto = new Jumpto();
@@ -46,6 +47,7 @@ public class LoginController {
         Stage stage = new Stage();
         jumpto.start(stage);
     }
+    //关闭窗口
     @FXML
     void back(){
         Stage stage = (Stage) back.getScene().getWindow();

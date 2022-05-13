@@ -38,12 +38,15 @@ public class SurnameController {
 
     @FXML
     void ok(ActionEvent event) throws Exception{
+        //获取用户输入的姓名和ID号，存入变量
         String Surname = surnameField.getText();
         String IDnumber = id_numField.getText();
+        //测试代码，后端代码添加后即可删除
         System.out.println("Surname: " + Surname);
         System.out.println("ID Number: " + IDnumber);
-        Jumpto jumpto = new Jumpto();
 
+        //页面跳转
+        Jumpto jumpto = new Jumpto();
         jumpto.set("MainMenu.fxml", "Hello");
         Stage stage = new Stage();
 
@@ -58,6 +61,7 @@ public class SurnameController {
     }
     @FXML
     void back(){
+        //关闭当前窗口
         Stage stage = (Stage) back.getScene().getWindow();
         stage.close();
 
