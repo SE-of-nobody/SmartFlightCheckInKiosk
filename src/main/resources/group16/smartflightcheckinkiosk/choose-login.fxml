@@ -8,23 +8,32 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group16.smartflightcheckinkiosk.Controller.ChooseLoginController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group16.smartflightcheckinkiosk.Controller.ChooseLoginController">
    <children>
-      <FlowPane prefHeight="400.0" prefWidth="400.0">
+      <FlowPane prefHeight="400.0" prefWidth="600.0">
+         <AnchorPane layoutY="0.0" prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: #87cefa;">
+            <children>
+               <Label fx:id="confirm4" layoutX="51.0" layoutY="13.0" prefHeight="22.0" prefWidth="195.0" text="Log In">
+                  <font>
+                     <Font name="Myanmar MN" size="20.0" />
+                  </font>
+               </Label>
+            </children>
+         </AnchorPane>
          <children>
             <Pane prefHeight="387.0" prefWidth="401.0">
                <children>
-                  <Text layoutX="127.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log In" wrappingWidth="128.240234375">
-                     <font>
-                        <Font size="40.0" />
-                     </font>
-                  </Text>
-                  <Text layoutX="77.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please choose your identity" wrappingWidth="272.890625">
+<!--                  <Text layoutX="127.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log In" wrappingWidth="128.240234375">-->
+<!--                     <font>-->
+<!--                        <Font size="40.0" />-->
+<!--                     </font>-->
+<!--                  </Text>-->
+                  <Text layoutX="77.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please choose your identity" wrappingWidth="272.890625">
                      <font>
                         <Font size="17.0" />
                      </font>
                   </Text>
-                  <Pane layoutX="39.0" layoutY="194.0" prefHeight="140.0" prefWidth="145.0">
+                  <Pane layoutX="39.0" layoutY="144.0" prefHeight="140.0" prefWidth="145.0">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="140.0" stroke="BLACK" strokeType="INSIDE" width="145.0" />
                         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" onMouseClicked="#gotoPassengerLogin" prefHeight="140.0" prefWidth="145.0" text="Passenger">
@@ -34,7 +43,7 @@
                         </Label>
                      </children>
                   </Pane>
-                  <Pane layoutX="213.0" layoutY="194.0" prefHeight="140.0" prefWidth="145.0">
+                  <Pane layoutX="213.0" layoutY="144.0" prefHeight="140.0" prefWidth="145.0">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="140.0" stroke="BLACK" strokeType="INSIDE" width="145.0" />
                         <Label alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#gotoStaffLogin" prefHeight="140.0" prefWidth="145.0" text="Staff" textAlignment="CENTER">
