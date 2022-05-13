@@ -35,6 +35,7 @@ public class BookedFlightController implements Initializable{
      }
 
     private ViewAlter viewAlter;
+
     public BookedFlightController() {
         // TODO Auto-generated constructor stub
     }
