@@ -7,7 +7,6 @@ import javafx.stage.Stage;
 
 public class Jumpto extends Application {
     String fxml, title;
-    //设置跳转页面链接和页面标题
     public void set(String fxml, String title) {
         this.fxml = fxml;
         this.title = title;

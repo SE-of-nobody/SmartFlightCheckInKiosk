@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 
-<TabPane fx:id="mealpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group16.smartflightcheckinkiosk.Controller.MealChooseController">
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group16.smartflightcheckinkiosk.Controller.MealChooseController">
   <tabs>
     <Tab text="Meal1">
       <content>
@@ -15,7 +15,7 @@
                <children>
                   <BorderPane prefHeight="366.0" prefWidth="594.0">
                      <bottom>
-                        <Button fx:id="OrderMeal1" mnemonicParsing="false" onMouseClicked="#orderButtonClicked" text="order" BorderPane.alignment="CENTER" />
+                        <Button fx:id="OrderMeal1" mnemonicParsing="false" onAction="#ButtonClicked" text="order" BorderPane.alignment="CENTER" />
                      </bottom>
                      <top>
                         <Label fx:id="LabelMeal1" text="Meal1 多少钱" BorderPane.alignment="CENTER" />
@@ -33,7 +33,7 @@
                <children>
                   <BorderPane prefHeight="366.0" prefWidth="594.0">
                      <bottom>
-                        <Button fx:id="OrderMeal2" mnemonicParsing="false" text="order" onMouseClicked="#orderButtonClicked" BorderPane.alignment="CENTER" />
+                        <Button fx:id="OrderMeal2" mnemonicParsing="false" text="order" onAction="#ButtonClicked" BorderPane.alignment="CENTER" />
                      </bottom>
                      <top>
                         <Label fx:id="LabelMeal2" text="Meal2 多少钱" BorderPane.alignment="CENTER" />
@@ -52,7 +52,7 @@
                <children>
                   <BorderPane prefHeight="366.0" prefWidth="594.0">
                      <bottom>
-                        <Button fx:id="OrderMeal3" mnemonicParsing="false" onAction="#orderButtonClicked" text="order" BorderPane.alignment="CENTER" />
+                        <Button fx:id="OrderMeal3" mnemonicParsing="false" onAction="#ButtonClicked" text="order" BorderPane.alignment="CENTER" />
                      </bottom>
                      <top>
                         <Label fx:id="LabelMeal3" text="Meal3 多少钱" BorderPane.alignment="CENTER" />

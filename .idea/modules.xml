@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/SmartFlightCheckInKiosk.iml" filepath="$PROJECT_DIR$/.idea/SmartFlightCheckInKiosk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SmartFlightCheckInKiosk.iml" filepath="$PROJECT_DIR$/SmartFlightCheckInKiosk.iml" />
     </modules>
   </component>
 </project>

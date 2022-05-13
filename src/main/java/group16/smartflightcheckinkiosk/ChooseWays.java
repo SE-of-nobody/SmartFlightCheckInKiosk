@@ -11,7 +11,6 @@ import java.io.IOException;
 public class ChooseWays extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        //打开login界面
         FXMLLoader root = new FXMLLoader(getClass().getResource("Login.fxml"));
         Scene scene = new Scene(root.load());
         stage.setTitle("Login");

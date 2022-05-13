@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80e9fdb2-f2eb-4655-aa18-a79d61a7e0d1" name="变更" comment="" />
+    <list default="true" id="ed5b730b-5404-43b3-94a7-7243a1b1ee56" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -23,13 +20,29 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="297fQoC732XOE1wEgVb0hMpYdZI" />
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false"
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+    <option name="vmOptions" value="-DarchetypeCatalog=internal" />
+  </component>
+  <component name="ProjectId" id="291DzPmyoJSAAEARTkQbEeLzCdL" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\transi\SmartFlightCheckInKiosk-master (1)(2)\SmartFlightCheckInKiosk-master\src\main\resources\group16\smartflightcheckinkiosk" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\transi\SmartFlightCheckInKiosk-master (1)(2)\SmartFlightCheckInKiosk-master\src\main\resources\group16\smartflightcheckinkiosk" />
+    </key>
+  </component>
+  <component name="RunManager" selected="应用程序.ChooseWays">
     <configuration name="ChooseLogin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="group16.smartflightcheckinkiosk.ChooseLogin" />
       <module name="SmartFlightCheckInKiosk" />
@@ -43,21 +56,70 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ChooseWays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="group16.smartflightcheckinkiosk.ChooseWays" />
+      <module name="SmartFlightCheckInKiosk" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="group16.smartflightcheckinkiosk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="group16.smartflightcheckinkiosk.HelloApplication" />
+      <module name="SmartFlightCheckInKiosk" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="group16.smartflightcheckinkiosk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="group16.smartflightcheckinkiosk.MainMenu" />
+      <module name="SmartFlightCheckInKiosk" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="group16.smartflightcheckinkiosk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.ChooseWays" />
         <item itemvalue="应用程序.ChooseLogin" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="默认任务">
-      <changelist id="80e9fdb2-f2eb-4655-aa18-a79d61a7e0d1" name="变更" comment="" />
-      <created>1652469031219</created>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ed5b730b-5404-43b3-94a7-7243a1b1ee56" name="Default Changelist" comment="" />
+      <created>1652271964179</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1652469031219</updated>
-      <workItem from="1652469033229" duration="27000" />
+      <updated>1652271964179</updated>
+      <workItem from="1652271965960" duration="2432000" />
+      <workItem from="1652274448923" duration="301000" />
+      <workItem from="1652279513919" duration="1917000" />
+      <workItem from="1652312421038" duration="336000" />
+      <workItem from="1652314295944" duration="7889000" />
+      <workItem from="1652364900547" duration="3140000" />
+      <workItem from="1652425024702" duration="15964000" />
+      <workItem from="1652468637243" duration="28000" />
+      <workItem from="1652469105757" duration="20000" />
+      <workItem from="1652469464164" duration="16000" />
     </task>
     <servers />
   </component>
