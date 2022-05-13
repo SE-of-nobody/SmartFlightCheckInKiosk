@@ -3,13 +3,10 @@ package group16.smartflightcheckinkiosk.Controller;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import group16.smartflightcheckinkiosk.Jumpto;
-import javafx.event.ActionEvent;
+import group16.smartflightcheckinkiosk.ViewAlter;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
-import javafx.scene.layout.GridPane;
-import javafx.stage.Stage;
 
 public class BookedFlightController implements Initializable{
     public static String[] userInfo;
@@ -27,8 +24,6 @@ public class BookedFlightController implements Initializable{
     private Label DepatureCity;
     @FXML
     private Label ArrivingCity;
-    @FXML
-    private GridPane Flightpane;
      public void ChangeText(){
          BookingFlight.setText(String.valueOf(userInfo[0]));
          BookingNumber.setText(String.valueOf(userInfo[1]));
@@ -39,6 +34,7 @@ public class BookedFlightController implements Initializable{
          ArrivingCity.setText(String.valueOf(userInfo[6]));
      }
 
+    private ViewAlter viewAlter;
 
     public BookedFlightController() {
         // TODO Auto-generated constructor stub
@@ -50,13 +46,7 @@ public class BookedFlightController implements Initializable{
 
     }
 
-    @FXML
-    public void gotoMainMenu(ActionEvent event) throws Exception {
-        Jumpto jumpto = new Jumpto();
-        jumpto.set("MainMenu.fxml", "MainMenu");
-        Stage stage = new Stage();
-        Stage stage_old = (Stage) Flightpane.getScene().getWindow();
-        stage_old.close();
-        jumpto.start(stage);
+    public void setApp(ViewAlter viewAlter) {
+        this.viewAlter = viewAlter;
     }
 }

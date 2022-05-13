@@ -8,7 +8,6 @@ import javafx.scene.control.Label;
 import java.io.IOException;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.stage.Stage;
 public class BoardingpassController {
     @FXML
@@ -16,9 +15,9 @@ public class BoardingpassController {
     @FXML
     private Label Staff;
     @FXML
-    private Button label_ok;
+    private Label label_ok;
     @FXML
-    private Button label_help;
+    private Label label_help;
 
     @FXML
     protected void onHelpClick() {

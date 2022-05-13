@@ -1,8 +1,8 @@
-package service;
+package group16.smartflightcheckinkiosk.Passager.service;
 
+import group16.smartflightcheckinkiosk.Passager.util.PlaneUtil;
+import group16.smartflightcheckinkiosk.Passager.util.VarUtil;
 import service.Order;
-import util.PlaneUtil;
-import util.VarUtil;
 
 import java.util.Arrays;
 import java.util.List;
@@ -13,9 +13,9 @@ public class OrderInfo {
 
 
 
-    private int orderIndex = -1;
+    public int orderIndex = -1;
 
-    private List<Order> orders;
+    public List<Order> orders;
 
     public OrderInfo(){
         orders = this.getCSV(VarUtil.DATAPATH, VarUtil.CHARSET);
@@ -138,14 +138,15 @@ public class OrderInfo {
 
     //用户文件登录
     public int checkWithFile(){
-        List<Order> list = PlaneUtil.getOrdersFromCsv(VarUtil.LOGINPATH, VarUtil.CHARSET);
+        List<Order> list = PlaneUtil.getOrdersFromLoginCsv(VarUtil.LOGINPATH, VarUtil.CHARSET);
         if(list.size() < 1) return -1;
         Order userInfo = list.get(0);
+        System.out.println(userInfo);
         for (int i = 0; i < orders.size(); i++) {
             //遍历加判断
             if(orders.get(i).getSurname().equals(userInfo.getSurname())
                     && orders.get(i).getIDNumber().equals(userInfo.getIDNumber())
-                    && orders.get(i).getBookingNumber().equals(userInfo.BookingNumber)){
+                    && orders.get(i).getBookingNumber().equals(userInfo.getBookingNumber())){
                 //登陆成功友好提示
                 loginSuccessMsg(userInfo.getSurname());
                 return i;
