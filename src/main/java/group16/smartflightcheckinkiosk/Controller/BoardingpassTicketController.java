@@ -1,6 +1,5 @@
 package group16.smartflightcheckinkiosk.Controller;
 
-import group16.smartflightcheckinkiosk.ViewAlter;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.text.Text;
@@ -21,7 +20,7 @@ public class BoardingpassTicketController implements Initializable {
     @FXML
     private Text CounterNumber;
 
-    private ViewAlter viewAlter;
+
 
 
     @Override
@@ -79,7 +78,5 @@ public class BoardingpassTicketController implements Initializable {
         }
     }
 
-    public void setApp(ViewAlter viewAlter) {
-        this.viewAlter = viewAlter;
-    }
+
 }

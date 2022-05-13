@@ -1,16 +1,11 @@
 package group16.smartflightcheckinkiosk.Controller;
-import group16.smartflightcheckinkiosk.CsvReader;
 import group16.smartflightcheckinkiosk.Jumpto;
-import group16.smartflightcheckinkiosk.ViewAlter;
 import javafx.fxml.FXML;
-import javafx.scene.text.Text;
-import javafx.event.ActionEvent;
-import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 public class ChooseLoginController {
 
-    private ViewAlter viewAlter;
+
 //    @FXML
 //    private Label Passenger;
 //    @FXML
@@ -37,9 +32,7 @@ public void gotoPassengerLogin() throws Exception {
         Stage stage = new Stage();
         jumpto.start(stage);
     }
-    public void setApp(ViewAlter viewAlter) {
-        this.viewAlter = viewAlter;
-    }
+
 }
 
 

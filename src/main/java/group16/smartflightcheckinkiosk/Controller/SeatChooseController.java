@@ -4,17 +4,17 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import group16.smartflightcheckinkiosk.Jumpto;
-import group16.smartflightcheckinkiosk.ViewAlter;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.fxml.Initializable;
+import javafx.scene.control.ScrollPane;
 import javafx.stage.Stage;
 
 
 public class SeatChooseController implements Initializable {
     public static String[] userInfo;
-    private ViewAlter viewAlter;
+
     @FXML
     private Button A1;
     @FXML
@@ -27,8 +27,8 @@ public class SeatChooseController implements Initializable {
     private Button C1;
     @FXML
     private Button C2;
-
-
+    @FXML
+    private ScrollPane SeatChoosePane;
 
     public SeatChooseController() {
         // TODO Auto-generated constructor stub
@@ -40,10 +40,7 @@ public class SeatChooseController implements Initializable {
 
     }
 
-    public void setApp(ViewAlter viewAlter) {
 
-        this.viewAlter = viewAlter;
-    }
 
 @FXML
 public String ButtonClicked(ActionEvent event){
@@ -57,11 +54,12 @@ public String ButtonClicked(ActionEvent event){
 
 
 @FXML
-    public void gotoMealChoose(ActionEvent event) throws Exception {
+    public void gotoMainMenu(ActionEvent event) throws Exception {
     Jumpto jumpto = new Jumpto();
-    jumpto.set("MealChoose.fxml", "Meal Choose");
+    jumpto.set("MainMenu.fxml", "MainMenu");
     Stage stage = new Stage();
-
+    Stage stage_old = (Stage) SeatChoosePane.getScene().getWindow();
+    stage_old.close();
     jumpto.start(stage);
 }
 
