@@ -29,11 +29,11 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\transi\SmartFlightCheckInKiosk-master (1)(2)\SmartFlightCheckInKiosk-master\src\main\resources\group16\smartflightcheckinkiosk" />
@@ -42,7 +42,7 @@
       <recent name="C:\transi\SmartFlightCheckInKiosk-master (1)(2)\SmartFlightCheckInKiosk-master\src\main\resources\group16\smartflightcheckinkiosk" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.ChooseWays">
+  <component name="RunManager" selected="应用程序.ChooseLogin">
     <configuration name="ChooseLogin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="group16.smartflightcheckinkiosk.ChooseLogin" />
       <module name="SmartFlightCheckInKiosk" />
@@ -97,8 +97,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.ChooseWays" />
         <item itemvalue="应用程序.ChooseLogin" />
+        <item itemvalue="应用程序.ChooseWays" />
       </list>
     </recent_temporary>
   </component>
@@ -118,8 +118,6 @@
       <workItem from="1652364900547" duration="3140000" />
       <workItem from="1652425024702" duration="15964000" />
       <workItem from="1652468637243" duration="28000" />
-      <workItem from="1652469105757" duration="20000" />
-      <workItem from="1652469464164" duration="16000" />
     </task>
     <servers />
   </component>
