@@ -23,7 +23,6 @@ public class ChooseLogin extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("choose-login.fxml"));
         primaryStage.setScene(new Scene(root,400,400));
         primaryStage.setTitle("Log In");
-
         primaryStage.show();
     }
 

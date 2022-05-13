@@ -118,7 +118,7 @@ public class HelloApplication extends Application {
         List<String> dataList = importCsv(new File("src/main/resources/group16/smartflightcheckinkiosk/PassengerInfo.csv"));
         if (dataList != null && !dataList.isEmpty()) {
             for (String data : dataList) {
-                System.out.println(data);
+//                System.out.println(data);
             }
         }
         launch();
