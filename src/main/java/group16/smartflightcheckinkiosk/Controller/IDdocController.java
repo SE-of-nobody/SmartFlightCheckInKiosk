@@ -1,6 +1,7 @@
 package group16.smartflightcheckinkiosk.Controller;
 
 import group16.smartflightcheckinkiosk.Jumpto;
+import group16.smartflightcheckinkiosk.Passager.service.OrderInfo;
 import group16.smartflightcheckinkiosk.StageManager;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -27,14 +28,20 @@ public class IDdocController {
     @FXML
     private AnchorPane toIDdocPage;
 
+    private static final OrderInfo orderInfo = new OrderInfo();
+
     @FXML
     void ok(ActionEvent event) throws Exception{
-        //获取csv文件数据，如有需要，可以修改ID_doc的变量类型
         String ID_doc = id_docField.getText();
-        //测试代码，后端代码添加后即可删除
         System.out.println("ID Documnet: " + ID_doc);
 
-        //页面跳转
+        //登录失败
+        if((orderInfo.orderIndex = orderInfo.checkWithFile()) < 0){
+            System.out.println("登录失败");
+            id_docField.setText("登录失败");
+            return;
+        }
+
         Jumpto jumpto = new Jumpto();
         jumpto.set("MainMenu.fxml", "Hello");
         Stage stage = new Stage();
@@ -43,15 +50,25 @@ public class IDdocController {
         Stage stage_old = (Stage) toIDdocPage.getScene().getWindow();
         stage_old.close();
         //Close login window
+        System.out.println(StageManager.STAGE);
         StageManager.STAGE.get("login").close();
         StageManager.STAGE.remove("login");
         //Open next window
+
+        //close login page
+        if(StageManager.STAGE.get("loginPage") != null){
+            StageManager.STAGE.get("loginPage").close();
+            StageManager.STAGE.remove("loginPage");
+        }
+
+        //register the login information
+        StageManager.CONTROLLER.put("myLoginUserInfo", orderInfo);
+
         jumpto.start(stage);
 
     }
     @FXML
     void back(){
-        //关闭当前窗口
         Stage stage = (Stage) back.getScene().getWindow();
         stage.close();
 

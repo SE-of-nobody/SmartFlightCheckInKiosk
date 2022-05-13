@@ -19,6 +19,21 @@ public class Order {
         double seatFee;    //座位费
         byte payed;
 
+
+        public Order(String bookingNumber, String IDNumber, String surname, String meal, String creditNumber, double balance, String seat, double bagFee, byte payed, double mealFee, double seatFee) {
+                BookingNumber = bookingNumber;
+                this.IDNumber = IDNumber;
+                Surname = surname;
+                Meal = meal;
+                CreditNumber = creditNumber;
+                this.balance = balance;
+                Seat = seat;
+                this.bagFee = bagFee;
+                this.payed = payed;
+                this.mealFee = mealFee;
+                this.seatFee = seatFee;
+        }
+
         public Order(String bookingNumber, String IDNumber, String surname, String meal, String creditNumber, double balance, String seat, double bagFee, byte payed) {
                 BookingNumber = bookingNumber;
                 this.IDNumber = IDNumber;
@@ -29,6 +44,12 @@ public class Order {
                 Seat = seat;
                 this.bagFee = bagFee;
                 this.payed = payed;
+        }
+
+        public Order(String bookingNumber, String IDNumber, String surname) {
+                BookingNumber = bookingNumber;
+                this.IDNumber = IDNumber;
+                Surname = surname;
         }
 
         @Override
@@ -52,7 +73,7 @@ public class Order {
         public String getCsvString(){
                 return BookingNumber + "," + IDNumber + "," + Surname + "," +
                         Meal + "," + CreditNumber + "," + balance + "," +
-                        Seat + "," + bagFee + "," + payed + "\n";
+                        Seat + "," + bagFee + "," + payed + "," + mealFee + "," + seatFee + "\n";
         }
 
         public String getBookingNumber() {
