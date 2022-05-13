@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.scene.control.Label;
+import javafx.scene.control.Button;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -24,9 +25,9 @@ public class BoardingpassCheckController {
     private Text Timetable;
 
     @FXML
-    private Label back;
+    private Button back;
     @FXML
-    private Label next;
+    private Button next;
     @FXML
     void onNextClick()throws Exception{
         //transport the parameter

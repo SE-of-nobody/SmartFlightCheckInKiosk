@@ -6,10 +6,8 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import group16.smartflightcheckinkiosk.ViewAlter;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Label;
 import javafx.scene.text.Text;
 
 public class BoardingpassTagController implements Initializable{
@@ -19,7 +17,7 @@ public class BoardingpassTagController implements Initializable{
     private Text FlightNumber;
     @FXML
     private Text Tag;
-    private ViewAlter viewAlter;
+
 
 
     @Override
@@ -76,7 +74,5 @@ public class BoardingpassTagController implements Initializable{
         }
     }
 
-    public void setApp(ViewAlter viewAlter) {
-        this.viewAlter = viewAlter;
-    }
+
 }

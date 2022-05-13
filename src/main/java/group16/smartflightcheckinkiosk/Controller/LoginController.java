@@ -1,6 +1,5 @@
 package group16.smartflightcheckinkiosk.Controller;
 
-import group16.smartflightcheckinkiosk.StageManager;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -24,12 +23,12 @@ public class LoginController {
     private Button surname_button;
     @FXML
     private Button back;
+    //以下为跳转到三个不同界面的函数
     @FXML
     void toBookNumPage(ActionEvent event) throws Exception {
         Jumpto jumpto = new Jumpto();
         jumpto.set("BookNum.fxml", "Booking Number");
         Stage stage = new Stage();
-        StageManager.STAGE.put("login", stage);
         jumpto.start(stage);
     }
 
@@ -38,7 +37,6 @@ public class LoginController {
         Jumpto jumpto = new Jumpto();
         jumpto.set("Surname.fxml", "Surname & ID Number");
         Stage stage = new Stage();
-        StageManager.STAGE.put("login", stage);
         jumpto.start(stage);
     }
 
@@ -47,11 +45,9 @@ public class LoginController {
         Jumpto jumpto = new Jumpto();
         jumpto.set("IDdoc.fxml", "ID Documnet");
         Stage stage = new Stage();
-        StageManager.STAGE.put("login", stage);
         jumpto.start(stage);
     }
-
-
+    //关闭窗口
     @FXML
     void back(){
         Stage stage = (Stage) back.getScene().getWindow();
