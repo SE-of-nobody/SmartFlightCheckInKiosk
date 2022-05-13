@@ -42,26 +42,26 @@ public class SeatChooseController implements Initializable {
 
 
 
-@FXML
-public String ButtonClicked(ActionEvent event){
-    Button button = (Button) event.getSource();
-    String ChoosedSeat = (String) button.getId();
-   System.out.println(ChoosedSeat);
-   return ChoosedSeat;
+    @FXML
+    public String ButtonClicked(ActionEvent event){
+        Button button = (Button) event.getSource();
+        String ChoosedSeat = (String) button.getId();
+        System.out.println(ChoosedSeat);
+        return ChoosedSeat;
 
 
-}
+    }
 
 
-@FXML
+    @FXML
     public void gotoMainMenu(ActionEvent event) throws Exception {
-    Jumpto jumpto = new Jumpto();
-    jumpto.set("MainMenu.fxml", "MainMenu");
-    Stage stage = new Stage();
-    Stage stage_old = (Stage) SeatChoosePane.getScene().getWindow();
-    stage_old.close();
-    jumpto.start(stage);
-}
+        Jumpto jumpto = new Jumpto();
+        jumpto.set("MainMenu.fxml", "MainMenu");
+        Stage stage = new Stage();
+        Stage stage_old = (Stage) SeatChoosePane.getScene().getWindow();
+        stage_old.close();
+        jumpto.start(stage);
+    }
 
 
 

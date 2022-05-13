@@ -10,6 +10,7 @@ module group16.smartflightcheckinkiosk {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires java.logging;
+    requires junit;
 
     opens group16.smartflightcheckinkiosk to javafx.fxml;
     exports group16.smartflightcheckinkiosk;
