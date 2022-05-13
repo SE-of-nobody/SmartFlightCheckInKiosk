@@ -20,6 +20,7 @@ public class SeatChooseController implements Initializable {
     @FXML
     private Button A2;
     @FXML
+
     private Button B1;
     @FXML
     private Button B2;
