@@ -1,6 +1,8 @@
 package group16.smartflightcheckinkiosk.Controller;
 
 import group16.smartflightcheckinkiosk.Jumpto;
+import group16.smartflightcheckinkiosk.Passager.service.OrderInfo;
+import group16.smartflightcheckinkiosk.Passager.util.PlaneUtil;
 import group16.smartflightcheckinkiosk.StageManager;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -9,6 +11,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+
+import java.util.List;
 
 public class BooknumController {
 
@@ -27,15 +31,25 @@ public class BooknumController {
     @FXML
     private AnchorPane toBookNumPage;
 
+    private static final OrderInfo orderInfo = new OrderInfo();
+
 
 
     @FXML
     void ok(ActionEvent event) throws Exception{
-        //获取用户输入的Booking Number，存入变量
         String BookingNumber = booknumField.getText();
-        //测试代码，后端代码添加后即可删除
         System.out.println("Booking Number: " + BookingNumber);
-        //页面跳转
+
+        //登录失败
+        if((orderInfo.orderIndex = orderInfo.checkBookingNumber(BookingNumber)) < 0){
+            System.out.println("登录失败");
+            booknumField.setText("");
+            return;
+        }
+
+
+        List<service.Order> orders = PlaneUtil.getOrdersFromCsv("src/main/resources/group16/smartflightcheckinkiosk/data.csv", "UTF-8");
+
         Jumpto jumpto = new Jumpto();
         jumpto.set("MainMenu.fxml", "Hello");
         Stage stage = new Stage();
@@ -46,12 +60,21 @@ public class BooknumController {
         //Close login window
         StageManager.STAGE.get("login").close();
         StageManager.STAGE.remove("login");
+
+        //close login page
+        if(StageManager.STAGE.get("loginPage") != null){
+            StageManager.STAGE.get("loginPage").close();
+            StageManager.STAGE.remove("loginPage");
+        }
+
+        //register the login information
+        StageManager.CONTROLLER.put("myLoginUserInfo", orderInfo);
+
         //Open next window
         jumpto.start(stage);
     }
     @FXML
     void back() {
-        //关闭当前窗口
         Stage stage = (Stage) back.getScene().getWindow();
         stage.close();
     }

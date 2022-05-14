@@ -1,4 +1,4 @@
-package util;
+package group16.smartflightcheckinkiosk.Passager.util;
 
 import service.Order;
 
@@ -126,6 +126,45 @@ public class PlaneUtil {
     }
 
 
+    //从login。csv里面都数据
+    public static List<Order> getOrdersFromLoginCsv(String path, String charset){
+        File file = new File(path);
+        //设置为可读
+        file.setReadable(true);
+        //数据将读取到这个集合里面
+        List<Order> orders = new ArrayList<>();
+
+        BufferedReader bfr = null;
+        try {
+            bfr = new BufferedReader(new InputStreamReader(new FileInputStream(file), charset));
+        } catch (FileNotFoundException | UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+        if (bfr == null) return null;
+        //储存读到的每一行的数据的字符串变量
+        String str = "";
+        String[] temp;
+        try {
+            //没有了直接退出
+            while((str = bfr.readLine()) != null){
+                //添加解析好的数据到集合中
+                temp = str.split(",");
+                orders.add(new Order(temp[0], temp[1], temp[2]));
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try {
+            //关闭
+            if(bfr != null){
+                bfr.close();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return orders;
+    }
+
     //使用java的bufferReader从csv文件中读取
     public static List<Order> getOrdersFromCsv(String path, String charset){
         File file = new File(path);
@@ -140,6 +179,7 @@ public class PlaneUtil {
         } catch (FileNotFoundException | UnsupportedEncodingException e) {
             e.printStackTrace();
         }
+        if (bfr == null) return null;
         //储存读到的每一行的数据的字符串变量
         String str = "";
         String[] temp;
@@ -149,10 +189,11 @@ public class PlaneUtil {
                 //添加解析好的数据到集合中
                 temp = str.split(",");
                 orders.add(new Order(temp[0], temp[1], temp[2], temp[3],temp[4],
-                        Double.parseDouble(temp[5]),temp[6],Double.parseDouble(temp[7]), Byte.parseByte(temp[8])));
+                        Double.parseDouble(temp[5]),temp[6],Double.parseDouble(temp[7]), Byte.parseByte(temp[8]),
+                        Double.parseDouble(temp[9]), Double.parseDouble(temp[10])));
                 //设置指定类型餐品和座位的价格
-                setMealPrice(orders.get(orders.size() - 1));
-                setSeatPrice(orders.get(orders.size() - 1));
+//                setMealPrice(orders.get(orders.size() - 1));
+//                setSeatPrice(orders.get(orders.size() - 1));
             }
         } catch (IOException e) {
             e.printStackTrace();

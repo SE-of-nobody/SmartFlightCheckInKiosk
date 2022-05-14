@@ -1,4 +1,4 @@
-package util;
+package group16.smartflightcheckinkiosk.Passager.util;
 
 import java.util.HashMap;
 import java.util.ResourceBundle;
@@ -6,10 +6,10 @@ import java.util.ResourceBundle;
 //存放静态变量的类
 public class VarUtil {
     //csv文件路径，和编码
-    public static final String DATAPATH = ResourceBundle.getBundle("data").getString("dataPath");
-    public static final String LOGINPATH = ResourceBundle.getBundle("data").getString("loginPath");
-    public static final String SAVEPATH = ResourceBundle.getBundle("data").getString("savePath");
-    public static final String CHARSET = ResourceBundle.getBundle("data").getString("charset");
+    public static final String DATAPATH = "src/main/resources/group16/smartflightcheckinkiosk/data.csv";
+    public static final String LOGINPATH = "src/main/resources/group16/smartflightcheckinkiosk/login.csv";
+    public static final String SAVEPATH = "src/main/resources/group16/smartflightcheckinkiosk/data.csv";
+    public static final String CHARSET = "UTF-8";
 
     //各种座位和食物类型的价格
     public static final double MEAL_A = Double.parseDouble(ResourceBundle.getBundle("price").getString("meal_A"));
