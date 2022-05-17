@@ -61,7 +61,6 @@
          <bottom>
             <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
               <buttons>
-                <Button fx:id="Back" onAction="#gotoMainMenu" mnemonicParsing="false" text="Back" />
               </buttons>
             </ButtonBar>
          </bottom>

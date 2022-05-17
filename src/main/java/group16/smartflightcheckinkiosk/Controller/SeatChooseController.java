@@ -10,7 +10,6 @@ import group16.smartflightcheckinkiosk.Jumpto;
 import group16.smartflightcheckinkiosk.Passager.service.OrderInfo;
 import group16.smartflightcheckinkiosk.Passager.util.PlaneUtil;
 import group16.smartflightcheckinkiosk.StageManager;
-import group16.smartflightcheckinkiosk.ViewAlter;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -20,7 +19,6 @@ import javafx.stage.Stage;
 
 public class SeatChooseController implements Initializable {
     public static String[] userInfo;
-    private ViewAlter viewAlter;
     @FXML
     private Button A1;
     @FXML
@@ -124,10 +122,6 @@ public class SeatChooseController implements Initializable {
         return buttonMap.get(type);
     }
 
-    public void setApp(ViewAlter viewAlter) {
-
-        this.viewAlter = viewAlter;
-    }
 
 @FXML
 public void ButtonClicked(ActionEvent event){
@@ -135,14 +129,7 @@ public void ButtonClicked(ActionEvent event){
 }
 
 
-@FXML
-    public void gotoMealChoose(ActionEvent event) throws Exception {
-    Jumpto jumpto = new Jumpto();
-    jumpto.set("MealChoose.fxml", "Meal Choose");
-    Stage stage = new Stage();
 
-    jumpto.start(stage);
-}
 
 
 

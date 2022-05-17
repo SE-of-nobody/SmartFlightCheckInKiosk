@@ -6,20 +6,21 @@ import java.util.Map;
 import java.util.ResourceBundle;
 import java.util.Scanner;
 
+import group16.smartflightcheckinkiosk.Jumpto;
 import group16.smartflightcheckinkiosk.Passager.service.OrderInfo;
 import group16.smartflightcheckinkiosk.Passager.util.PlaneUtil;
 import group16.smartflightcheckinkiosk.StageManager;
-import group16.smartflightcheckinkiosk.ViewAlter;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TabPane;
+import javafx.stage.Stage;
 
 public class MealChooseController implements Initializable {
 
     public static String[] userInfo;
-    private ViewAlter viewAlter;
     @FXML
     private Label LabelMeal1;
     @FXML
@@ -32,6 +33,8 @@ public class MealChooseController implements Initializable {
     private Label LabelMealPic2;
     @FXML
     private Label LabelMealPic3;
+    @FXML
+    private TabPane mealpane;
 
     public void MealChooseController(ActionEvent event) {
         // TODO Auto-generated constructor stub
@@ -78,9 +81,6 @@ public class MealChooseController implements Initializable {
         setMeal(3, "黄瓜鸭血", 55.0);
     }
 
-    public void setApp(ViewAlter viewAlter) {
-        this.viewAlter = viewAlter;
-    }
 
     @FXML
     public void setMeal(int type,String name, double price){
@@ -96,8 +96,17 @@ public class MealChooseController implements Initializable {
 
 
     @FXML
-    public void ButtonClicked(ActionEvent event){
+    public void orderButtonClicked(ActionEvent event){
         MealChooseController(event);
+    }
+    @FXML
+    public void gotoMainMenu(ActionEvent event) throws Exception {
+        Jumpto jumpto = new Jumpto();
+        jumpto.set("MainMenu.fxml", "MainMenu");
+        Stage stage = new Stage();
+        Stage stage_old = (Stage) mealpane.getScene().getWindow();
+        stage_old.close();
+        jumpto.start(stage);
     }
 
 
