@@ -190,7 +190,7 @@ public class PlaneUtil {
                 temp = str.split(",");
                 orders.add(new Order(temp[0], temp[1], temp[2], temp[3],temp[4],
                         Double.parseDouble(temp[5]),temp[6],Double.parseDouble(temp[7]), Byte.parseByte(temp[8]),
-                        Double.parseDouble(temp[9]), Double.parseDouble(temp[10])));
+                        Double.parseDouble(temp[9]), Double.parseDouble(temp[10]), temp[11],temp[12],temp[13],temp[14],temp[15]));
                 //设置指定类型餐品和座位的价格
 //                setMealPrice(orders.get(orders.size() - 1));
 //                setSeatPrice(orders.get(orders.size() - 1));

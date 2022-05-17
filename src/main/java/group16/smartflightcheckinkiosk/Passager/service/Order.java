@@ -18,7 +18,70 @@ public class Order {
         double mealFee;    //餐品费
         double seatFee;    //座位费
         byte payed;
+        String bookingFlight;
+        String depatureCity;
+        String arrivingCity;
+        String depatureTime;
+        String arrivingTime;
 
+        public String getBookingFlight() {
+                return bookingFlight;
+        }
+
+        public void setBookingFlight(String bookingFlight) {
+                this.bookingFlight = bookingFlight;
+        }
+
+        public String getDepatureCity() {
+                return depatureCity;
+        }
+
+        public void setDepatureCity(String depatureCity) {
+                this.depatureCity = depatureCity;
+        }
+
+        public String getArrivingCity() {
+                return arrivingCity;
+        }
+
+        public void setArrivingCity(String arrivingCity) {
+                this.arrivingCity = arrivingCity;
+        }
+
+        public String getDepatureTime() {
+                return depatureTime;
+        }
+
+        public void setDepatureTime(String depatureTime) {
+                this.depatureTime = depatureTime;
+        }
+
+        public String getArrivingTime() {
+                return arrivingTime;
+        }
+
+        public void setArrivingTime(String arrivingTime) {
+                this.arrivingTime = arrivingTime;
+        }
+
+        public Order(String bookingNumber, String IDNumber, String surname, String meal, String creditNumber, double balance, String seat, double bagFee, byte payed, double mealFee, double seatFee, String bookingFlight, String depatureCity, String arrivingCity, String depatureTime, String arrivingTime) {
+                BookingNumber = bookingNumber;
+                this.IDNumber = IDNumber;
+                Surname = surname;
+                Meal = meal;
+                CreditNumber = creditNumber;
+                this.balance = balance;
+                Seat = seat;
+                this.bagFee = bagFee;
+                this.mealFee = mealFee;
+                this.seatFee = seatFee;
+                this.payed = payed;
+                this.bookingFlight = bookingFlight;
+                this.depatureCity = depatureCity;
+                this.arrivingCity = arrivingCity;
+                this.depatureTime = depatureTime;
+                this.arrivingTime = arrivingTime;
+        }
 
         public Order(String bookingNumber, String IDNumber, String surname, String meal, String creditNumber, double balance, String seat, double bagFee, byte payed, double mealFee, double seatFee) {
                 BookingNumber = bookingNumber;
@@ -63,9 +126,14 @@ public class Order {
                         ", balance=" + balance +
                         ", Seat='" + Seat + '\'' +
                         ", bagFee=" + bagFee +
-                        ", meatFee=" + mealFee +
+                        ", mealFee=" + mealFee +
                         ", seatFee=" + seatFee +
                         ", payed=" + payed +
+                        ", bookingFlight='" + bookingFlight + '\'' +
+                        ", depatureCity='" + depatureCity + '\'' +
+                        ", arrivingCity='" + arrivingCity + '\'' +
+                        ", depatureTime='" + depatureTime + '\'' +
+                        ", arrivingTime='" + arrivingTime + '\'' +
                         '}';
         }
 
@@ -73,7 +141,7 @@ public class Order {
         public String getCsvString(){
                 return BookingNumber + "," + IDNumber + "," + Surname + "," +
                         Meal + "," + CreditNumber + "," + balance + "," +
-                        Seat + "," + bagFee + "," + payed + "," + mealFee + "," + seatFee + "\n";
+                        Seat + "," + bagFee + "," + payed + "," + mealFee + "," + seatFee + "," + bookingFlight + "," + depatureCity + "," + arrivingCity + "," + depatureTime + "," + arrivingTime + "\n";
         }
 
         public String getBookingNumber() {

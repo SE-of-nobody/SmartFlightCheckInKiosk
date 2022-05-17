@@ -1,15 +1,20 @@
 package group16.smartflightcheckinkiosk.Controller;
 
+import java.io.*;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
 
-import group16.smartflightcheckinkiosk.Jumpto;
-import javafx.event.ActionEvent;
+import group16.smartflightcheckinkiosk.Passager.service.OrderInfo;
+import group16.smartflightcheckinkiosk.Passager.util.PlaneUtil;
+import group16.smartflightcheckinkiosk.Passager.util.VarUtil;
+import group16.smartflightcheckinkiosk.StageManager;
+import group16.smartflightcheckinkiosk.ViewAlter;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
-import javafx.scene.layout.GridPane;
-import javafx.stage.Stage;
+import service.Order;
 
 public class BookedFlightController implements Initializable{
     public static String[] userInfo;
@@ -27,36 +32,45 @@ public class BookedFlightController implements Initializable{
     private Label DepatureCity;
     @FXML
     private Label ArrivingCity;
-    @FXML
-    private GridPane Flightpane;
+
+
      public void ChangeText(){
-         BookingFlight.setText(String.valueOf(userInfo[0]));
-         BookingNumber.setText(String.valueOf(userInfo[1]));
-         Surname.setText(String.valueOf(userInfo[2]));
-         DepatureTime.setText(String.valueOf(userInfo[3]));
-         ArrivingTime.setText(String.valueOf(userInfo[4]));
-         DepatureCity.setText(String.valueOf(userInfo[5]));
-         ArrivingCity.setText(String.valueOf(userInfo[6]));
+         BookingFlight.setText(userInfo[0]);
+         BookingNumber.setText(userInfo[1]);
+         Surname.setText(userInfo[2]);
+         DepatureTime.setText(userInfo[3]);
+         ArrivingTime.setText(userInfo[4]);
+         DepatureCity.setText(userInfo[5]);
+         ArrivingCity.setText(userInfo[6]);
      }
 
+    private ViewAlter viewAlter;
 
     public BookedFlightController() {
         // TODO Auto-generated constructor stub
+        //there is nothing to write, this page for just showing right?
     }
 
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
         // TODO Auto-generated method stub
-
+        userInfo = new String[7];
+        OrderInfo orderInfo = (OrderInfo) StageManager.CONTROLLER.get("myLoginUserInfo");
+        if(orderInfo == null){
+            System.out.println("非法登录");
+            return;
+        }
+        userInfo[0] = orderInfo.orders.get(orderInfo.orderIndex).getBookingFlight();
+        userInfo[1] = orderInfo.orders.get(orderInfo.orderIndex).getBookingNumber();
+        userInfo[2] = orderInfo.orders.get(orderInfo.orderIndex).getSurname();
+        userInfo[3] = orderInfo.orders.get(orderInfo.orderIndex).getDepatureTime();
+        userInfo[4] = orderInfo.orders.get(orderInfo.orderIndex).getArrivingTime();
+        userInfo[5] = orderInfo.orders.get(orderInfo.orderIndex).getDepatureCity();
+        userInfo[6] = orderInfo.orders.get(orderInfo.orderIndex).getArrivingCity();
+        ChangeText();
     }
 
-    @FXML
-    public void gotoMainMenu(ActionEvent event) throws Exception {
-        Jumpto jumpto = new Jumpto();
-        jumpto.set("MainMenu.fxml", "MainMenu");
-        Stage stage = new Stage();
-        Stage stage_old = (Stage) Flightpane.getScene().getWindow();
-        stage_old.close();
-        jumpto.start(stage);
+    public void setApp(ViewAlter viewAlter) {
+        this.viewAlter = viewAlter;
     }
 }

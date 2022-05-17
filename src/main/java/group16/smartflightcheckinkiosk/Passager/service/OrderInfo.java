@@ -24,7 +24,7 @@ public class OrderInfo {
     //业务方法
     public void startService(){
         Scanner scanner =new Scanner(System.in);
-        System.out.println("请选择登陆模式(1 飞机号, 2 用户名和ID, 3 核对csv文件): ");
+        System.out.println("请选择登陆模式(1 booking number, 2 用户名和ID, 3 核对csv文件): ");
         String choose = scanner.nextLine();
         //调用选择登陆模式的方法
         while(!chooseWays(choose, scanner)){
@@ -113,7 +113,7 @@ public class OrderInfo {
         switch (choose){
             //根据飞机号查找
             case "1":
-                System.out.println("请输入飞机号:");
+                System.out.println("请输入booking number:");
                 String bookingNum = scanner.nextLine();
                 orderIndex = checkBookingNumber(bookingNum);
                 return orderIndex > -1;
@@ -153,7 +153,7 @@ public class OrderInfo {
             }
         }
         //没找到则返回-1
-        System.out.println("有户名或密码或飞机号错误");
+        System.out.println("有户名或密码或booking number错误");
         return -1;
     }
 
@@ -172,7 +172,7 @@ public class OrderInfo {
         return -1;
     }
 
-    //验证飞机号是否存在
+    //验证booking number是否存在
     public int checkBookingNumber(String bookingNum){
         for (int i = 0; i < orders.size(); i++) {
             //遍历加判断
@@ -183,7 +183,7 @@ public class OrderInfo {
             }
         }
         //没找到则返回-1
-        System.out.println("对不起，没有找到该飞机号");
+        System.out.println("对不起，没有找到该booking number");
         return -1;
     }
 
