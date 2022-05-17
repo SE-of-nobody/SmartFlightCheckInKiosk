@@ -1,11 +1,9 @@
 package group16.smartflightcheckinkiosk.Controller;
-import javafx.event.ActionEvent;
 import group16.smartflightcheckinkiosk.Jumpto;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-import javafx.scene.control.Label;
-import javafx.scene.control.Button;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -31,13 +29,14 @@ public class BoardingpassCheckController {
     @FXML
     void onNextClick()throws Exception{
         //transport the parameter
-        String name="";
-
+        SurnameController surname=new SurnameController();
+        String name= surname.global_name;
+        //String name="";
         //read passenger csv
-        String csvFile = " src/main/resources/group16.smartflightcheckinkiosk/PassengerInfo.csv";
+        String csvFile = " src/main/resources/group16.smartflightcheckinkiosk/data.csv";
         String line = "";
         String cvsSplitBy = ",";
-        String[] passenger= new String[5];
+        String[] passenger= new String[16];
         //match the information
         try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
 
@@ -46,38 +45,16 @@ public class BoardingpassCheckController {
                 // use comma as separator
                 passenger = line.split(cvsSplitBy);
                 // check the name
-                if (passenger[0].equals(name)) {
+                if (passenger[2].equals(name)) {
                     break;
                 }
             }
-            if(passenger[0].equals(name)){
+            if(passenger[2].equals(name)){
                Surname.setText(name);
-               idNumber.setText(passenger[2]);
-               BookingNumber.setText(passenger[1]);
-               FlightNumber.setText(passenger[3]);
-            }
-        }
-        catch (IOException e) {
-            e.printStackTrace();
-        }
-        String flightNumber=passenger[3];
-        //read flight csv
-        String csvFile1 = " src/main/resources/group16.smartflightcheckinkiosk/Flight.csv";
-        String[] flight= new String[4];
-        //match the flight
-        try (BufferedReader br = new BufferedReader(new FileReader(csvFile1))) {
-
-            while ((line = br.readLine()) != null) {
-
-                // use comma as separator
-                flight = line.split(cvsSplitBy);
-                // check the FlghtNumber
-                if (flight[0].equals(flightNumber)) {
-                    break;
-                }
-            }
-            if (flight[0].equals(flightNumber)) {
-                Timetable.setText(flight[3]);
+               idNumber.setText(passenger[1]);
+               BookingNumber.setText(passenger[0]);
+               FlightNumber.setText(passenger[11]);
+               Timetable.setText(passenger[14]+" to "+passenger[15]);
             }
         }
         catch (IOException e) {
