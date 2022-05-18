@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.paint.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.text.*?>
-<?import javafx.scene.control.*?>
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
 
-<VBox fx:id="CheckFlight" prefHeight="220.0" prefWidth="330.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group16.smartflightcheckinkiosk.Controller.CheckFlightController">
+<VBox fx:id="CheckFlight" prefHeight="220.0" prefWidth="330.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group16.smartflightcheckinkiosk.Controller.CheckFlightController">
    <children>
    <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
      <columnConstraints>
@@ -60,22 +61,22 @@
                <Insets left="50.0" />
             </GridPane.margin>
          </Label>
-            <Text fill="BLUE" strokeType="OUTSIDE" strokeWidth="0.0" text="String FlightNumber" wrappingWidth="300.0" GridPane.rowIndex="1">
+            <Text fx:id="FlightNum" fill="BLUE" strokeType="OUTSIDE" strokeWidth="0.0" text="String FlightNumber" wrappingWidth="300.0" GridPane.rowIndex="1">
                <GridPane.margin>
                   <Insets left="160.0" />
                </GridPane.margin>
             </Text>
-            <Text fill="BLUE" layoutX="1400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="String Date " GridPane.rowIndex="2">
+            <Text fx:id="Date" fill="BLUE" layoutX="1400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="String Date " GridPane.rowIndex="2">
                <GridPane.margin>
                   <Insets left="160.0" />
                </GridPane.margin>
             </Text>
-            <Text fill="BLUE" strokeType="OUTSIDE" strokeWidth="0.0" text="String BoardingTime" GridPane.rowIndex="3">
+            <Text fx:id="Time" fill="BLUE" strokeType="OUTSIDE" strokeWidth="0.0" text="String BoardingTime" GridPane.rowIndex="3">
                <GridPane.margin>
                   <Insets left="220.0" />
                </GridPane.margin>
             </Text>
-            <Text fill="BLUE" strokeType="OUTSIDE" strokeWidth="0.0" text="String StartPoint" GridPane.rowIndex="4">
+            <Text fx:id="Startpoint" fill="BLUE" strokeType="OUTSIDE" strokeWidth="0.0" text="String StartPoint" GridPane.rowIndex="4">
                <GridPane.margin>
                   <Insets left="160.0" />
                </GridPane.margin>
@@ -85,7 +86,7 @@
                   <Insets left="280.0" />
                </GridPane.margin>
             </Label>
-            <Text fill="BLUE" strokeType="OUTSIDE" strokeWidth="0.0" text="String Destination" GridPane.rowIndex="4">
+            <Text fx:id="Destination" fill="BLUE" strokeType="OUTSIDE" strokeWidth="0.0" text="String Destination" GridPane.rowIndex="4">
                <GridPane.margin>
                   <Insets left="320.0" />
                </GridPane.margin>
