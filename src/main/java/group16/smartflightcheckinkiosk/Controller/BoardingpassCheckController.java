@@ -1,5 +1,7 @@
 package group16.smartflightcheckinkiosk.Controller;
 import group16.smartflightcheckinkiosk.Jumpto;
+import group16.smartflightcheckinkiosk.Passager.service.OrderInfo;
+import group16.smartflightcheckinkiosk.StageManager;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.text.Text;
@@ -29,11 +31,11 @@ public class BoardingpassCheckController {
     @FXML
     void onNextClick()throws Exception{
         //transport the parameter
-        SurnameController surname=new SurnameController();
-        String name= surname.global_name;
-        //String name="";
+        OrderInfo orderInfo = (OrderInfo) StageManager.CONTROLLER.get("myLoginUserInfo");
+        String name = orderInfo.orders.get(orderInfo.orderIndex).getSurname();
+        //String name= SurnameController.global_name;
         //read passenger csv
-        String csvFile = " src/main/resources/group16.smartflightcheckinkiosk/data.csv";
+        String csvFile = "src/main/resources/group16/smartflightcheckinkiosk/data.csv";
         String line = "";
         String cvsSplitBy = ",";
         String[] passenger= new String[16];
