@@ -2,6 +2,7 @@ package group16.smartflightcheckinkiosk.Controller;
 import group16.smartflightcheckinkiosk.Jumpto;
 import group16.smartflightcheckinkiosk.Passager.service.OrderInfo;
 import group16.smartflightcheckinkiosk.StageManager;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.text.Text;
@@ -29,52 +30,63 @@ public class BoardingpassCheckController {
     @FXML
     private Button next;
     @FXML
-    void onNextClick()throws Exception{
-        //transport the parameter
-        OrderInfo orderInfo = (OrderInfo) StageManager.CONTROLLER.get("myLoginUserInfo");
-        String name = orderInfo.orders.get(orderInfo.orderIndex).getSurname();
-        //String name= SurnameController.global_name;
-        //read passenger csv
-        String csvFile = "src/main/resources/group16/smartflightcheckinkiosk/data.csv";
-        String line = "";
-        String cvsSplitBy = ",";
-        String[] passenger= new String[16];
-        //match the information
-        try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
+    void onNextClick() throws Exception {
+//                //transport the parameter
+//        OrderInfo orderInfo = (OrderInfo) StageManager.CONTROLLER.get("myLoginUserInfo");
+//        String name = orderInfo.orders.get(orderInfo.orderIndex).getSurname();
+//        //String name= SurnameController.global_name;
+//        //read passenger csv
+//        String csvFile = "src/main/resources/group16/smartflightcheckinkiosk/data.csv";
+//        String line = "";
+//        String cvsSplitBy = ",";
+//        String[] passenger= new String[16];
+//        //match the information
+//        try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
+//
+//            while ((line = br.readLine()) != null) {
+//
+//                // use comma as separator
+//                passenger = line.split(cvsSplitBy);
+//                // check the name
+//                if (passenger[2].equals(name)) {
+//                    break;
+//                }
+//            }
+//            if(passenger[2].equals(name)){
+//               Surname.setText(name);
+//               idNumber.setText(passenger[1]);
+//               BookingNumber.setText(passenger[0]);
+//               FlightNumber.setText(passenger[11]);
+//               Timetable.setText(passenger[14]+" to "+passenger[15]);
+//            }
+//        }
+//        catch (IOException e) {
+//            e.printStackTrace();
+//        }
 
-            while ((line = br.readLine()) != null) {
-
-                // use comma as separator
-                passenger = line.split(cvsSplitBy);
-                // check the name
-                if (passenger[2].equals(name)) {
-                    break;
-                }
-            }
-            if(passenger[2].equals(name)){
-               Surname.setText(name);
-               idNumber.setText(passenger[1]);
-               BookingNumber.setText(passenger[0]);
-               FlightNumber.setText(passenger[11]);
-               Timetable.setText(passenger[14]+" to "+passenger[15]);
-            }
-        }
-        catch (IOException e) {
-            e.printStackTrace();
-        }
 
         System.out.println("next button pressed");
         Jumpto jumpto = new Jumpto();
-        jumpto.set("boardingpass.fxml", "boaringpass-printing");
+        jumpto.set("boardingpass.fxml", "boaringpass-2");
         Stage stage = new Stage();
         jumpto.start(stage);
-        Stage stage2 = (Stage) next.getScene().getWindow();
-        stage2.close();
+        Stage stage_old = (Stage)next.getScene().getWindow();
+        stage_old.close();
+        jumpto.start(stage);
     }
+
+
+
+
+
+
     @FXML
-    void onPrevClick() {
-        System.out.println("prev button pressed");
-        Stage stage = (Stage) back.getScene().getWindow();
-        stage.close();
+    public void onPrevClick() throws Exception {
+        Jumpto jumpto = new Jumpto();
+        jumpto.set("MainMenu.fxml", "MainMenu");
+        Stage stage = new Stage();
+        Stage stage_old = (Stage) back.getScene().getWindow();
+        stage_old.close();
+        jumpto.start(stage);
     }
 }

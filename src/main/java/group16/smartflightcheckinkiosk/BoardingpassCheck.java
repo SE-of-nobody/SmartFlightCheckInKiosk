@@ -9,9 +9,9 @@ import java.io.IOException;
 
 public class BoardingpassCheck extends Application {
     @Override
-    public void start(Stage stage) throws IOException {
-        FXMLLoader root = new FXMLLoader(getClass().getResource("boardingpass-check.fxml"));
-        Scene scene = new Scene(root.load());
+    public void start(Stage stage) throws Exception {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("boardingpass-check.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Boardingpass-check");
         stage.setScene(scene);
         stage.show();

@@ -44,5 +44,14 @@ public class MainMenuController {
         Stage stage = new Stage();
         jumpto.start(stage);
     }
+    @FXML
+    void gotoBoardingpassCheck(ActionEvent event) throws Exception {
+        Jumpto jumpto = new Jumpto();
+        jumpto.set("boardingpass-check.fxml", "boardingpass1");
+        Stage stage = new Stage();
+        jumpto.start(stage);
+        Stage stage_old = (Stage) rootLayout.getScene().getWindow();
+        stage_old.close();
+    }
 
 }

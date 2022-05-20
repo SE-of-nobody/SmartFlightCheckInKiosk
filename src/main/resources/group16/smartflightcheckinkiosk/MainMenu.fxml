@@ -39,6 +39,11 @@
                         <MenuItem mnemonicParsing="false" text="Check" />
                     </items>
                 </Menu>
+                <Menu mnemonicParsing="false" text="Next">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#gotoBoardingpassCheck" text="boardingpass-check" />
+                    </items>
+                </Menu>
             </menus>
         </MenuBar>
         <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
