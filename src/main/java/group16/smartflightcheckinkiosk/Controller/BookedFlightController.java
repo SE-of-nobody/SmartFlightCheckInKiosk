@@ -10,7 +10,7 @@ import group16.smartflightcheckinkiosk.Passager.service.OrderInfo;
 import group16.smartflightcheckinkiosk.Passager.util.PlaneUtil;
 import group16.smartflightcheckinkiosk.Passager.util.VarUtil;
 import group16.smartflightcheckinkiosk.StageManager;
-import group16.smartflightcheckinkiosk.ViewAlter;
+//import group16.smartflightcheckinkiosk.ViewAlter;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
@@ -44,7 +44,7 @@ public class BookedFlightController implements Initializable{
          ArrivingCity.setText(userInfo[6]);
      }
 
-    private ViewAlter viewAlter;
+    //private ViewAlter viewAlter;
 
     public BookedFlightController() {
         // TODO Auto-generated constructor stub
@@ -70,7 +70,7 @@ public class BookedFlightController implements Initializable{
         ChangeText();
     }
 
-    public void setApp(ViewAlter viewAlter) {
-        this.viewAlter = viewAlter;
-    }
+//    public void setApp(ViewAlter viewAlter) {
+//        this.viewAlter = viewAlter;
+//    }
 }
