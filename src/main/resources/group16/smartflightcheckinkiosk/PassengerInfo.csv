@@ -1,3 +1,5 @@
-Name,Bnumber,IDNumber,FlightNumber,SeatNumber
-Mike,123456,123456789,123,1
-Rose,654321,987654321,456,4
+Name,Bnumber,IDNumber,FlightNumber,Gender,Date
+小王,123456,01,CA1343,male,5.31
+张三,123457,02,BD3254,male,5.31
+佩奇,123458,03,EC3434,female,5.31
+小林,123459,04,CA1343,female,5.31

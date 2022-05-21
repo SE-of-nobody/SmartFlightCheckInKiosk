@@ -55,7 +55,7 @@ public class BoardingpassTagController implements Initializable{
             e.printStackTrace();
         }
         //read flight csv
-        String csvFile1 = " src/main/resources/group16/smartflightcheckinkiosk/Luggage.csv";
+        String csvFile1 = "src/main/resources/group16/smartflightcheckinkiosk/Luggage.csv";
         String[] luggage= new String[4];
         //match the flight
         try (BufferedReader br = new BufferedReader(new FileReader(csvFile1))) {

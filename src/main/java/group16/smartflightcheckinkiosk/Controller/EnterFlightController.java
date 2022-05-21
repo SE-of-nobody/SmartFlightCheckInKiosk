@@ -24,6 +24,7 @@ public class EnterFlightController {
     private Button b4;
 
     public static String flight_num;
+
     @FXML
     void gotoStaffLogin(ActionEvent event)throws Exception{
         Jumpto jumpto = new Jumpto();
@@ -38,10 +39,10 @@ public class EnterFlightController {
         String flightNum=FlightnumField.getText();
         flight_num=flightNum;
         //read passenger csv
-        String csvFile = "src/main/resources/group16/smartflightcheckinkiosk/data.csv";
+        String csvFile = "src/main/resources/group16/smartflightcheckinkiosk/PassengerInfo.csv";
         String line = "";
         String cvsSplitBy = ",";
-        String[] flight= new String[16];
+        String[] flight= new String[6];
         //match the information
         try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
 
@@ -50,11 +51,11 @@ public class EnterFlightController {
                 // use comma as separator
                 flight = line.split(cvsSplitBy);
                 // check the name
-                if (flight[11].equals(flightNum)) {
+                if (flight[3].equals(flightNum)) {
                     break;
                 }
             }
-            if(flight[11].equals(flightNum)){
+            if(flight[3].equals(flightNum)){
                 System.out.println("Flight is found");
                 Jumpto jumpto = new Jumpto();
                 jumpto.set("CheckFlight.fxml", "Check Flight");

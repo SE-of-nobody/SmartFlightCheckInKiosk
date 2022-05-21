@@ -51,7 +51,7 @@ public class CheckFlightController implements Initializable {
         String csvFile = "src/main/resources/group16/smartflightcheckinkiosk/data.csv";
         String line = "";
         String cvsSplitBy = ",";
-        String[] passenger= new String[18];
+        String[] passenger= new String[16];
         //match the information
         try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
 
@@ -67,12 +67,37 @@ public class CheckFlightController implements Initializable {
             if(passenger[11].equals(flightNum)){
                 System.out.println("found");
                 FlightNum.setText(flightNum);
-                Date.setText(passenger[16]);
                 Time.setText(passenger[14]+" to "+passenger[15]);
                 Startpoint.setText(passenger[12]);
                 Destination.setText(passenger[13]);
             }
             else{System.out.println("not found");}
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+        //read passenger csv
+        String csvFile2 = "src/main/resources/group16/smartflightcheckinkiosk/PassengerInfo.csv";
+        String[] flight= new String[6];
+        String line2 = "";
+        String cvsSplitBy2 = ",";
+        //match the information
+        try (BufferedReader br2 = new BufferedReader(new FileReader(csvFile2))) {
+
+            while ((line2 = br2.readLine()) != null) {
+
+                // use comma as separator
+                flight = line2.split(cvsSplitBy2);
+                // check the name
+                if (flight[3].equals(flightNum)) {
+                    break;
+                }
+            }
+            if(flight[3].equals(flightNum)){
+              Date.setText(flight[5]);
+            }
         }
         catch (IOException e) {
             e.printStackTrace();
