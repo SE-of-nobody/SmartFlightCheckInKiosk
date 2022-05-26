@@ -45,6 +45,8 @@ public class BooknumController {
             System.out.println("登录失败");
             booknumField.setText("");
             jumpto.set("Warning.fxml", "WARNING");
+            Stage stage = new Stage();
+            jumpto.start(stage);
             return;
         }
 
