@@ -40,7 +40,7 @@ public class IDdocController {
         if((orderInfo.orderIndex = orderInfo.checkWithFile()) < 0){
             System.out.println("登录失败");
             id_docField.setText("登录失败");
-            jumpto.set("warning.fxml", "WARNING");
+            jumpto.set("Warning.fxml", "WARNING");
             return;
         }
 

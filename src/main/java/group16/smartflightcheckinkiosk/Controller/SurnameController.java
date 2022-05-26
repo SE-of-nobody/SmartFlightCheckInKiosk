@@ -51,7 +51,7 @@ public class SurnameController {
         if((orderInfo.orderIndex = orderInfo.checkUsernameAndID(Surname, IDnumber)) < 0){
             System.out.println("登录失败");
             id_numField.setText("");
-            jumpto.set("warning.fxml", "WARNING");
+            jumpto.set("Warning.fxml", "WARNING");
             return;
         }
 

@@ -44,7 +44,7 @@ public class BooknumController {
         if((orderInfo.orderIndex = orderInfo.checkBookingNumber(BookingNumber)) < 0){
             System.out.println("登录失败");
             booknumField.setText("");
-            jumpto.set("warning.fxml", "WARNING");
+            jumpto.set("Warning.fxml", "WARNING");
             return;
         }
 
