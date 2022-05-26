@@ -47,17 +47,19 @@ public class SurnameController {
         System.out.println("Surname: " + Surname);
         System.out.println("ID Number: " + IDnumber);
         Jumpto jumpto = new Jumpto();
+        Stage stage = new Stage();
         //登录失败
         if((orderInfo.orderIndex = orderInfo.checkUsernameAndID(Surname, IDnumber)) < 0){
             System.out.println("登录失败");
             id_numField.setText("");
+
             jumpto.set("Warning.fxml", "WARNING");
+            jumpto.start(stage);
             return;
         }
 
 
         jumpto.set("MainMenu.fxml", "Hello");
-        Stage stage = new Stage();
 
         //Close this window
         Stage stage_old = (Stage) toSurnamePage.getScene().getWindow();

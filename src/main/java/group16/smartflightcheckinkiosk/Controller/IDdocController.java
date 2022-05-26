@@ -35,17 +35,18 @@ public class IDdocController {
         String ID_doc = id_docField.getText();
         System.out.println("ID Documnet: " + ID_doc);
         Jumpto jumpto = new Jumpto();
-
+        Stage stage = new Stage();
         //登录失败
         if((orderInfo.orderIndex = orderInfo.checkWithFile()) < 0){
             System.out.println("登录失败");
             id_docField.setText("登录失败");
             jumpto.set("Warning.fxml", "WARNING");
+            jumpto.start(stage);
             return;
         }
 
         jumpto.set("MainMenu.fxml", "Hello");
-        Stage stage = new Stage();
+
 
         //Close this window
         Stage stage_old = (Stage) toIDdocPage.getScene().getWindow();
