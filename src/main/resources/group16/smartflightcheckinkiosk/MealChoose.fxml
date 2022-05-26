@@ -4,6 +4,8 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 
@@ -21,7 +23,11 @@
                         <Label fx:id="LabelMeal1" text="Meal1 多少钱" BorderPane.alignment="CENTER" />
                      </top>
                      <center>
-                        <Label fx:id="LabelMealPic1" text="这里放张图" BorderPane.alignment="CENTER" />
+                        <ImageView fitHeight="270.0" fitWidth="542.0" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@img/xhs.png" />
+                           </image>
+                        </ImageView>
                      </center>
                   </BorderPane>
                </children></AnchorPane>
@@ -33,13 +39,17 @@
                <children>
                   <BorderPane prefHeight="366.0" prefWidth="594.0">
                      <bottom>
-                        <Button fx:id="OrderMeal2" mnemonicParsing="false" text="order" onMouseClicked="#orderButtonClicked" BorderPane.alignment="CENTER" />
+                        <Button fx:id="OrderMeal2" mnemonicParsing="false" onMouseClicked="#orderButtonClicked" text="order" BorderPane.alignment="CENTER" />
                      </bottom>
                      <top>
                         <Label fx:id="LabelMeal2" text="Meal2 多少钱" BorderPane.alignment="CENTER" />
                      </top>
                      <center>
-                        <Label fx:id="LabelMealPic2" text="这里放张图" BorderPane.alignment="CENTER" />
+                        <ImageView fitHeight="234.0" fitWidth="418.0" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@img/xc.png" />
+                           </image>
+                        </ImageView>
                      </center>
                   </BorderPane>
                </children>
@@ -58,7 +68,11 @@
                         <Label fx:id="LabelMeal3" text="Meal3 多少钱" BorderPane.alignment="CENTER" />
                      </top>
                      <center>
-                        <Label fx:id="LabelMealPic3" text="这里放张图" BorderPane.alignment="CENTER" />
+                        <ImageView fitHeight="268.0" fitWidth="473.0" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@img/hg.png" />
+                           </image>
+                        </ImageView>
                      </center>
                   </BorderPane>
                </children>
