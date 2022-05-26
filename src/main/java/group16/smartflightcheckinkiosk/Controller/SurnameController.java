@@ -46,14 +46,15 @@ public class SurnameController {
         String IDnumber = id_numField.getText();
         System.out.println("Surname: " + Surname);
         System.out.println("ID Number: " + IDnumber);
+        Jumpto jumpto = new Jumpto();
         //登录失败
         if((orderInfo.orderIndex = orderInfo.checkUsernameAndID(Surname, IDnumber)) < 0){
             System.out.println("登录失败");
             id_numField.setText("");
+            jumpto.set("warning.fxml", "WARNING");
             return;
         }
 
-        Jumpto jumpto = new Jumpto();
 
         jumpto.set("MainMenu.fxml", "Hello");
         Stage stage = new Stage();

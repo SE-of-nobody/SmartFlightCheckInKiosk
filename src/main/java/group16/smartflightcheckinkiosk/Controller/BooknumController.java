@@ -39,18 +39,18 @@ public class BooknumController {
     void ok(ActionEvent event) throws Exception{
         String BookingNumber = booknumField.getText();
         System.out.println("Booking Number: " + BookingNumber);
-
+        Jumpto jumpto = new Jumpto();
         //登录失败
         if((orderInfo.orderIndex = orderInfo.checkBookingNumber(BookingNumber)) < 0){
             System.out.println("登录失败");
             booknumField.setText("");
+            jumpto.set("warning.fxml", "WARNING");
             return;
         }
 
 
         List<service.Order> orders = PlaneUtil.getOrdersFromCsv("src/main/resources/group16/smartflightcheckinkiosk/data.csv", "UTF-8");
 
-        Jumpto jumpto = new Jumpto();
         jumpto.set("MainMenu.fxml", "Hello");
         Stage stage = new Stage();
 
