@@ -78,7 +78,7 @@ public class BudgetController implements Initializable {
             //页面展示
             clear();
             cardnumField.setText("");
-            success.setText("支付成功!O(∩_∩)O");
+            success.setText("successfully paid!O(∩_∩)O");
             System.out.println("支付成功!!");
             //取消可点击事件
             ok.setDisable(true);
