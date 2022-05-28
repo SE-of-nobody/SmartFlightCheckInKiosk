@@ -11,8 +11,10 @@
 
 
 
-# Software Engineering Group Project Final Report
+
 <div style="text-align: center;">
+
+# Software Engineering Group Project Final Report
 
 ![img_2.png](ReportImg/titoutu.png)  
 Group 16
