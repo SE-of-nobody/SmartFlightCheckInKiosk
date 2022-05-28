@@ -2,9 +2,9 @@
 ## Back-end
 We have divided the back-end code into two parts: passager and staff, which will be introduced to you in turn below.At the beginning of the code, we unified the va
 riable name and function name in the code, as shown in the following figure.
-![img.png](.idea/ReportImg/backendimg.png)
+![img.png](ReportImg/backendimg.png)
 ### passager
-![img.png](.idea/ReportImg/passengerimg.png)
+![img.png](ReportImg/passengerimg.png)
 In the passager section, we use the following variables
 
     The following functions are implemented in the passager section:

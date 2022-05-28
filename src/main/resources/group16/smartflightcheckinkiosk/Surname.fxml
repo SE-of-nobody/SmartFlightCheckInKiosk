@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="toSurnamePage" prefHeight="200.0" prefWidth="437.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group16.smartflightcheckinkiosk.Controller.SurnameController">
+<AnchorPane fx:id="toSurnamePage" prefHeight="200.0" prefWidth="437.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group16.smartflightcheckinkiosk.Controller.SurnameController">
    <children>
       <AnchorPane layoutX="137.0" layoutY="-6.0" prefHeight="60.0" prefWidth="300.0" style="-fx-background-color: #87cefa;">
          <children>

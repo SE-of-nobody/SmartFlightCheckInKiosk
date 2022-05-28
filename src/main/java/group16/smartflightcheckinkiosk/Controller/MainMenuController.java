@@ -94,8 +94,6 @@ public class MainMenuController  implements Initializable{
             ArrivingCity.setText(userInfo[6]);
         }
 
-        //private ViewAlter viewAlter;
-
 
 
         @Override
@@ -117,9 +115,6 @@ public class MainMenuController  implements Initializable{
             ChangeText();
         }
 
-//    public void setApp(ViewAlter viewAlter) {
-//        this.viewAlter = viewAlter;
-//    }
 
 
 }
