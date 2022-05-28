@@ -16,8 +16,8 @@ public class ChooseLoginController {
 
     //    @FXML
 //    private Label Passenger;
-//    @FXML
-//    private Label Staff;
+    @FXML
+    private Label confirm4;
     /*
     @FXML
     protected void onPassengerClick() {
@@ -33,6 +33,8 @@ public class ChooseLoginController {
         Stage stage = new Stage();
         StageManager.STAGE.put("loginPage", stage);
         jumpto.start(stage);
+        Stage stage_old = (Stage) confirm4.getScene().getWindow();
+        stage_old.close();
     }
 
     @FXML
@@ -41,6 +43,8 @@ public class ChooseLoginController {
         jumpto.set("StaffLogin.fxml", "Staff Login");
         Stage stage = new Stage();
         jumpto.start(stage);
+        Stage stage_old = (Stage) confirm4.getScene().getWindow();
+        stage_old.close();
     }
 
 //    public void setApp(ViewAlter viewAlter) {
