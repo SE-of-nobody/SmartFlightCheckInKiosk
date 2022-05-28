@@ -29,7 +29,7 @@ public class ChooseLoginController {
     @FXML
     public void gotoPassengerLogin() throws Exception {
         Jumpto jumpto = new Jumpto();
-        jumpto.set("Login.fxml", "login");
+        jumpto.set("PassengerLogin.fxml", "login");
         Stage stage = new Stage();
         StageManager.STAGE.put("loginPage", stage);
         jumpto.start(stage);
@@ -42,6 +42,7 @@ public class ChooseLoginController {
         Jumpto jumpto = new Jumpto();
         jumpto.set("StaffLogin.fxml", "Staff Login");
         Stage stage = new Stage();
+        StageManager.STAGE.put("loginPage", stage);
         jumpto.start(stage);
         Stage stage_old = (Stage) confirm4.getScene().getWindow();
         stage_old.close();

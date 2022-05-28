@@ -12,7 +12,7 @@ public class ChooseWays extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         //打开login界面
-        FXMLLoader root = new FXMLLoader(getClass().getResource("Login.fxml"));
+        FXMLLoader root = new FXMLLoader(getClass().getResource("PassengerLogin.fxml"));
         Scene scene = new Scene(root.load());
         stage.setTitle("Login");
         stage.setScene(scene);

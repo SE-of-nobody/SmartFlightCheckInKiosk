@@ -23,7 +23,7 @@ public class MainMenuController  implements Initializable{
     @FXML
     void quit(ActionEvent event)throws Exception{
         Jumpto jumpto = new Jumpto();
-        jumpto.set("choose-login.fxml", "Login");
+        jumpto.set("ChooseLogin.fxml", "Login");
         Stage stage = new Stage();
         Stage stage_old = (Stage) rootLayout.getScene().getWindow();
         stage_old.close();
