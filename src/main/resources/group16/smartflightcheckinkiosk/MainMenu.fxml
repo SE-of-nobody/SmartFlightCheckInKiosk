@@ -1,27 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import java.lang.*?>
-<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.text.Text?>
 
-<VBox fx:id="rootLayout" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group16.smartflightcheckinkiosk.Controller.MainMenuController">
+<VBox fx:id="rootLayout" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group16.smartflightcheckinkiosk.Controller.MainMenuController">
     <children>
         <MenuBar VBox.vgrow="NEVER">
             <menus>
-                <Menu mnemonicParsing="false" text="Info">
+                <Menu mnemonicParsing="false" text="Login">
                     <items>
-                        <MenuItem mnemonicParsing="false" onAction="#gotoBookedFlight" text="PersonalInfo" />
-                        <SeparatorMenuItem mnemonicParsing="false" />
 <!--                  <Menu mnemonicParsing="false" text="FlightInfo">-->
 <!--                     <items>-->
 <!--                        <MenuItem mnemonicParsing="false" text="Check" />-->
@@ -42,11 +40,6 @@
                 <Menu mnemonicParsing="false" text="Budget">
                     <items>
                         <MenuItem mnemonicParsing="false" onAction="#gotoBudget" text="Check" />
-                    </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Boarding">
-                    <items>
-                        <MenuItem mnemonicParsing="false" onAction="#gotoBoardingpassCheck" text="Check" />
                     </items>
                 </Menu>
             </menus>
@@ -76,13 +69,13 @@
                        <Label contentDisplay="CENTER" text="depature time" GridPane.rowIndex="7" />
                        <Label contentDisplay="CENTER" text="Surname" GridPane.rowIndex="3" />
                        <Label contentDisplay="CENTER" text="Booking Number" GridPane.rowIndex="2" />
-                       <Label fx:id="BookingFlight" contentDisplay="CENTER" prefHeight="15.0" prefWidth="99.0" text="666" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                       <Label fx:id="ArrivingCity" contentDisplay="CENTER" text="xxx" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                       <Label fx:id="DepatureCity" contentDisplay="CENTER" text="xxx" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                       <Label fx:id="ArrivingTime" contentDisplay="CENTER" text="xxx" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-                       <Label fx:id="DepatureTime" contentDisplay="CENTER" text="xxx" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-                       <Label fx:id="Surname" contentDisplay="CENTER" text="xxx" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                       <Label fx:id="BookingNumber" contentDisplay="CENTER" text="xxx" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                       <Label fx:id="BookingFlight" contentDisplay="CENTER" prefHeight="15.0" prefWidth="99.0"  GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                       <Label fx:id="ArrivingCity" contentDisplay="CENTER"  GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                       <Label fx:id="DepatureCity" contentDisplay="CENTER"  GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                       <Label fx:id="ArrivingTime" contentDisplay="CENTER"  GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                       <Label fx:id="DepatureTime" contentDisplay="CENTER"  GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                       <Label fx:id="Surname" contentDisplay="CENTER"  GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                       <Label fx:id="BookingNumber" contentDisplay="CENTER"  GridPane.columnIndex="1" GridPane.rowIndex="2" />
                   <Pane prefHeight="50.0" prefWidth="433.0" style="-fx-background-color: #87cefa;">
                      <children>
                         <Text layoutX="139.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Booking">
