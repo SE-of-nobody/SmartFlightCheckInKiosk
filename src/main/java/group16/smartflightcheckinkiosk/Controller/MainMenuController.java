@@ -45,6 +45,13 @@ public class MainMenuController {
         jumpto.start(stage);
     }
     @FXML
+    void gotoBudget(ActionEvent event) throws Exception {
+        Jumpto jumpto = new Jumpto();
+        jumpto.set("Budget.fxml", "Budget");
+        Stage stage = new Stage();
+        jumpto.start(stage);
+    }
+    @FXML
     void gotoBoardingpassCheck(ActionEvent event) throws Exception {
         Jumpto jumpto = new Jumpto();
         jumpto.set("boardingpass-check.fxml", "boardingpass1");
