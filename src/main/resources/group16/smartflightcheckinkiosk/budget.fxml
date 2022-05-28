@@ -23,15 +23,18 @@
             </children>
         </AnchorPane>
         <Text layoutX="53.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meal:" />
-            <Text fx:id="meal" fill="BLUE" layoutX="120.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="xxx" />
-            <Text fx:id="meal_pay" fill="BLUE" layoutX="201.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="xxx" />
+            <Text fx:id="meal" fill="BLUE" layoutX="90.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="xxx" />
+            <Text layoutX="230.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$" />
+            <Text fx:id="meal_pay" fill="BLUE" layoutX="235.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="xxx" />
         <Text layoutX="53.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seat:" />
             <Text fx:id="seat" fill="BLUE" layoutX="120.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="xxx" />
+            <Text layoutX="195.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$" />
             <Text fx:id="seat_pay" fill="BLUE" layoutX="201.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="xxx" />
         <Text layoutX="53.0" layoutY="100" strokeType="OUTSIDE" strokeWidth="0.0" text="Luggage:" />
-            <Text fx:id="luggage" fill="BLUE" layoutX="120.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="xxx" />
-            <Text fx:id="luggage_pay" fill="BLUE" layoutX="201.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="xxx" />
+        <Text fx:id="luggage" fill="BLUE" layoutX="115.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 10px" text="charge at the drop in counter" />
+<!--            <Text fx:id="luggage_pay" fill="BLUE" layoutX="201.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="xxx" />-->
         <Text layoutX="53.0" layoutY="120" strokeType="OUTSIDE" strokeWidth="0.0" text="Total:" />
+            <Text layoutX="195.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$" />
             <Text fx:id="total_pay" fill="BLUE" layoutX="201.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="xxx" />
 
         <Text layoutX="53.0" layoutY="140" strokeType="OUTSIDE" strokeWidth="0.0" text="input your credit Card Number:" />

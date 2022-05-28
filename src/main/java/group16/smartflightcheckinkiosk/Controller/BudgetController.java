@@ -13,6 +13,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import service.Order;
 
 import java.net.URL;
 import java.util.List;
@@ -27,6 +28,8 @@ public class BudgetController implements Initializable {
     private Text seat;
     @FXML
     private Text seat_pay;
+    //    @FXML
+//    private Text luggage_pay;
     @FXML
     private Text total_pay;
     @FXML
@@ -37,13 +40,14 @@ public class BudgetController implements Initializable {
     private Text not_correct;
     @FXML
     private Text success;
+
     @FXML
     private Button back;
 
     @FXML
     private Button ok;
-    private OrderInfo orderInfo;
 
+    private OrderInfo orderInfo;
 
 
     @FXML
@@ -54,7 +58,7 @@ public class BudgetController implements Initializable {
             System.out.println("尚未初始化");
             return;
         }
-        service.Order order = orderInfo.orders.get(orderInfo.orderIndex);
+        Order order = orderInfo.orders.get(orderInfo.orderIndex);
 
         if(cardNum == null || !cardNum.equals(order.getCreditNumber())){
             clear();
@@ -108,7 +112,7 @@ public class BudgetController implements Initializable {
 
         this.orderInfo = orderInfo;
         //填入用户信息
-        service.Order order = orderInfo.orders.get(orderInfo.orderIndex);
+        Order order = orderInfo.orders.get(orderInfo.orderIndex);
         //餐品
         meal.setText(order.getMeal());
         meal_pay.setText(String.valueOf(order.getMealFee()));

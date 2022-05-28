@@ -53,9 +53,14 @@ public class LoginController {
 
 
     @FXML
-    void back(){
-        Stage stage = (Stage) back.getScene().getWindow();
-        stage.close();
+    void back()throws Exception{
+        Jumpto jumpto = new Jumpto();
+        jumpto.set("ChooseLogin.fxml", "Choose Login");
+        Stage stage = new Stage();
+
+        jumpto.start(stage);
+        Stage stage_old = (Stage) back.getScene().getWindow();
+        stage_old.close();
     }
 
 }
