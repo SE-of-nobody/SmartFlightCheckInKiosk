@@ -56,7 +56,7 @@ public class BoardingpassTagController implements Initializable{
         }
         //read flight csv
         String csvFile1 = "src/main/resources/group16/smartflightcheckinkiosk/Luggage.csv";
-        String[] luggage= new String[5];
+        String[] luggage= new String[8];
         //match the flight
         try (BufferedReader br = new BufferedReader(new FileReader(csvFile1))) {
 
@@ -65,11 +65,11 @@ public class BoardingpassTagController implements Initializable{
                 // use comma as separator
                 luggage = line.split(cvsSplitBy);
                 // check the name
-                if (luggage[0].equals(name)&&Integer.parseInt(luggage[4])==BoardingpassController.ticket_tag_index) {
+                if (luggage[0].equals(name)&&Integer.parseInt(luggage[6])==BoardingpassController.tag_index) {
                     break;
                 }
             }
-            if (luggage[0].equals(name)&&Integer.parseInt(luggage[4])==BoardingpassController.ticket_tag_index) {
+            if (luggage[0].equals(name)&&Integer.parseInt(luggage[6])==BoardingpassController.tag_index) {
                 Tag.setText(luggage[3]);
             }
         }

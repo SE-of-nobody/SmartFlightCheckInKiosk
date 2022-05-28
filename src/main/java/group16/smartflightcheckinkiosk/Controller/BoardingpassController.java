@@ -21,7 +21,8 @@ public class BoardingpassController {
     @FXML
     private Button label_help;
 
-    public static int ticket_tag_index=1;
+    public static int ticket_index=1;
+    public static int tag_index=1;
 //    @FXML
 //    protected void onHelpClick() {
 //        System.out.println("you choose help");
@@ -54,8 +55,9 @@ public class BoardingpassController {
         String csvFile = "src/main/resources/group16/smartflightcheckinkiosk/Luggage.csv";
         String line = "";
         String cvsSplitBy = ",";
-        String[] luggage= new String[5];
-        int total_luggage=0;
+        String[] luggage= new String[8];
+        int total_tag_luggage=0;//carry-on luggage
+        int total_ticket_luggage=0;//check-in luggage
         //match the flight
         try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
 
@@ -64,8 +66,11 @@ public class BoardingpassController {
                 // use comma as separator
                 luggage = line.split(cvsSplitBy);
                 // check the name
-                if (luggage[0].equals(name)) {
-                    total_luggage++;
+                if (luggage[0].equals(name)&&luggage[7].equals("1")) {
+                    total_ticket_luggage++;
+                }
+                if (luggage[0].equals(name)&&luggage[7].equals("2")) {
+                    total_tag_luggage++;
                 }
             }
         }
@@ -73,18 +78,21 @@ public class BoardingpassController {
             e.printStackTrace();
         }
 
-        for(int i=0;i<total_luggage;i++){
+        for(int i=0;i<total_tag_luggage;i++) {
             Jumpto jumpto2 = new Jumpto();
             jumpto2.set("boardingpass-tag.fxml", "Booked Flight");
             Stage stage2 = new Stage();
             jumpto2.start(stage2);
-
+            tag_index++;
+        }
+        for(int j=0;j<total_ticket_luggage;j++) {
             Jumpto jumpto3 = new Jumpto();
             jumpto3.set("boardingpass-ticket.fxml", "Booked Flight");
             Stage stage3 = new Stage();
             jumpto3.start(stage3);
-            ticket_tag_index++;
+            ticket_index++;
         }
+        System.out.println("ci:"+ticket_index+total_ticket_luggage+"co:"+tag_index+total_tag_luggage);
         Stage stage4 = (Stage) label_ok.getScene().getWindow();
         stage4.close();
     }
