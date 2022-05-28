@@ -106,6 +106,7 @@ In this project, we used [JavaFX](https://openjfx.io/) to complete the GUI desig
 In terms of user stories, we produce a large number of user stories, delete a batch through meetings, and
 then evaluate and priorities the remaining parts.
 We chose a different ID for each story.  According to the Specification in Handout, we chose different three-digit numbers.  Where the leading number indicates which part they belong to:
+
 <div class="center">
 
 | ID  |      Category      |
