@@ -17,14 +17,14 @@
                     <items>
                         <MenuItem mnemonicParsing="false" onAction="#gotoBookedFlight" text="PersonalInfo" />
                         <SeparatorMenuItem mnemonicParsing="false" />
-                  <Menu mnemonicParsing="false" text="FlightInfo">
-                     <items>
-                        <MenuItem mnemonicParsing="false" text="Check" />
-                        <SeparatorMenuItem mnemonicParsing="false" />
-                        <MenuItem mnemonicParsing="false" text="List" />
-                        <SeparatorMenuItem mnemonicParsing="false" />
-                     </items>
-                  </Menu>
+<!--                  <Menu mnemonicParsing="false" text="FlightInfo">-->
+<!--                     <items>-->
+<!--                        <MenuItem mnemonicParsing="false" text="Check" />-->
+<!--                        <SeparatorMenuItem mnemonicParsing="false" />-->
+<!--                        <MenuItem mnemonicParsing="false" text="List" />-->
+<!--                        <SeparatorMenuItem mnemonicParsing="false" />-->
+<!--                     </items>-->
+<!--                  </Menu>-->
                   <MenuItem mnemonicParsing="false" onAction="#quit" text="Quit" />
                     </items>
                 </Menu>
@@ -39,9 +39,9 @@
                         <MenuItem mnemonicParsing="false" text="Check" />
                     </items>
                 </Menu>
-                <Menu mnemonicParsing="false" text="Next">
+                <Menu mnemonicParsing="false" text="Boarding">
                     <items>
-                        <MenuItem mnemonicParsing="false" onAction="#gotoBoardingpassCheck" text="boardingpass-check" />
+                        <MenuItem mnemonicParsing="false" onAction="#gotoBoardingpassCheck" text="Check" />
                     </items>
                 </Menu>
             </menus>

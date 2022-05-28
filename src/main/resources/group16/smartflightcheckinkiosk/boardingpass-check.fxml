@@ -42,8 +42,8 @@
                         <Text layoutX="52.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="name:" />
                         <Text layoutX="52.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID number:" />
                         <Text layoutX="52.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="booking number:" wrappingWidth="263.4921875" />
-                        <Button fx:id="back" layoutX="61.0" layoutY="250.0" mnemonicParsing="false" onMouseClicked="#onPrevClick" prefHeight="26.0" prefWidth="55.0" text="BACK" />
-                        <Button fx:id="next" layoutX="183.0" layoutY="250.0" mnemonicParsing="false" onMouseClicked="#onNextClick" prefHeight="26.0" prefWidth="55.0" style="-fx-background-color: #87cefa;" text="OK" />
+                        <Button fx:id="back" layoutX="61.0" layoutY="270.0" mnemonicParsing="false" onMouseClicked="#onPrevClick" prefHeight="26.0" prefWidth="55.0" text="BACK" />
+                        <Button fx:id="next" layoutX="183.0" layoutY="270.0" mnemonicParsing="false" onMouseClicked="#onNextClick" prefHeight="26.0" prefWidth="55.0" style="-fx-background-color: #87cefa;" text="OK" />
 <!--                        <Circle fill="DODGERBLUE" layoutX="330.0" layoutY="279.0" radius="44.0" stroke="BLACK" strokeType="INSIDE" />-->
 <!--                        <Label fx:id="back" alignment="CENTER" layoutX="286.0" layoutY="235.0" onMouseClicked="#onNextClick" prefHeight="88.0" prefWidth="88.0" text="Next" textFill="WHITE">-->
 <!--                            <font>-->
@@ -75,6 +75,10 @@
                         <Text fx:id="BookingNumber" fill="BLUE" layoutX="201.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="String BookingNumber" />
                         <Text fx:id="FlightNumber" fill="BLUE" layoutX="201.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="String NaN" />
                         <Text fx:id="Timetable" fill="BLUE" layoutX="201.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="String NaN" />
+                        <Text layoutX="53.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meal:" />
+                        <Text fx:id="meal" fill="BLUE" layoutX="201.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="String NaN" />
+                        <Text layoutX="53.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seat:" />
+                        <Text fx:id="seat" fill="BLUE" layoutX="201.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="String NaN" />
                     </children>
                 </Pane>
             </children>
