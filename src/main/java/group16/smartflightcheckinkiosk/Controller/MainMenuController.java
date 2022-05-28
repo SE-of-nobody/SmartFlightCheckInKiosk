@@ -64,8 +64,6 @@ public class MainMenuController  implements Initializable{
         jumpto.set("boardingpass-check.fxml", "boardingpass1");
         Stage stage = new Stage();
         jumpto.start(stage);
-        Stage stage_old = (Stage) rootLayout.getScene().getWindow();
-        stage_old.close();
     }
     ///////主页
 
@@ -96,8 +94,6 @@ public class MainMenuController  implements Initializable{
             ArrivingCity.setText(userInfo[6]);
         }
 
-        //private ViewAlter viewAlter;
-
 
 
         @Override
@@ -119,9 +115,6 @@ public class MainMenuController  implements Initializable{
             ChangeText();
         }
 
-//    public void setApp(ViewAlter viewAlter) {
-//        this.viewAlter = viewAlter;
-//    }
 
 
 }
