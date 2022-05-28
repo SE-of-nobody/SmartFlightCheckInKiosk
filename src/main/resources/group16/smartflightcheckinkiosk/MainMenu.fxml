@@ -42,6 +42,15 @@
                         <MenuItem mnemonicParsing="false" onAction="#gotoBudget" text="Check" />
                     </items>
                 </Menu>
+
+<!--                boarding-->
+                <Menu mnemonicParsing="false" text="Boarding">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#gotoBoardingpassCheck" text="Check" />
+                    </items>
+                </Menu>
+ <!-- boarding end-->
+
             </menus>
         </MenuBar>
         <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
