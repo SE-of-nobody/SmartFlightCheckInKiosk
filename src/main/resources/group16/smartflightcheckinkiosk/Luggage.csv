@@ -1,5 +1,7 @@
-Surname,CarryOnBag,CheckInBag,Tag
-JACK,4,4,11
-ROSE,6,3,12
-TOM,1,1,13
-MIKE,2,4,14
+Surname,CarryOnBag,CheckInBag,Tag,Index
+JACK,4,3,011,1
+JACK,2,3,012,2
+JACK,1,3,013,3
+ROSE,,6,3,112,1
+TOM,1,1,213,1
+ROSE,2,4,114,2
