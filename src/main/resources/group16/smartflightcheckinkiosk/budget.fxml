@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="toBookNumPage" prefHeight="240.0" prefWidth="416.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group16.smartflightcheckinkiosk.Controller.BudgetController">
+<AnchorPane fx:id="toBookNumPage" prefHeight="240.0" prefWidth="416.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group16.smartflightcheckinkiosk.Controller.BudgetController">
     <children>
         <AnchorPane prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #87cefa;">
             <children>

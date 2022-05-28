@@ -15,7 +15,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 
-<AnchorPane prefHeight="300.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group16.smartflightcheckinkiosk.Controller.BoardingpassTagController">
+<AnchorPane prefHeight="300.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group16.smartflightcheckinkiosk.Controller.BoardingpassTagController">
     <children>
         <FlowPane prefHeight="300.0" prefWidth="200.0">
             <AnchorPane layoutY="12.0" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #87cefa;">
