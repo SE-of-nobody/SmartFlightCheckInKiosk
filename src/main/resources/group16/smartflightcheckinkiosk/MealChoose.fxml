@@ -17,7 +17,7 @@
                <children>
                   <BorderPane prefHeight="366.0" prefWidth="594.0">
                      <bottom>
-                        <Button fx:id="OrderMeal1" mnemonicParsing="false" onMouseClicked="#orderButtonClicked" text="order" BorderPane.alignment="CENTER" />
+                        <Button fx:id="OrderMeal1" mnemonicParsing="false" onAction="#orderButtonClicked" text="order" BorderPane.alignment="CENTER" />
                      </bottom>
                      <top>
                         <Label fx:id="LabelMeal1" text="Meal1 多少钱" BorderPane.alignment="CENTER" />
@@ -39,7 +39,7 @@
                <children>
                   <BorderPane prefHeight="366.0" prefWidth="594.0">
                      <bottom>
-                        <Button fx:id="OrderMeal2" mnemonicParsing="false" onMouseClicked="#orderButtonClicked" text="order" BorderPane.alignment="CENTER" />
+                        <Button fx:id="OrderMeal2" mnemonicParsing="false" onAction="#orderButtonClicked" text="order" BorderPane.alignment="CENTER" />
                      </bottom>
                      <top>
                         <Label fx:id="LabelMeal2" text="Meal2 多少钱" BorderPane.alignment="CENTER" />
