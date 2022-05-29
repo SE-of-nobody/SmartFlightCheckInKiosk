@@ -20,7 +20,7 @@
         <FlowPane prefHeight="300.0" prefWidth="200.0">
             <AnchorPane layoutY="12.0" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #87cefa;">
                 <children>
-                    <Label fx:id="confirm4" layoutX="51.0" layoutY="13.0" prefHeight="22.0" prefWidth="195.0" text="Boaringpass-tag">
+                    <Label fx:id="confirm4" layoutX="20.0" layoutY="13.0" prefHeight="22.0" prefWidth="195.0" text="Tag for Carry-on Luggage">
                         <font>
                             <Font name="Myanmar MN" size="13.0" />
                         </font>
@@ -56,7 +56,7 @@
 <!--        <Button fx:id="ok" layoutX="300.0" layoutY="166.0" mnemonicParsing="false" onAction="#ok" prefHeight="26.0" prefWidth="55.0" text="OK" />-->
         <ImageView fitHeight="85.0" fitWidth="83.0" layoutX="50.0" layoutY="180.0">
             <image>
-                <Image url="@img/tuoyun.png" />
+                <Image url="@img/boardingpass-carryon.png" />
             </image>
         </ImageView>
     </children>

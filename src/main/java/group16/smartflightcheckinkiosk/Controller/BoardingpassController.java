@@ -44,7 +44,7 @@ public class BoardingpassController {
     @FXML
     void onOKClick() throws Exception{
         Jumpto jumpto1 = new Jumpto();
-        jumpto1.set("boardingpass-boardingpass.fxml", "Booked Flight");
+        jumpto1.set("boardingpass-boardingpass.fxml", "Boarding pass");
         Stage stage1 = new Stage();
         jumpto1.start(stage1);
 
@@ -80,14 +80,14 @@ public class BoardingpassController {
 
         for(int i=0;i<total_tag_luggage;i++) {
             Jumpto jumpto2 = new Jumpto();
-            jumpto2.set("boardingpass-tag.fxml", "Booked Flight");
+            jumpto2.set("boardingpass-tag.fxml", "Carry-on Luggage");
             Stage stage2 = new Stage();
             jumpto2.start(stage2);
             tag_index++;
         }
         for(int j=0;j<total_ticket_luggage;j++) {
             Jumpto jumpto3 = new Jumpto();
-            jumpto3.set("boardingpass-ticket.fxml", "Booked Flight");
+            jumpto3.set("boardingpass-ticket.fxml", "Check-in Luggage");
             Stage stage3 = new Stage();
             jumpto3.start(stage3);
             ticket_index++;

@@ -41,7 +41,7 @@ public class BoardingpassCheckController implements Initializable {
 
         System.out.println("next button pressed");
         Jumpto jumpto = new Jumpto();
-        jumpto.set("boardingpass.fxml", "boaringpass-2");
+        jumpto.set("boardingpass.fxml", "boaringpass-notification");
         Stage stage = new Stage();
         jumpto.start(stage);
         Stage stage_old = (Stage)next.getScene().getWindow();
