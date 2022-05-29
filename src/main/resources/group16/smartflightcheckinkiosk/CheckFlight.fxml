@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
@@ -9,9 +15,27 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-<VBox fx:id="CheckFlight" prefHeight="220.0" prefWidth="330.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group16.smartflightcheckinkiosk.Controller.CheckFlightController">
+<VBox fx:id="CheckFlight" prefHeight="360.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group16.smartflightcheckinkiosk.Controller.CheckFlightController">
    <children>
-   <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane prefHeight="45.0" prefWidth="600.0" style="-fx-background-color: #78cafe;">
+               <children>
+                  <Text layoutX="57.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Back-end System" wrappingWidth="199.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="23.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/plane_logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="600.0">
      <columnConstraints>
        <ColumnConstraints hgrow="SOMETIMES" maxWidth="600.0" minWidth="10.0" prefWidth="600.0" />
        <ColumnConstraints hgrow="SOMETIMES" maxWidth="290.0" minWidth="0.0" prefWidth="0.0" />
@@ -30,66 +54,105 @@
             <GridPane.margin>
                <Insets left="100.0" />
             </GridPane.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
          </Button>
          <Button fx:id="b6" mnemonicParsing="false" onAction="#gotoFlightList" text="  Next  " GridPane.halignment="RIGHT" GridPane.rowIndex="6" GridPane.valignment="CENTER">
             <GridPane.margin>
                <Insets right="100.0" />
             </GridPane.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
          </Button>
          <Label alignment="TOP_LEFT" contentDisplay="TOP" text="Please confirm the flight you are looking for!">
             <GridPane.margin>
                <Insets left="50.0" />
             </GridPane.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
          </Label>
          <Label text="FLIGHT:" GridPane.rowIndex="1">
             <GridPane.margin>
                <Insets left="50.0" />
             </GridPane.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
          </Label>
          <Label alignment="TOP_CENTER" contentDisplay="CENTER" text="DATE:" GridPane.rowIndex="2">
             <GridPane.margin>
                <Insets left="50.0" />
             </GridPane.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
          </Label>
          <Label alignment="TOP_CENTER" contentDisplay="CENTER" text="BOARDING:" GridPane.rowIndex="3">
             <GridPane.margin>
                <Insets left="50.0" />
             </GridPane.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
          </Label>
          <Label alignment="TOP_CENTER" contentDisplay="CENTER" text="ROUTE:" GridPane.rowIndex="4">
             <GridPane.margin>
                <Insets left="50.0" />
             </GridPane.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
          </Label>
             <Text fx:id="FlightNum" fill="BLUE" strokeType="OUTSIDE" strokeWidth="0.0" text="String FlightNumber" wrappingWidth="300.0" GridPane.rowIndex="1">
                <GridPane.margin>
                   <Insets left="160.0" />
                </GridPane.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
             </Text>
             <Text fx:id="Date" fill="BLUE" layoutX="1400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="String Date " GridPane.rowIndex="2">
                <GridPane.margin>
                   <Insets left="160.0" />
                </GridPane.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
             </Text>
             <Text fx:id="Time" fill="BLUE" strokeType="OUTSIDE" strokeWidth="0.0" text="String BoardingTime" GridPane.rowIndex="3">
                <GridPane.margin>
                   <Insets left="220.0" />
                </GridPane.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
             </Text>
             <Text fx:id="Startpoint" fill="BLUE" strokeType="OUTSIDE" strokeWidth="0.0" text="String StartPoint" GridPane.rowIndex="4">
                <GridPane.margin>
                   <Insets left="160.0" />
                </GridPane.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
             </Text>
             <Label alignment="TOP_CENTER" contentDisplay="CENTER" text="TO" GridPane.rowIndex="4">
                <GridPane.margin>
                   <Insets left="280.0" />
                </GridPane.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
             </Label>
             <Text fx:id="Destination" fill="BLUE" strokeType="OUTSIDE" strokeWidth="0.0" text="String Destination" GridPane.rowIndex="4">
                <GridPane.margin>
                   <Insets left="320.0" />
                </GridPane.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
             </Text>
       </children>
    </GridPane>

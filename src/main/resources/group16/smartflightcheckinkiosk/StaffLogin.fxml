@@ -3,40 +3,47 @@
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
 
-<VBox fx:id="StaffLogin" prefHeight="220.0" prefWidth="330.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group16.smartflightcheckinkiosk.Controller.StaffLoginController">
-    <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="220.0" prefWidth="330">
-
-        <columnConstraints>
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="600.0" minWidth="10.0" prefWidth="600.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="290.0" minWidth="0.0" prefWidth="0.0" />
-        </columnConstraints>
-        <rowConstraints>
-            <RowConstraints maxHeight="185.0" minHeight="10.0" prefHeight="165.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="242.0" minHeight="10.0" prefHeight="84.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="151.0" minHeight="10.0" prefHeight="151.0" vgrow="SOMETIMES" />
-        </rowConstraints>
-        <children>
-            <Button fx:id="b1" onAction="#gotoChooseLogin" mnemonicParsing="false" text="Go back" GridPane.halignment="LEFT" GridPane.rowIndex="2">
-                <GridPane.margin>
-                    <Insets left="100.0" />
-                </GridPane.margin>
-            </Button>
-            <TextField fx:id="staffnumField" GridPane.rowIndex="1" GridPane.valignment="TOP">
-                <GridPane.margin>
-                    <Insets left="50.0" right="50.0" />
-                </GridPane.margin>
-            </TextField>
-            <Button fx:id="b2" onAction="#gotoEnterFlight" mnemonicParsing="false" text="  Next  " GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
-                <GridPane.margin>
-                    <Insets right="100.0" />
-                </GridPane.margin>
-            </Button>
-            <Label text="Please enter your staff number:">
-                <GridPane.margin>
-                    <Insets left="50.0" />
-                </GridPane.margin>
-            </Label>
-        </children>
-    </GridPane>
+<VBox fx:id="StaffLogin" prefHeight="235.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group16.smartflightcheckinkiosk.Controller.StaffLoginController">
+    <children>
+        <AnchorPane prefHeight="238.0" prefWidth="760.0">
+           <children>
+              <AnchorPane layoutX="357.0" prefHeight="48.0" prefWidth="404.0" style="-fx-background-color: #87cefa;">
+                 <children>
+                    <ImageView fitHeight="33.0" fitWidth="46.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                       <image>
+                          <Image url="@img/staff002.png" />
+                       </image>
+                    </ImageView>
+                    <Label layoutX="53.0" layoutY="13.0" prefHeight="30.0" prefWidth="312.0" text="Welcome to the Staff System！">
+                       <font>
+                          <Font size="18.0" />
+                       </font>
+                    </Label>
+                 </children>
+              </AnchorPane>
+              <ImageView fitHeight="250.0" fitWidth="357.0" pickOnBounds="true" preserveRatio="true">
+                 <image>
+                    <Image url="@img/login_plot.jpeg" />
+                 </image>
+              </ImageView>
+              <Label layoutX="373.0" layoutY="63.0" prefHeight="32.0" prefWidth="388.0" text="Please enter your staff number:">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+              <TextField fx:id="staffnumField" layoutX="432.0" layoutY="118.0" prefHeight="33.0" prefWidth="254.0" />
+              <Button fx:id="b1" layoutX="452.0" layoutY="177.0" mnemonicParsing="false" onAction="#gotoChooseLogin" text="Go back">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+              <Button fx:id="b2" layoutX="584.0" layoutY="177.0" mnemonicParsing="false" onAction="#gotoEnterFlight" text="  Next  ">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+           </children>
+        </AnchorPane>
+     </children>
 </VBox>
