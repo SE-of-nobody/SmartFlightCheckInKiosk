@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<ScrollPane fx:id="SeatChoosePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group16.smartflightcheckinkiosk.Controller.SeatChooseController">
+<ScrollPane fx:id="SeatChoosePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group16.smartflightcheckinkiosk.Controller.SeatChooseController">
     <content>
         <BorderPane prefHeight="791.0" prefWidth="585.0">
             <left>
@@ -22,6 +22,7 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                     <children>
                         <Button fx:id="A1" mnemonicParsing="false" onAction="#ButtonClicked" text="Button" />
@@ -29,7 +30,9 @@
                         <Button fx:id="A2" mnemonicParsing="false" onAction="#ButtonClicked" text="Button" GridPane.rowIndex="1" />
                         <Button fx:id="B2" mnemonicParsing="false" onAction="#ButtonClicked" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                         <Button fx:id="A3" mnemonicParsing="false" onAction="#ButtonClicked" text="Button" GridPane.rowIndex="2" />
-                        <Button fx:id="B3" mnemonicParsing="false" onAction="#ButtonClicked" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                        <Button fx:id="B3" mnemonicParsing="false" onAction="#ButtonClicked" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Button fx:id="A4" mnemonicParsing="false" onAction="#ButtonClicked" text="Button" GridPane.rowIndex="3" />
+                        <Button fx:id="B4" mnemonicParsing="false" onAction="#ButtonClicked" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="3" >
                             <GridPane.margin>
                                 <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
                             </GridPane.margin>
@@ -47,6 +50,7 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                     <children>
                         <Button fx:id="C1" mnemonicParsing="false" onAction="#ButtonClicked" text="Button" />
@@ -55,6 +59,8 @@
                         <Button fx:id="D2" mnemonicParsing="false" onAction="#ButtonClicked" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                         <Button fx:id="C3" mnemonicParsing="false" onAction="#ButtonClicked" text="Button" GridPane.rowIndex="2" />
                         <Button fx:id="D3" mnemonicParsing="false" onAction="#ButtonClicked" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Button fx:id="C4" mnemonicParsing="false" onAction="#ButtonClicked" text="Button" GridPane.rowIndex="3" />
+                        <Button fx:id="D4" mnemonicParsing="false" onAction="#ButtonClicked" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                     </children>
                 </GridPane>
             </right>

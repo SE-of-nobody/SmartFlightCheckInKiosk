@@ -26,11 +26,15 @@ public class SeatChooseController implements Initializable {
     @FXML
     private Button A3;
     @FXML
+    private Button A4;
+    @FXML
     private Button B1;
     @FXML
     private Button B2;
     @FXML
     private Button B3;
+    @FXML
+    private Button B4;
     @FXML
     private Button C1;
     @FXML
@@ -38,11 +42,15 @@ public class SeatChooseController implements Initializable {
     @FXML
     private Button C3;
     @FXML
+    private Button C4;
+    @FXML
     private Button D1;
     @FXML
     private Button D2;
     @FXML
     private Button D3;
+    @FXML
+    private Button D4;
 
     static  final Map<String, Button> buttonMap = new HashMap<>();
 
@@ -98,6 +106,10 @@ public class SeatChooseController implements Initializable {
         buttonMap.put("D1", D1);
         buttonMap.put("D2", D2);
         buttonMap.put("D3", D3);
+        buttonMap.put("A4", A4);
+        buttonMap.put("B4", B4);
+        buttonMap.put("C4", C4);
+        buttonMap.put("D4", D4);
 
         setSeat("A1",  10.12);
         setSeat("A2",  102.2);
@@ -111,6 +123,10 @@ public class SeatChooseController implements Initializable {
         setSeat("D1",  50223.666);
         setSeat("D2",  120.223);
         setSeat("D3",  2243.2431);
+        setSeat("A4",  0);
+        setSeat("B4",  0);
+        setSeat("C4",  0);
+        setSeat("D4",  0);
 
     }
 

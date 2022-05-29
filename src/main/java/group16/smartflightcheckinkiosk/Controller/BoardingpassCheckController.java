@@ -25,6 +25,10 @@ public class BoardingpassCheckController implements Initializable {
     private Text FlightNumber;
     @FXML
     private Text Timetable;
+    @FXML
+    private Text meal;
+    @FXML
+    private Text seat;
 
     @FXML
     private Button back;
@@ -67,6 +71,8 @@ public class BoardingpassCheckController implements Initializable {
             }
             if(passenger[2].equals(name)){
                 Surname.setText(name);
+                seat.setText(passenger[6]);
+                meal.setText(passenger[3]);
                 idNumber.setText(passenger[1]);
                 BookingNumber.setText(passenger[0]);
                 FlightNumber.setText(passenger[11]);
