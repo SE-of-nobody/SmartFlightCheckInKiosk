@@ -29,6 +29,78 @@
                         <RowConstraints minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                     <children>
+                        <VBox alignment="TOP_CENTER" GridPane.columnIndex="1">
+                            <children>
+                                <ImageView fitHeight="59.0" fitWidth="57.0">
+                                    <image>
+                                        <Image url="@img/seat.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                            <children>
+                                <ImageView fitHeight="59.0" fitWidth="57.0">
+                                    <image>
+                                        <Image url="@img/seat.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" GridPane.rowIndex="1">
+                            <children>
+                                <ImageView fitHeight="59.0" fitWidth="57.0">
+                                    <image>
+                                        <Image url="@img/seat.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" GridPane.rowIndex="2">
+                            <children>
+                                <ImageView fitHeight="59.0" fitWidth="57.0">
+                                    <image>
+                                        <Image url="@img/seat.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                            <children>
+                                <ImageView fitHeight="59.0" fitWidth="57.0">
+                                    <image>
+                                        <Image url="@img/seat.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                            <children>
+                                <ImageView fitHeight="59.0" fitWidth="57.0">
+                                    <image>
+                                        <Image url="@img/seat.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" GridPane.rowIndex="3">
+                            <children>
+                                <ImageView fitHeight="59.0" fitWidth="57.0">
+                                    <image>
+                                        <Image url="@img/seat.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER">
+                            <children>
+                                <ImageView fitHeight="59.0" fitWidth="57.0">
+                                    <image>
+                                        <Image url="@img/seat.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </VBox>
                         <Button fx:id="A1" alignment="CENTER" mnemonicParsing="false" onAction="#ButtonClicked" stylesheets="@seatbutton.css" text="Button" textAlignment="CENTER" />
                         <Button fx:id="B1" mnemonicParsing="false" onAction="#ButtonClicked" text="Button" GridPane.columnIndex="1" />
                         <Button fx:id="A2" mnemonicParsing="false" onAction="#ButtonClicked" text="Button" GridPane.rowIndex="1" />
@@ -41,78 +113,7 @@
                                 <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
                             </GridPane.margin>
                         </Button>
-                  <VBox alignment="TOP_CENTER" GridPane.columnIndex="1">
-                     <children>
-                        <ImageView fitHeight="59.0" fitWidth="57.0">
-                           <image>
-                              <Image url="@img/seat.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </VBox>
-                  <VBox alignment="TOP_CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <children>
-                        <ImageView fitHeight="59.0" fitWidth="57.0">
-                           <image>
-                              <Image url="@img/seat.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </VBox>
-                  <VBox alignment="TOP_CENTER" GridPane.rowIndex="1">
-                     <children>
-                        <ImageView fitHeight="59.0" fitWidth="57.0">
-                           <image>
-                              <Image url="@img/seat.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </VBox>
-                  <VBox alignment="TOP_CENTER" GridPane.rowIndex="2">
-                     <children>
-                        <ImageView fitHeight="59.0" fitWidth="57.0">
-                           <image>
-                              <Image url="@img/seat.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </VBox>
-                  <VBox alignment="TOP_CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
-                     <children>
-                        <ImageView fitHeight="59.0" fitWidth="57.0">
-                           <image>
-                              <Image url="@img/seat.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </VBox>
-                  <VBox alignment="TOP_CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
-                     <children>
-                        <ImageView fitHeight="59.0" fitWidth="57.0">
-                           <image>
-                              <Image url="@img/seat.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </VBox>
-                  <VBox alignment="TOP_CENTER" GridPane.rowIndex="3">
-                     <children>
-                        <ImageView fitHeight="59.0" fitWidth="57.0">
-                           <image>
-                              <Image url="@img/seat.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </VBox>
-                  <VBox alignment="TOP_CENTER">
-                     <children>
-                        <ImageView fitHeight="59.0" fitWidth="57.0">
-                           <image>
-                              <Image url="@img/seat.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </VBox>
+
                     </children>
                 </GridPane>
             </left>
@@ -129,6 +130,78 @@
                         <RowConstraints minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                     <children>
+                        <VBox alignment="TOP_CENTER">
+                            <children>
+                                <ImageView fitHeight="59.0" fitWidth="57.0">
+                                    <image>
+                                        <Image url="@img/seat.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" GridPane.columnIndex="1">
+                            <children>
+                                <ImageView fitHeight="59.0" fitWidth="57.0">
+                                    <image>
+                                        <Image url="@img/seat.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" GridPane.rowIndex="1">
+                            <children>
+                                <ImageView fitHeight="59.0" fitWidth="57.0">
+                                    <image>
+                                        <Image url="@img/seat.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                            <children>
+                                <ImageView fitHeight="59.0" fitWidth="57.0">
+                                    <image>
+                                        <Image url="@img/seat.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" GridPane.rowIndex="2">
+                            <children>
+                                <ImageView fitHeight="59.0" fitWidth="57.0">
+                                    <image>
+                                        <Image url="@img/seat.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                            <children>
+                                <ImageView fitHeight="59.0" fitWidth="57.0">
+                                    <image>
+                                        <Image url="@img/seat.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" GridPane.rowIndex="3">
+                            <children>
+                                <ImageView fitHeight="59.0" fitWidth="57.0">
+                                    <image>
+                                        <Image url="@img/seat.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                            <children>
+                                <ImageView fitHeight="59.0" fitWidth="57.0">
+                                    <image>
+                                        <Image url="@img/seat.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </VBox>
                         <Button fx:id="C1" mnemonicParsing="false" onAction="#ButtonClicked" text="Button" />
                         <Button fx:id="D1" mnemonicParsing="false" onAction="#ButtonClicked" text="Button" GridPane.columnIndex="1" />
                         <Button fx:id="C2" mnemonicParsing="false" onAction="#ButtonClicked" text="Button" GridPane.rowIndex="1" />
@@ -137,78 +210,6 @@
                         <Button fx:id="D3" mnemonicParsing="false" onAction="#ButtonClicked" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                         <Button fx:id="C4" mnemonicParsing="false" onAction="#ButtonClicked" text="Button" GridPane.rowIndex="3" />
                         <Button fx:id="D4" mnemonicParsing="false" onAction="#ButtonClicked" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                  <VBox alignment="TOP_CENTER">
-                     <children>
-                        <ImageView fitHeight="59.0" fitWidth="57.0">
-                           <image>
-                              <Image url="@img/seat.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </VBox>
-                  <VBox alignment="TOP_CENTER" GridPane.columnIndex="1">
-                     <children>
-                        <ImageView fitHeight="59.0" fitWidth="57.0">
-                           <image>
-                              <Image url="@img/seat.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </VBox>
-                  <VBox alignment="TOP_CENTER" GridPane.rowIndex="1">
-                     <children>
-                        <ImageView fitHeight="59.0" fitWidth="57.0">
-                           <image>
-                              <Image url="@img/seat.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </VBox>
-                  <VBox alignment="TOP_CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <children>
-                        <ImageView fitHeight="59.0" fitWidth="57.0">
-                           <image>
-                              <Image url="@img/seat.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </VBox>
-                  <VBox alignment="TOP_CENTER" GridPane.rowIndex="2">
-                     <children>
-                        <ImageView fitHeight="59.0" fitWidth="57.0">
-                           <image>
-                              <Image url="@img/seat.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </VBox>
-                  <VBox alignment="TOP_CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
-                     <children>
-                        <ImageView fitHeight="59.0" fitWidth="57.0">
-                           <image>
-                              <Image url="@img/seat.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </VBox>
-                  <VBox alignment="TOP_CENTER" GridPane.rowIndex="3">
-                     <children>
-                        <ImageView fitHeight="59.0" fitWidth="57.0">
-                           <image>
-                              <Image url="@img/seat.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </VBox>
-                  <VBox alignment="TOP_CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
-                     <children>
-                        <ImageView fitHeight="59.0" fitWidth="57.0">
-                           <image>
-                              <Image url="@img/seat.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </VBox>
                     </children>
                 </GridPane>
             </right>
