@@ -1,7 +1,6 @@
 package group16.smartflightcheckinkiosk.Controller;
 
 import group16.smartflightcheckinkiosk.Jumpto;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -16,7 +15,10 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
-
+/**
+ * @author Ziding Lin, Liya Zhong
+ * @version jdk-17
+ */
 public class FlightListController implements Initializable {
 
     @FXML
@@ -32,8 +34,15 @@ public class FlightListController implements Initializable {
     @FXML
     private Text Statusfield1, Statusfield2, Statusfield3, Statusfield4;
 
+    public String flightNum;
+    public int test=0;
+
+    /**
+     * back button event
+     * @throws Exception click no response
+     */
     @FXML
-    void gotoCheckFlight(ActionEvent event) throws Exception {
+    void gotoCheckFlight() throws Exception {
         Jumpto jumpto = new Jumpto();
         jumpto.set("CheckFlight.fxml", "Back-end System");
         Stage stage = new Stage();
@@ -44,7 +53,7 @@ public class FlightListController implements Initializable {
 
     @FXML
     public void initialize(URL arg0, ResourceBundle arg1) {
-        String flightNum = EnterFlightController.flight_num;
+        flightNum = EnterFlightController.flight_num;
         ArrayList<Text> namelist = new ArrayList<>();
         namelist.add(Namefield1);
         namelist.add(Namefield2);
@@ -85,6 +94,7 @@ public class FlightListController implements Initializable {
                     seatlist.get(i).setText(passenger[6]);
                     statuslist.get(i).setText("yes");
                     i++;
+                    test=1;
                 }
             }
             System.out.println("over");

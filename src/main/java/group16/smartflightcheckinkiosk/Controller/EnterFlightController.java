@@ -1,9 +1,7 @@
 package group16.smartflightcheckinkiosk.Controller;
 
 import group16.smartflightcheckinkiosk.Jumpto;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
@@ -12,21 +10,26 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-
+/**
+ * @author Ziding Lin, Liya Zhong
+ * @version jdk-17
+ */
 public class EnterFlightController {
     @FXML
     private VBox EnterFlight;
     @FXML
     private TextField FlightnumField;
-    @FXML
-    private Button b3;
-    @FXML
-    private Button b4;
 
+    public  String flightNum;
+    public  int test=0;
     public static String flight_num;
 
+    /**
+     * back button event
+     * @throws Exception click no response
+     */
     @FXML
-    void gotoStaffLogin(ActionEvent event)throws Exception{
+    void gotoStaffLogin()throws Exception{
         Jumpto jumpto = new Jumpto();
         jumpto.set("StaffLogin.fxml", "Login");
         Stage stage = new Stage();
@@ -34,9 +37,14 @@ public class EnterFlightController {
        stage_old.close();
        jumpto.start(stage);
     }
+
+    /**
+     * next button event
+     * @throws Exception click no response
+     */
     @FXML
-    void gotoCheckFlight(ActionEvent event) throws Exception {
-        String flightNum=FlightnumField.getText();
+    void gotoCheckFlight() throws Exception {
+        flightNum=FlightnumField.getText();
         flight_num=flightNum;
         //read passenger csv
         String csvFile = "src/main/resources/group16/smartflightcheckinkiosk/PassengerInfo.csv";
@@ -56,13 +64,13 @@ public class EnterFlightController {
                 }
             }
             if(flight[3].equals(flightNum)){
-                System.out.println("Flight is found");
                 Jumpto jumpto = new Jumpto();
                 jumpto.set("CheckFlight.fxml", "Check Flight");
                 Stage stage = new Stage();
                 Stage stage_old = (Stage) EnterFlight.getScene().getWindow();
                 stage_old.close();
                 jumpto.start(stage);
+                test=1;
             }
             else{
                 System.out.println("Input is wrong");
@@ -72,12 +80,7 @@ public class EnterFlightController {
         catch (IOException e) {
             e.printStackTrace();
         }
-//        Jumpto jumpto = new Jumpto();
-//        jumpto.set("CheckFlight.fxml", "Check Flight");
-//        Stage stage = new Stage();
-//        Stage stage_old = (Stage) EnterFlight.getScene().getWindow();
-//        stage_old.close();
-//        jumpto.start(stage);
+
     }
 
 }

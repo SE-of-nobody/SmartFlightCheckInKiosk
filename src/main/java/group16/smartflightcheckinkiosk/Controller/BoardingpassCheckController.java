@@ -14,6 +14,11 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+/**
+ * @author Ziding Lin, Ruoqi Zhang
+ * @version jdk-17
+ */
+
 public class BoardingpassCheckController implements Initializable {
     @FXML
     private Text Surname;
@@ -34,6 +39,16 @@ public class BoardingpassCheckController implements Initializable {
     private Button back;
     @FXML
     private Button next;
+
+    public int test=0;
+    public String name;
+
+
+    /**
+     * Next button event
+     * @throws Exception Click no response
+     */
+
     @FXML
     void onNextClick() throws Exception {
 
@@ -47,10 +62,15 @@ public class BoardingpassCheckController implements Initializable {
         jumpto.start(stage);
     }
 
+    /**
+     * initialize the information
+     * @param arg0 URL
+     * @param arg1 ResourceBundle
+     */
     public void initialize(URL arg0, ResourceBundle arg1){
         //                //transport the parameter
         OrderInfo orderInfo = (OrderInfo) StageManager.CONTROLLER.get("myLoginUserInfo");
-        String name = orderInfo.orders.get(orderInfo.orderIndex).getSurname();
+        name = orderInfo.orders.get(orderInfo.orderIndex).getSurname();
 //        //String name= SurnameController.global_name;
         //read passenger csv
         String csvFile = "src/main/resources/group16/smartflightcheckinkiosk/data.csv";
@@ -77,16 +97,18 @@ public class BoardingpassCheckController implements Initializable {
                 BookingNumber.setText(passenger[0]);
                 FlightNumber.setText(passenger[11]);
                 Timetable.setText(passenger[14]+" to "+passenger[15]);
+                test=1;
             }
         }
         catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 
-
-
+    /**
+     * Prev button event
+     * @throws Exception Click no response
+     */
 
     @FXML
     public void onPrevClick() throws Exception {

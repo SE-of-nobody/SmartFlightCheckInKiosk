@@ -1,25 +1,17 @@
-package test.group16.smartflightcheckinkiosk.Controller; 
-
-import org.junit.Test; 
-import org.junit.Before; 
-import org.junit.After; 
+package test.group16.smartflightcheckinkiosk.Controller;
+import group16.smartflightcheckinkiosk.Controller.BoardingpassCheckController;
+import org.junit.Assert;
+import org.junit.Test;
 
 /** 
 * BoardingpassCheckController Tester. 
 * 
-* @author <Authors name> 
-* @since <pre>5ÔÂ 15, 2022</pre> 
+* @author <Ziding Lin>
+* @since <pre>5ï¿½ï¿½ 29, 2022</pre> 
 * @version 1.0 
 */ 
 public class BoardingpassCheckControllerTest { 
 
-@Before
-public void before() throws Exception { 
-} 
-
-@After
-public void after() throws Exception { 
-} 
 
 /** 
 * 
@@ -27,8 +19,22 @@ public void after() throws Exception {
 * 
 */ 
 @Test
-public void testOnNextClick() throws Exception { 
-//TODO: Test goes here... 
+public void testOnNextClick() throws Exception {
+    BoardingpassCheckController a=new BoardingpassCheckController();
+    a.name="Rose";
+    Assert.assertEquals(0, a.test);
+} 
+
+/** 
+* 
+* Method: initialize(URL arg0, ResourceBundle arg1) 
+* 
+*/ 
+@Test
+public void testInitialize() throws Exception {
+    BoardingpassCheckController a=new BoardingpassCheckController();
+    a.name="JACK";
+    Assert.assertEquals(0, a.test);
 } 
 
 /** 
@@ -37,8 +43,10 @@ public void testOnNextClick() throws Exception {
 * 
 */ 
 @Test
-public void testOnPrevClick() throws Exception { 
-//TODO: Test goes here... 
+public void testOnPrevClick() throws Exception {
+    BoardingpassCheckController a=new BoardingpassCheckController();
+    a.name="JACK";
+    Assert.assertEquals(0, a.test);
 } 
 
 
