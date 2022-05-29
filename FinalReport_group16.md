@@ -195,10 +195,13 @@ after the meeting.
 ## 4.Analysis and Design
 ### 4.2 Design Principle
 1. Single Responsibility Principle (SRP)
+
    Each class in our system fulfills the single responsibility principle. Since we use JavaFX to design the system, our java classes are all distinguished by modules and services. GUI is divdided into two parts, Controller and FXML document. Each control class is only responsible for one action and each FXML is related to only one controller.
 2. Open-Closed Principle (OCP)
+
    Our software entity is open to extension and closed to modification, which means that a software entity should be changed by extension rather than by modifying existing code. The controller classes in our project conform to this principle because we just need to add the new extension to the original class without modifying it.
 3. Don't Repeat Yourself (DRY)
+
    To avoid duplication, we always create a separate class to implement a function used frequently, such as the Jumpto class which is used by all the GUI controller to jump to other GUI. So if there is any change to this function, just modify the Jumpto class, for example.
 ## 5.Implementation and Testing
 ### 5.1 Implementation
