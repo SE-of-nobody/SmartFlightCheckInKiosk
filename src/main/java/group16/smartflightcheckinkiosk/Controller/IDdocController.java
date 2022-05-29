@@ -6,6 +6,7 @@ import group16.smartflightcheckinkiosk.StageManager;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
@@ -17,7 +18,7 @@ public class IDdocController {
     private Label confirm4;
 
     @FXML
-    private TextField id_docField;
+    private CheckBox id_docField;
 
     @FXML
     private Button ok;
@@ -32,14 +33,13 @@ public class IDdocController {
 
     @FXML
     void ok(ActionEvent event) throws Exception{
-        String ID_doc = id_docField.getText();
+        Boolean ID_doc = id_docField.isSelected();
         System.out.println("ID Documnet: " + ID_doc);
         Jumpto jumpto = new Jumpto();
         Stage stage = new Stage();
         //登录失败
-        if((orderInfo.orderIndex = orderInfo.checkWithFile()) < 0){
+        if((orderInfo.orderIndex = orderInfo.checkWithFile()) < 0||ID_doc==false){
             System.out.println("登录失败");
-            id_docField.setText("登录失败");
             jumpto.set("Warning.fxml", "WARNING");
             jumpto.start(stage);
             return;
