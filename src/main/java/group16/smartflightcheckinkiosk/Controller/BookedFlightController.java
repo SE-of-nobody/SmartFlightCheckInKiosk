@@ -14,7 +14,7 @@ import group16.smartflightcheckinkiosk.StageManager;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
-import service.Order;
+import group16.smartflightcheckinkiosk.Passager.service.Order;
 
 public class BookedFlightController implements Initializable{
     public static String[] userInfo;

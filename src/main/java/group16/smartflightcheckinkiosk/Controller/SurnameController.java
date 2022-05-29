@@ -52,6 +52,8 @@ public class SurnameController {
             System.out.println("登录失败");
             id_numField.setText("");
             jumpto.set("Warning.fxml", "WARNING");
+            Stage stage = new Stage();
+            jumpto.start(stage);
             return;
         }
 

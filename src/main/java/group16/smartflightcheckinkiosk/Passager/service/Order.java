@@ -1,4 +1,4 @@
-package service;
+package group16.smartflightcheckinkiosk.Passager.service;
 
 import java.util.Scanner;
 import java.lang.Integer;

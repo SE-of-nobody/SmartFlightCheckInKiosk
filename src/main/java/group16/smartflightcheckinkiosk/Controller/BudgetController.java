@@ -13,7 +13,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-import service.Order;
+import group16.smartflightcheckinkiosk.Passager.service.Order;
 
 import java.net.URL;
 import java.util.List;
