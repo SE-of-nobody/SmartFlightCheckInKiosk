@@ -18,7 +18,7 @@ import java.util.ResourceBundle;
 
 /**
  * @author Ziding Lin, Ruoqi Zhang
- * @version jdk-17
+ * @version jdk15.0.2
  */
 public class BoardingpassCheckController implements Initializable {
     @FXML
@@ -67,7 +67,7 @@ public class BoardingpassCheckController implements Initializable {
      * @param arg1 ResourceBundle
      */
      public void initialize(URL arg0, ResourceBundle arg1){
-        //                //transport the parameter
+        //transport the parameter
         OrderInfo orderInfo = (OrderInfo) StageManager.CONTROLLER.get("myLoginUserInfo");
         if (orderInfo == null) {
             System.out.println("非法登录!!!");
@@ -78,7 +78,6 @@ public class BoardingpassCheckController implements Initializable {
         Order order = orderInfo.orders.get(orderInfo.orderIndex);
 
         String name = orderInfo.orders.get(orderInfo.orderIndex).getSurname();
-//        //String name= SurnameController.global_name;
         //read passenger csv
         String csvFile = "src/main/resources/group16/smartflightcheckinkiosk/data.csv";
         String line = "";

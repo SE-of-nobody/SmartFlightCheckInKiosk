@@ -14,7 +14,7 @@ import java.util.ResourceBundle;
 
 /**
  * @author Ziding Lin, Ruoqi Zhang
- * @version jdk-17
+ * @version jdk15.0.2
  */
 
 public class BoardingpassTicketController implements Initializable {

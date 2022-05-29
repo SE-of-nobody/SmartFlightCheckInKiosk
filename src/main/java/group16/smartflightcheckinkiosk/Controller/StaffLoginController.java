@@ -20,6 +20,9 @@ public class StaffLoginController {
     private VBox StaffLogin;
     @FXML
     private TextField staffnumField;
+    @FXML
+    private TextField passwordfield;
+
     public String staff_num;
     public int test=0;
 
@@ -43,25 +46,26 @@ public class StaffLoginController {
      */
     @FXML
     public void gotoEnterFlight() throws Exception {
-        staff_num= staffnumField.getText();
+        staff_num = staffnumField.getText();
+        String password = passwordfield.getText();
         //read the csv
         String csvFile = "src/main/resources/group16/smartflightcheckinkiosk/Staff.csv";
         String line = "";
         String cvsSplitBy = ",";
-        String[] staff= new String[2];
-
+        String[] staff = new String[2];
+        //match the information
         try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
 
             while ((line = br.readLine()) != null) {
                 // use comma as separator
                 staff = line.split(cvsSplitBy);
                 // check the StaffNumber and Password
-                if (staff[0].equals(staff_num)) {
+                if (staff[0].equals(staff_num)&&staff[1].equals(password)) {
                     break;
                 }
             }
-            ////input right information
-            if(staff[0].equals(staff_num)){
+            //input right information
+            if (staff[0].equals(staff_num) && staff[1].equals(password)) {
                 Jumpto jumpto = new Jumpto();
                 jumpto.set("EnterFlight.fxml", "Back-end System");
                 Stage stage = new Stage();
@@ -71,20 +75,20 @@ public class StaffLoginController {
                 System.out.println("Check in");
                 test=1;
             }
-            //input wrong information
-            else{
-                System.out.println("Input is wrong");
-                staffnumField.setText("");
-                Jumpto jumpto = new Jumpto();
-                jumpto.set("Warning.fxml", "WARNING");
-                Stage stage = new Stage();
-                jumpto.start(stage);
-                return;
+                //input wrong information
+                else {
+                    System.out.println("Input is wrong");
+                    staffnumField.setText("");
+                    passwordfield.setText("");
+                    Jumpto jumpto = new Jumpto();
+                    jumpto.set("Warning.fxml", "WARNING");
+                    Stage stage = new Stage();
+                    jumpto.start(stage);
+                }
             }
-        }
-        catch (IOException e) {
-            e.printStackTrace();
-        }
+        catch(IOException e){
+                e.printStackTrace();
+            }
 
     }
 

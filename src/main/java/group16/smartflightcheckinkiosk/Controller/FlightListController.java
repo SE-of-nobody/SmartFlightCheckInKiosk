@@ -17,7 +17,7 @@ import java.util.ResourceBundle;
 
 /**
  * @author Ziding Lin, Liya Zhong
- * @version jdk-17
+ * @version jdk15.0.2
  */
 public class FlightListController implements Initializable {
 

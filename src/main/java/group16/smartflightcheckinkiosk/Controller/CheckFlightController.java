@@ -1,5 +1,4 @@
 package group16.smartflightcheckinkiosk.Controller;
-
 import group16.smartflightcheckinkiosk.Jumpto;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -15,7 +14,7 @@ import java.util.ResourceBundle;
 
 /**
  * @author Ziding Lin, Liya Zhong
- * @version jdk-17
+ * @version jdk15.0.2
  */
 
 public class CheckFlightController implements Initializable {
@@ -30,8 +29,7 @@ public class CheckFlightController implements Initializable {
     private Text Startpoint;
     @FXML
     private Text Destination;
-    @FXML
-    private Text Date;
+
     public String flightNum;
     public int test=0;
 
@@ -54,14 +52,14 @@ public class CheckFlightController implements Initializable {
      * @param arg0 URL
      * @param arg1 ResourceBundle
      */
-    public void initialize(URL arg0, ResourceBundle arg1){
-        flightNum= EnterFlightController.flight_num;
+    public void initialize(URL arg0, ResourceBundle arg1) {
+        flightNum = EnterFlightController.flight_num;
 
         //read passenger csv
         String csvFile = "src/main/resources/group16/smartflightcheckinkiosk/data.csv";
         String line = "";
         String cvsSplitBy = ",";
-        String[] passenger= new String[16];
+        String[] passenger = new String[16];
         //match the information
         try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
 
@@ -74,41 +72,16 @@ public class CheckFlightController implements Initializable {
                     break;
                 }
             }
-            if(passenger[11].equals(flightNum)){
+            if (passenger[11].equals(flightNum)) {
                 FlightNum.setText(flightNum);
-                Time.setText(passenger[14]+" to "+passenger[15]);
+                Time.setText(passenger[14] + " to " + passenger[15]);
                 Startpoint.setText(passenger[12]);
                 Destination.setText(passenger[13]);
-                test=1;
+                test = 1;
+            } else {
+                System.out.println("not found");
             }
-            else{System.out.println("not found");}
-        }
-        catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        //read passenger csv
-        String csvFile2 = "src/main/resources/group16/smartflightcheckinkiosk/PassengerInfo.csv";
-        String[] flight= new String[6];
-        String line2 = "";
-        String cvsSplitBy2 = ",";
-        //match the information
-        try (BufferedReader br2 = new BufferedReader(new FileReader(csvFile2))) {
-
-            while ((line2 = br2.readLine()) != null) {
-
-                // use comma as separator
-                flight = line2.split(cvsSplitBy2);
-                // check the name
-                if (flight[3].equals(flightNum)) {
-                    break;
-                }
-            }
-            if(flight[3].equals(flightNum)){
-              Date.setText(flight[5]);
-            }
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }

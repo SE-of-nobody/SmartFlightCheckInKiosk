@@ -13,7 +13,7 @@ import java.io.IOException;
 
 /**
  * @author Ziding Lin, Ruoqi Zhang
- * @version jdk-17
+ * @version jdk15.0.2
  */
 public class BoardingpassController {
     @FXML

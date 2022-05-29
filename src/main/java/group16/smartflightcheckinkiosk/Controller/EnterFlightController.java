@@ -5,8 +5,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import group16.smartflightcheckinkiosk.StageManager;
-import javafx.event.ActionEvent;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -14,7 +12,7 @@ import java.io.IOException;
 
 /**
  * @author Ziding Lin, Liya Zhong
- * @version jdk-17
+ * @version jdk15.0.2
  */
 public class EnterFlightController {
     @FXML
@@ -75,7 +73,7 @@ public class EnterFlightController {
                 jumpto.start(stage);
                 test=1;
             }
-            //input invalid flight number
+            //input invalid flight number then show a warning window
             else{
                 System.out.println("This query is invalid.");
                 FlightnumField.setText("");
