@@ -5,6 +5,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import group16.smartflightcheckinkiosk.StageManager;
+import javafx.event.ActionEvent;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -63,6 +65,7 @@ public class EnterFlightController {
                     break;
                 }
             }
+            //input valid flight number
             if(flight[3].equals(flightNum)){
                 Jumpto jumpto = new Jumpto();
                 jumpto.set("CheckFlight.fxml", "Check Flight");
@@ -72,9 +75,15 @@ public class EnterFlightController {
                 jumpto.start(stage);
                 test=1;
             }
+            //input invalid flight number then show a warning window
             else{
-                System.out.println("Input is wrong");
+                System.out.println("This query is invalid.");
                 FlightnumField.setText("");
+                Jumpto jumpto = new Jumpto();
+                jumpto.set("Warning.fxml", "WARNING");
+                Stage stage = new Stage();
+                jumpto.start(stage);
+                return;
             }
         }
         catch (IOException e) {

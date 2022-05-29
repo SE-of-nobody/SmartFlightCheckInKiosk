@@ -60,6 +60,7 @@ public class StaffLoginController {
                     break;
                 }
             }
+            ////input right information
             if(staff[0].equals(staff_num)){
                 Jumpto jumpto = new Jumpto();
                 jumpto.set("EnterFlight.fxml", "Back-end System");
@@ -70,9 +71,15 @@ public class StaffLoginController {
                 System.out.println("Check in");
                 test=1;
             }
+            //input wrong information
             else{
                 System.out.println("Input is wrong");
                 staffnumField.setText("");
+                Jumpto jumpto = new Jumpto();
+                jumpto.set("Warning.fxml", "WARNING");
+                Stage stage = new Stage();
+                jumpto.start(stage);
+                return;
             }
         }
         catch (IOException e) {
