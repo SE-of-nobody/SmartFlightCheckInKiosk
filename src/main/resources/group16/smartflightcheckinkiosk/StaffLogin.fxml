@@ -7,11 +7,11 @@
 <?import javafx.scene.image.*?>
 <?import java.lang.*?>
 
-<VBox fx:id="StaffLogin" prefHeight="235.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group16.smartflightcheckinkiosk.Controller.StaffLoginController">
+<VBox fx:id="StaffLogin" prefHeight="300.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group16.smartflightcheckinkiosk.Controller.StaffLoginController">
     <children>
-        <AnchorPane prefHeight="238.0" prefWidth="760.0">
+        <AnchorPane prefHeight="310.0" prefWidth="783.0">
            <children>
-              <AnchorPane layoutX="357.0" prefHeight="48.0" prefWidth="404.0" style="-fx-background-color: #87cefa;">
+              <AnchorPane layoutX="350.0" prefHeight="48.0" prefWidth="431.0" style="-fx-background-color: #87cefa;">
                  <children>
                     <ImageView fitHeight="33.0" fitWidth="46.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
                        <image>
@@ -25,24 +25,42 @@
                     </Label>
                  </children>
               </AnchorPane>
-              <ImageView fitHeight="250.0" fitWidth="357.0" pickOnBounds="true" preserveRatio="true">
+              <ImageView fitHeight="300.0" fitWidth="364.0" pickOnBounds="true" preserveRatio="true">
                  <image>
-                    <Image url="@img/login_plot.jpeg" />
+                    <Image url="@img/staff01.jpg" />
                  </image>
               </ImageView>
-              <Label layoutX="373.0" layoutY="63.0" prefHeight="32.0" prefWidth="388.0" text="Please enter your staff number:">
+              <Label layoutX="365.0" layoutY="54.0" prefHeight="32.0" prefWidth="388.0" text="Please enter your staff ID and password:">
                <font>
                   <Font size="15.0" />
                </font></Label>
-              <TextField fx:id="staffnumField" layoutX="432.0" layoutY="118.0" prefHeight="33.0" prefWidth="254.0" />
-              <Button fx:id="b1" layoutX="452.0" layoutY="177.0" mnemonicParsing="false" onAction="#gotoChooseLogin" text="Go back">
+              <TextField fx:id="staffnumField" layoutX="470.0" layoutY="120.0" prefHeight="30.0" prefWidth="222.0">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+              <Button fx:id="b1" layoutX="450.0" layoutY="250.0" mnemonicParsing="false" onAction="#gotoChooseLogin" text="Go back">
                <font>
                   <Font size="14.0" />
                </font></Button>
-              <Button fx:id="b2" layoutX="584.0" layoutY="177.0" mnemonicParsing="false" onAction="#gotoEnterFlight" text="  Next  ">
+              <Button fx:id="b2" layoutX="581.0" layoutY="250.0" mnemonicParsing="false" onAction="#gotoEnterFlight" text="  Next  ">
                <font>
                   <Font size="14.0" />
                </font></Button>
+            <TextField layoutX="470.0" layoutY="181.0" prefHeight="29.0" prefWidth="222.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Text layoutX="379.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Staff ID:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="379.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
            </children>
         </AnchorPane>
      </children>
