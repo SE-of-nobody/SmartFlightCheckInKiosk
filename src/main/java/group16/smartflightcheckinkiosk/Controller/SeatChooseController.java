@@ -141,6 +141,7 @@ public class SeatChooseController implements Initializable {
 
 @FXML
 public void ButtonClicked(ActionEvent event){
+        System.out.println("213213");
     SeatChooseController(event);
 }
 
