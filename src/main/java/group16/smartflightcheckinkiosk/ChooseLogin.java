@@ -21,7 +21,7 @@ public class ChooseLogin extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("ChooseLogin.fxml"));
-        primaryStage.setScene(new Scene(root,400,400));
+        primaryStage.setScene(new Scene(root,600,400));
         primaryStage.setTitle("Log In");
 
         primaryStage.show();

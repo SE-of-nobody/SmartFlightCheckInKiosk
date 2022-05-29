@@ -25,7 +25,7 @@
                 <Pane prefHeight="150.0" prefWidth="400.0">
                     <AnchorPane layoutY="0.0" prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: #87cefa;">
                         <children>
-                            <Label fx:id="confirm4" layoutX="51.0" layoutY="13.0" prefHeight="22.0" prefWidth="195.0" text="Boaringpass-ticket">
+                            <Label fx:id="confirm4" layoutX="51.0" layoutY="13.0" prefHeight="22.0" prefWidth="195.0" text="Ticket for Check-in Luggage">
                                 <font>
                                     <Font name="Myanmar MN" size="13.0" />
                                 </font>
@@ -63,7 +63,7 @@
         </FlowPane>
         <ImageView fitHeight="150.0" fitWidth="170.0" layoutX="230.0" layoutY="50.0">
             <image>
-                <Image url="@img/tuoyun.png" />
+                <Image url="@img/boardingpass-checkin.png" />
             </image>
         </ImageView>
     </children>
