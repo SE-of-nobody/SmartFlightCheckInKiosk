@@ -51,9 +51,6 @@ public class FlightListController implements Initializable {
         jumpto.start(stage);
     }
 
-    void check(){
-
-    }
 
     @FXML
     public void initialize(URL arg0, ResourceBundle arg1) {
