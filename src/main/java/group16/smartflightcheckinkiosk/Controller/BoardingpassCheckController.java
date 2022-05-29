@@ -11,13 +11,9 @@ import javafx.stage.Stage;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.net.URL;
 import java.util.ResourceBundle;
-
-/**
- * @author Ziding Lin, Ruoqi Zhang
- * @version jdk-17
- */
 
 public class BoardingpassCheckController implements Initializable {
     @FXML
@@ -39,16 +35,7 @@ public class BoardingpassCheckController implements Initializable {
     private Button back;
     @FXML
     private Button next;
-
-    public int test=0;
-    public String name;
-
-
-    /**
-     * Next button event
-     * @throws Exception Click no response
-     */
-
+    private OrderInfo orderInfo;
     @FXML
     void onNextClick() throws Exception {
 
@@ -62,15 +49,18 @@ public class BoardingpassCheckController implements Initializable {
         jumpto.start(stage);
     }
 
-    /**
-     * initialize the information
-     * @param arg0 URL
-     * @param arg1 ResourceBundle
-     */
     public void initialize(URL arg0, ResourceBundle arg1){
         //                //transport the parameter
         OrderInfo orderInfo = (OrderInfo) StageManager.CONTROLLER.get("myLoginUserInfo");
-        name = orderInfo.orders.get(orderInfo.orderIndex).getSurname();
+        if (orderInfo == null) {
+            System.out.println("非法登录!!!");
+            return;
+        }
+        this.orderInfo = orderInfo;
+        //填入用户信息
+        service.Order order = orderInfo.orders.get(orderInfo.orderIndex);
+
+        String name = orderInfo.orders.get(orderInfo.orderIndex).getSurname();
 //        //String name= SurnameController.global_name;
         //read passenger csv
         String csvFile = "src/main/resources/group16/smartflightcheckinkiosk/data.csv";
@@ -97,18 +87,31 @@ public class BoardingpassCheckController implements Initializable {
                 BookingNumber.setText(passenger[0]);
                 FlightNumber.setText(passenger[11]);
                 Timetable.setText(passenger[14]+" to "+passenger[15]);
-                test=1;
             }
         }
         catch (IOException e) {
             e.printStackTrace();
         }
+    //检测有无选座，有无支付
+        System.out.println(order.getSeat()+", your seat");
+        if(order.getSeat().equals("-")){
+            next.setDisable(true);
+            seat.setText("please shoose seat first");
+            System.out.println(order.getSeat()+", choose seat first");
+        }
+        double total_pay1=order.getMealFee() + order.getSeatFee();
+        BigDecimal b=new BigDecimal(total_pay1);
+        double total_pay=b.setScale(2,BigDecimal.ROUND_HALF_UP).doubleValue();
+        System.out.println(total_pay);
+        if((order.getPayed() != 1)&&total_pay!=0){
+            next.setDisable(true);next.setPrefWidth(150);
+            next.setText("please pay first");
+            System.out.println("pay first");
+        }
     }
 
-    /**
-     * Prev button event
-     * @throws Exception Click no response
-     */
+
+
 
     @FXML
     public void onPrevClick() throws Exception {
