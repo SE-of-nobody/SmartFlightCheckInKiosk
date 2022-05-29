@@ -38,7 +38,7 @@
                   <Font size="14.0" />
                </font>
             </Text>
-            <Text fx:id="Gender1" layoutX="175.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " wrappingWidth="65.6298828125">
+            <Text fx:id="IDnumber1" layoutX="175.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " wrappingWidth="65.6298828125">
                <font>
                   <Font size="14.0" />
                </font>
@@ -64,17 +64,17 @@
                   <Font size="14.0" />
                </font>
             </Text>
-            <Text fx:id="Gender2" layoutX="175.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " wrappingWidth="111.46875">
+            <Text fx:id="IDnumber2" layoutX="175.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " wrappingWidth="111.46875">
                <font>
                   <Font size="14.0" />
                </font>
             </Text>
-            <Text fx:id="Gender3" layoutX="175.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " wrappingWidth="160.48046875">
+            <Text fx:id="IDnumber3" layoutX="175.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " wrappingWidth="160.48046875">
                <font>
                   <Font size="14.0" />
                </font>
             </Text>
-            <Text fx:id="Gender4" layoutX="175.0" layoutY="377.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " wrappingWidth="160.48046875">
+            <Text fx:id="IDnumber4" layoutX="175.0" layoutY="377.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " wrappingWidth="160.48046875">
                <font>
                   <Font size="14.0" />
                </font>
@@ -84,7 +84,7 @@
                   <Font size="14.0" />
                </font>
             </Text>
-            <Text layoutX="175.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender:">
+            <Text layoutX="175.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IDnumber:">
                <font>
                   <Font size="14.0" />
                </font>
