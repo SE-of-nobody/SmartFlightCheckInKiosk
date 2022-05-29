@@ -26,9 +26,9 @@
                         <Font size="20.0" />
                      </font>
                   </Text>
-                  <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="23.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="34.0" fitWidth="28.0" layoutX="14.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@img/plane_logo.png" />
+                        <Image url="@img/staff00.png" />
                      </image>
                   </ImageView>
                </children>
@@ -68,7 +68,7 @@
          </Button>
          <Label alignment="TOP_LEFT" contentDisplay="TOP" text="Please confirm the flight you are looking for!">
             <GridPane.margin>
-               <Insets left="50.0" />
+               <Insets left="120.0" />
             </GridPane.margin>
                <font>
                   <Font size="16.0" />
@@ -154,6 +154,14 @@
                   <Font size="14.0" />
                </font>
             </Text>
+            <ImageView fitHeight="56.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/ticket.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="50.0" />
+               </GridPane.margin>
+            </ImageView>
       </children>
    </GridPane>
    </children>

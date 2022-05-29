@@ -75,7 +75,7 @@ public class EnterFlightController {
                 jumpto.start(stage);
                 test=1;
             }
-            //input invalid flight number then show a warning window
+            //input invalid flight number
             else{
                 System.out.println("This query is invalid.");
                 FlightnumField.setText("");
