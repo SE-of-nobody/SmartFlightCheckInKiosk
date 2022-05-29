@@ -2,7 +2,7 @@ package group16.smartflightcheckinkiosk.Passager.service;
 
 import group16.smartflightcheckinkiosk.Passager.util.PlaneUtil;
 import group16.smartflightcheckinkiosk.Passager.util.VarUtil;
-import service.Order;
+import group16.smartflightcheckinkiosk.Passager.service.Order;
 
 import java.util.Arrays;
 import java.util.List;

@@ -1,6 +1,6 @@
 package group16.smartflightcheckinkiosk.Passager.util;
 
-import service.Order;
+import group16.smartflightcheckinkiosk.Passager.service.Order;
 
 import java.io.*;
 import java.nio.charset.Charset;

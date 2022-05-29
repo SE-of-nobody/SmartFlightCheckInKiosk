@@ -11,6 +11,10 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
+/**
+ * @author Ziding Lin, Ruoqi Zhang
+ * @version jdk-17
+ */
 public class BoardingpassController {
     @FXML
     private Label Passenger;
@@ -23,13 +27,13 @@ public class BoardingpassController {
 
     public static int ticket_index=1;
     public static int tag_index=1;
-//    @FXML
-//    protected void onHelpClick() {
-//        System.out.println("you choose help");
-//        Stage stage = (Stage) label_help.getScene().getWindow();
-//        stage.close();
-//    }
+    public int test=0;
+    public String name;
 
+    /**
+     * Help button event
+     * @throws Exception Click no response
+     */
     @FXML
     void onHelpClick() throws Exception {
         System.out.println("you choose prev");
@@ -41,16 +45,20 @@ public class BoardingpassController {
         jumpto.start(stage);
     }
 
+    /**
+     * OK button event
+     * @throws Exception click no response
+     */
     @FXML
     void onOKClick() throws Exception{
         Jumpto jumpto1 = new Jumpto();
-        jumpto1.set("boardingpass-boardingpass.fxml", "Booked Flight");
+        jumpto1.set("boardingpass-boardingpass.fxml", "Boarding pass");
         Stage stage1 = new Stage();
         jumpto1.start(stage1);
 
         //transport the parameter
         OrderInfo orderInfo = (OrderInfo) StageManager.CONTROLLER.get("myLoginUserInfo");
-        String name = orderInfo.orders.get(orderInfo.orderIndex).getSurname();
+        name = orderInfo.orders.get(orderInfo.orderIndex).getSurname();
         //read flight csv
         String csvFile = "src/main/resources/group16/smartflightcheckinkiosk/Luggage.csv";
         String line = "";
@@ -80,17 +88,18 @@ public class BoardingpassController {
 
         for(int i=0;i<total_tag_luggage;i++) {
             Jumpto jumpto2 = new Jumpto();
-            jumpto2.set("boardingpass-tag.fxml", "Booked Flight");
+            jumpto2.set("boardingpass-tag.fxml", "Carry-on Luggage");
             Stage stage2 = new Stage();
             jumpto2.start(stage2);
             tag_index++;
         }
         for(int j=0;j<total_ticket_luggage;j++) {
             Jumpto jumpto3 = new Jumpto();
-            jumpto3.set("boardingpass-ticket.fxml", "Booked Flight");
+            jumpto3.set("boardingpass-ticket.fxml", "Check-in Luggage");
             Stage stage3 = new Stage();
             jumpto3.start(stage3);
             ticket_index++;
+            test=1;
         }
         System.out.println("ci:"+ticket_index+total_ticket_luggage+"co:"+tag_index+total_tag_luggage);
         Stage stage4 = (Stage) label_ok.getScene().getWindow();

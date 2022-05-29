@@ -11,6 +11,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import group16.smartflightcheckinkiosk.Passager.service.Order;
 
 import java.util.List;
 
@@ -51,7 +52,7 @@ public class BooknumController {
         }
 
 
-        List<service.Order> orders = PlaneUtil.getOrdersFromCsv("src/main/resources/group16/smartflightcheckinkiosk/data.csv", "UTF-8");
+        List<Order> orders = PlaneUtil.getOrdersFromCsv("src/main/resources/group16/smartflightcheckinkiosk/data.csv", "UTF-8");
 
         jumpto.set("MainMenu.fxml", "Hello");
         Stage stage = new Stage();

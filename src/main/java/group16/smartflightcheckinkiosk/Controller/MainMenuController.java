@@ -61,7 +61,7 @@ public class MainMenuController  implements Initializable{
     @FXML
     void gotoBoardingpassCheck(ActionEvent event) throws Exception {
         Jumpto jumpto = new Jumpto();
-        jumpto.set("boardingpass-check.fxml", "boardingpass1");
+        jumpto.set("boardingpass-check.fxml", "boardingpass-check");
         Stage stage = new Stage();
         jumpto.start(stage);
     }

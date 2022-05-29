@@ -1,6 +1,7 @@
 package group16.smartflightcheckinkiosk.Controller;
 import group16.smartflightcheckinkiosk.Jumpto;
 import group16.smartflightcheckinkiosk.Passager.service.OrderInfo;
+import group16.smartflightcheckinkiosk.Passager.service.Order;
 import group16.smartflightcheckinkiosk.StageManager;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -11,9 +12,14 @@ import javafx.stage.Stage;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+/**
+ * @author Ziding Lin, Ruoqi Zhang
+ * @version jdk-17
+ */
 public class BoardingpassCheckController implements Initializable {
     @FXML
     private Text Surname;
@@ -34,12 +40,20 @@ public class BoardingpassCheckController implements Initializable {
     private Button back;
     @FXML
     private Button next;
+    private OrderInfo orderInfo;
+    public int test=0;
+    public String name;
+
+    /**
+     * next button event
+     * @throws Exception
+     */
     @FXML
     void onNextClick() throws Exception {
 
         System.out.println("next button pressed");
         Jumpto jumpto = new Jumpto();
-        jumpto.set("boardingpass.fxml", "boaringpass-2");
+        jumpto.set("boardingpass.fxml", "boaringpass-notification");
         Stage stage = new Stage();
         jumpto.start(stage);
         Stage stage_old = (Stage)next.getScene().getWindow();
@@ -47,9 +61,22 @@ public class BoardingpassCheckController implements Initializable {
         jumpto.start(stage);
     }
 
-    public void initialize(URL arg0, ResourceBundle arg1){
+    /**
+     * initialize the information
+     * @param arg0 URL
+     * @param arg1 ResourceBundle
+     */
+     public void initialize(URL arg0, ResourceBundle arg1){
         //                //transport the parameter
         OrderInfo orderInfo = (OrderInfo) StageManager.CONTROLLER.get("myLoginUserInfo");
+        if (orderInfo == null) {
+            System.out.println("非法登录!!!");
+            return;
+        }
+        this.orderInfo = orderInfo;
+        //填入用户信息
+        Order order = orderInfo.orders.get(orderInfo.orderIndex);
+
         String name = orderInfo.orders.get(orderInfo.orderIndex).getSurname();
 //        //String name= SurnameController.global_name;
         //read passenger csv
@@ -82,12 +109,29 @@ public class BoardingpassCheckController implements Initializable {
         catch (IOException e) {
             e.printStackTrace();
         }
-
+    //检测有无选座，有无支付
+        System.out.println(order.getSeat()+", your seat");
+        if(order.getSeat().equals("-")){
+            next.setDisable(true);
+            seat.setText("please shoose seat first");
+            System.out.println(order.getSeat()+", choose seat first");
+        }
+        double total_pay1=order.getMealFee() + order.getSeatFee();
+        BigDecimal b=new BigDecimal(total_pay1);
+        double total_pay=b.setScale(2,BigDecimal.ROUND_HALF_UP).doubleValue();
+        System.out.println(total_pay);
+        if((order.getPayed() != 1)&&total_pay!=0){
+            next.setDisable(true);next.setPrefWidth(150);
+            next.setText("please pay first");
+            System.out.println("pay first");
+        }
     }
 
 
-
-
+    /**
+     * prev button event
+     * @throws Exception click no response
+     */
     @FXML
     public void onPrevClick() throws Exception {
         Jumpto jumpto = new Jumpto();

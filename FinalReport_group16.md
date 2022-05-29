@@ -30,7 +30,7 @@ Group 16
 | Ruibo Gang   | 2019213129 | 190897756 |
 | Zhishang Yu  | 2018212708 | 190015671 |
 | Ziding Lin   | 2019213116 | 190898421 |
-| 单元格          |    单元格     |    单元格    |
+| Liya Zhong   | 2019213243 | 190900470 |
 </div>
 
 ## 1.Introduction
@@ -195,6 +195,68 @@ after the meeting.
 ## 4.Analysis and Design
 
 ## 5.Implementation and Testing
+### 5.1 Implementation
+#### 5.1.1 Implementation Strategy
+We have divided the back-end code into two parts: passenger and staff, which will be introduced to you in turn below. At the beginning of the code, we unified the variable name and function name in the code.  
+We use object-oriented programming (Java language), which includes class definition and methods’ definition.  
+We use different kinds of mapping, such as association (including one-to-one and one-to-many) and  inheritance.  
+
+#### 5.1.2 Iteration Plan
+##### Iteration 1:  
+In this version, we implemented the first version of the back-end code. In this version of the back-end code, most functions can be realized, including customer login, meal selection, seat selection, credit card verification and settlement, etc.  
+However, in this version, we use the database to complete the interactive transfer of various data and the storage of user data. The existence of database makes the back-end code of the whole program become miscellaneous and cumbersome, which is not suitable for the combination of back-end and front-end. At the same time, it does not meet the requirements of our course.  
+Therefore, we abandoned this version of back-end design in subsequent iterations and adopted better back-end code.  
+
+##### Iteration 2:  
+In this version, we complete the GUI design of the front end. We designed the GUI according to the functions implemented by the back-end code in the first iteration. At this time, the connection jump problem of the front-end GUI has been solved. And try to connect and merge the back-end and front-end code.  
+During the connection, we found some problems with the back-end code, such as the monotonous login mode and the transmission of user data with the front-end, such as selecting meals and seats. We have summarized many problems and put forward improvement measures for these problems.  
+
+##### Iteration 3:  
+In this version, we follow up the back-end code to make the back-end code simple and easy to call. We have rewritten the back-end code, discarding most of the code in the first and second iterations and the way of data transmission. In the new back-end code, we have implemented a variety of login methods for users, including logging in through booking number; Log in through surname and ID number; And login through the ID document. At the same time, we also realize the function of user's personal information query. After the user selects the meal and seat, the data will be returned to the CSV file for modification. Users can also query through the front end.  
+For the front-end part, we have improved the GUI style and basically solved the connection problem between GUIs. At the same time, we added the code of the controller part to facilitate the integration of the back end and the addition of functions in the next iteration.  
+
+##### Iteration 4:  
+In this version, we have added some new user data, including the arrival time of the flight, the user's round-trip City, etc. These data can be displayed through the information query function, and the user can directly see these data, so that they can verify their own information. At the same time, we have also added the bill function. Users can view their seats, meals and other information on the bill.  
+We also improved the settlement interface. In the settlement interface, users can see the types and prices of meals and seats they have selected. The program will provide a credit card input box for the user. The user only needs to input his credit card number to complete the payment. Of course, if the card number is entered incorrectly or the balance in the card is insufficient, an error will be reported.   
+In the GUI interface, we added a error prompt. For example, when a user logs in, if he enters the wrong booking number, an error prompt window will pop up. At this time, the user needs to re-enter. We also beautify the entire operation interface to make it look more concise and beautiful.  
+
+##### Iteration 5:
+In this version, we have improved some code and tested it to improve the jump and display between pages. We also completed the testing and adjustment of the whole system.   
+
+### 5.2 Testing
+#### 5.2.1 Test Strategy
+Our strategy is to divide the code into front-end and back-end parts, which are completed by 4 students and 2 students respectively.Our aim is to verify the results from the implementation stage by testing each software build. We test the software in both component level and integration level.   
+At the beginning, we simulated the software usage scenarios and designed many different schemes and corresponding functional programs,including valid user inputs and invalid user inputs.   
+Second, we identify and structure test procedures. We try to reuse existing test procedures and create generic test procedures. First, we change register part to register a new account. After that we this account to we check login, including correct and incorrect input check. Then we go to the home screen to check different sections (which is mapping to different functions).   
+Finally, we find defects for the system.   
+
+#### 5.2.2 Test techniques
+We use black boxes test to test the software requirements and use white box test to test the internal program logic.
+##### Black-box test:
+We use partition test, scenario-based testing and regression testing to test the functional requirements for
+the whole system. Then whole test process will be put in Appendix D. Therefore, we only put an example
+here.</br>
+##### White-box test:
+We use white-box test to test all statements and conditions. Here is one of the examples of our white-box test.   
+Normal user login test: We use white-box test technology to test all the paths.   
+
+#### 5.2.3 The Using of TDD
+We use Test Driven Development to develop the entity and control part of our system. We write tests prior
+to write the production code. Then we write codes, execute the test, make change of the codes and execute
+the test again until pass all the tests.  
+Here are examples about our code passing the test.  
+<div style="text-align: center;">
+
+![img.png](ReportImg/test_false.png)  
+example of false input
+</div>
+
+<div style="text-align: center;">
+
+![img.png](ReportImg/test_true.png)  
+example of true input
+</div>
+
 ## 6.Appendix
 ### Appendix-1 References
 [1] [Github](https://github.com/SE-of-nobody/SmartFlightCheckInKiosk)  
