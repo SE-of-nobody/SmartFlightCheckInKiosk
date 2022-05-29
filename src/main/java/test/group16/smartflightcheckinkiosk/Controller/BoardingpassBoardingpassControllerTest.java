@@ -1,25 +1,18 @@
-package test.group16.smartflightcheckinkiosk.Controller; 
+package test.group16.smartflightcheckinkiosk.Controller;
 
-import org.junit.Test; 
-import org.junit.Before; 
-import org.junit.After; 
+import group16.smartflightcheckinkiosk.Controller.BoardingpassBoardingpassController;
+import org.junit.Assert;
+import org.junit.Test;
+
 
 /** 
 * BoardingpassBoardingpassController Tester. 
 * 
-* @author <Authors name> 
-* @since <pre>5ÔÂ 15, 2022</pre> 
+* @author <Ziding Lin>
+* @since <pre>5ï¿½ï¿½ 15, 2022</pre> 
 * @version 1.0 
 */ 
-public class BoardingpassBoardingpassControllerTest { 
-
-@Before
-public void before() throws Exception { 
-} 
-
-@After
-public void after() throws Exception { 
-} 
+public class BoardingpassBoardingpassControllerTest {
 
 /** 
 * 
@@ -27,8 +20,10 @@ public void after() throws Exception {
 * 
 */ 
 @Test
-public void testInitialize() throws Exception { 
-//TODO: Test goes here... 
+public void testInitialize() {
+    BoardingpassBoardingpassController a=new BoardingpassBoardingpassController();
+    a.name="JACK";
+    Assert.assertEquals(0, a.test);
 } 
 
 

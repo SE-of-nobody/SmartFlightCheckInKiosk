@@ -12,6 +12,11 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+/**
+ * @author Ziding Lin, Ruoqi Zhang
+ * @version jdk-17
+ */
+
 public class BoardingpassBoardingpassController implements Initializable {
     @FXML
     private Text Surname;
@@ -26,15 +31,19 @@ public class BoardingpassBoardingpassController implements Initializable {
     @FXML
     private Text SeatNumber;
 
+    public String name;
+    public int test=0;//
 
-
+    /**
+     * initialize the information
+     * @param arg0 URL
+     * @param arg1 ResourceBundle
+     */
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
-        // TODO Auto-generated method stub
         //transport the parameter
-//        String name= SurnameController.global_name;
         OrderInfo orderInfo = (OrderInfo) StageManager.CONTROLLER.get("myLoginUserInfo");
-        String name = orderInfo.orders.get(orderInfo.orderIndex).getSurname();
+        name = orderInfo.orders.get(orderInfo.orderIndex).getSurname();
         //read passenger csv
         String csvFile = "src/main/resources/group16/smartflightcheckinkiosk/data.csv";
         String line = "";
@@ -59,6 +68,7 @@ public class BoardingpassBoardingpassController implements Initializable {
                 Timetable.setText(passenger[14]+" to "+passenger[15]);
                 StartPoint.setText(passenger[12]);
                 Destination.setText(passenger[13]);
+                test=1;
             }
         }
         catch (IOException e) {

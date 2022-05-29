@@ -12,6 +12,11 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+/**
+ * @author Ziding Lin, Ruoqi Zhang
+ * @version jdk-17
+ */
+
 public class BoardingpassTicketController implements Initializable {
     @FXML
     private Text Surname;
@@ -22,15 +27,20 @@ public class BoardingpassTicketController implements Initializable {
     @FXML
     private Text CounterNumber;
 
+    public String name;
+    public int test=0;
 
-
-
+    /**
+     * initialize the information
+     * @param arg0 URL
+     * @param arg1 ResourceBundle
+     */
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
         // TODO Auto-generated method stub
         //transport the parameter
         OrderInfo orderInfo = (OrderInfo) StageManager.CONTROLLER.get("myLoginUserInfo");
-        String name = orderInfo.orders.get(orderInfo.orderIndex).getSurname();
+        name = orderInfo.orders.get(orderInfo.orderIndex).getSurname();
         //String name= SurnameController.global_name;
         //read passenger csv
         String csvFile = "src/main/resources/group16/smartflightcheckinkiosk/data.csv";
@@ -76,6 +86,7 @@ public class BoardingpassTicketController implements Initializable {
             if (luggage[0].equals(name)&&Integer.parseInt(luggage[5])==BoardingpassController.ticket_index) {
                 Tag.setText(luggage[3]);
                 CounterNumber.setText(luggage[4]);
+                test=1;
             }
         }
         catch (IOException e) {

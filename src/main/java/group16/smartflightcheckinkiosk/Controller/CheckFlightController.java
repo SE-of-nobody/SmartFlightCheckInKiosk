@@ -1,10 +1,8 @@
 package group16.smartflightcheckinkiosk.Controller;
 
 import group16.smartflightcheckinkiosk.Jumpto;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
@@ -15,15 +13,15 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+/**
+ * @author Ziding Lin, Liya Zhong
+ * @version jdk-17
+ */
 
 public class CheckFlightController implements Initializable {
 
     @FXML
     private VBox CheckFlight;
-    @FXML
-    private Button b5;
-    @FXML
-    private Button b6;
     @FXML
     private Text FlightNum;
     @FXML
@@ -34,8 +32,15 @@ public class CheckFlightController implements Initializable {
     private Text Destination;
     @FXML
     private Text Date;
+    public String flightNum;
+    public int test=0;
+
+    /**
+     * back button event
+     * @throws Exception click no response
+     */
     @FXML
-    void gotoEnterFlight(ActionEvent event)throws Exception{
+    void gotoEnterFlight()throws Exception{
         Jumpto jumpto = new Jumpto();
         jumpto.set("EnterFlight.fxml", "Back-end System");
         Stage stage = new Stage();
@@ -44,8 +49,13 @@ public class CheckFlightController implements Initializable {
         jumpto.start(stage);
     }
 
+    /**
+     * initialize the information
+     * @param arg0 URL
+     * @param arg1 ResourceBundle
+     */
     public void initialize(URL arg0, ResourceBundle arg1){
-        String flightNum= EnterFlightController.flight_num;
+        flightNum= EnterFlightController.flight_num;
 
         //read passenger csv
         String csvFile = "src/main/resources/group16/smartflightcheckinkiosk/data.csv";
@@ -65,18 +75,17 @@ public class CheckFlightController implements Initializable {
                 }
             }
             if(passenger[11].equals(flightNum)){
-                System.out.println("found");
                 FlightNum.setText(flightNum);
                 Time.setText(passenger[14]+" to "+passenger[15]);
                 Startpoint.setText(passenger[12]);
                 Destination.setText(passenger[13]);
+                test=1;
             }
             else{System.out.println("not found");}
         }
         catch (IOException e) {
             e.printStackTrace();
         }
-
 
         //read passenger csv
         String csvFile2 = "src/main/resources/group16/smartflightcheckinkiosk/PassengerInfo.csv";
@@ -103,8 +112,13 @@ public class CheckFlightController implements Initializable {
             e.printStackTrace();
         }
     }
+
+    /**
+     * next button event
+     * @throws Exception click no response
+     */
     @FXML
-    void gotoFlightList(ActionEvent event) throws Exception {
+    void gotoFlightList() throws Exception {
         Jumpto jumpto = new Jumpto();
         jumpto.set("FlightList.fxml", "Back-end System");
         Stage stage = new Stage();
