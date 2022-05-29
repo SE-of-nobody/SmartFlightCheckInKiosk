@@ -1,6 +1,7 @@
 package group16.smartflightcheckinkiosk.Controller;
 import group16.smartflightcheckinkiosk.Jumpto;
 import group16.smartflightcheckinkiosk.Passager.service.OrderInfo;
+import group16.smartflightcheckinkiosk.Passager.service.Order;
 import group16.smartflightcheckinkiosk.StageManager;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -15,6 +16,10 @@ import java.math.BigDecimal;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+/**
+ * @author Ziding Lin, Ruoqi Zhang
+ * @version jdk-17
+ */
 public class BoardingpassCheckController implements Initializable {
     @FXML
     private Text Surname;
@@ -36,6 +41,13 @@ public class BoardingpassCheckController implements Initializable {
     @FXML
     private Button next;
     private OrderInfo orderInfo;
+    public int test=0;
+    public String name;
+
+    /**
+     * next button event
+     * @throws Exception
+     */
     @FXML
     void onNextClick() throws Exception {
 
@@ -49,7 +61,12 @@ public class BoardingpassCheckController implements Initializable {
         jumpto.start(stage);
     }
 
-    public void initialize(URL arg0, ResourceBundle arg1){
+    /**
+     * initialize the information
+     * @param arg0 URL
+     * @param arg1 ResourceBundle
+     */
+     public void initialize(URL arg0, ResourceBundle arg1){
         //                //transport the parameter
         OrderInfo orderInfo = (OrderInfo) StageManager.CONTROLLER.get("myLoginUserInfo");
         if (orderInfo == null) {
@@ -58,7 +75,7 @@ public class BoardingpassCheckController implements Initializable {
         }
         this.orderInfo = orderInfo;
         //填入用户信息
-        service.Order order = orderInfo.orders.get(orderInfo.orderIndex);
+        Order order = orderInfo.orders.get(orderInfo.orderIndex);
 
         String name = orderInfo.orders.get(orderInfo.orderIndex).getSurname();
 //        //String name= SurnameController.global_name;
@@ -111,8 +128,10 @@ public class BoardingpassCheckController implements Initializable {
     }
 
 
-
-
+    /**
+     * prev button event
+     * @throws Exception click no response
+     */
     @FXML
     public void onPrevClick() throws Exception {
         Jumpto jumpto = new Jumpto();
