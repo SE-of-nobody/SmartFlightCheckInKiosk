@@ -49,7 +49,7 @@ public class IDdocController {
         Stage stage = new Stage();
         //登录失败
         if((orderInfo.orderIndex = orderInfo.checkWithFile()) < 0||ID_doc==false){
-            System.out.println("登录失败");
+            System.out.println("Log in Failed");
             jumpto.set("Warning.fxml", "WARNING");
             jumpto.start(stage);
             return;
