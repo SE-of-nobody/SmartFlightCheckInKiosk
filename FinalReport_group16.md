@@ -34,7 +34,7 @@ Group 16
 </div>
 
 ## 1. Introduction
-The aim of this project is to develop a smart kiosks in front of its check-in desks at the London Heathrow Airport. The system is developed with Agile methods. To develop this system, we first have meetings to brainstorm
+The aim of this project is to develop a smart kiosks in front of its check-in desks at the London Heathrow Airport. The system is developed with Agile methods. To develop this system, we first have meetings to brainstorm 
 for specific requirements. Then we use some fact-finding techniques such as interviews, observation,
 questionnaire and so on to make the requirements clear and accurate enough. Then we write java code
 through iterative development. At the end, we improve the user interface and produce some documents like
