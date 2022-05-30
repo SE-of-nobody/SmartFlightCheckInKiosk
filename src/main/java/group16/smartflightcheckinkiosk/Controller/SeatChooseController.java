@@ -2,11 +2,13 @@ package group16.smartflightcheckinkiosk.Controller;
 
 import group16.smartflightcheckinkiosk.Data.Passager.util.PlaneUtil;
 import group16.smartflightcheckinkiosk.Data.Passager.service.OrderInfo;
+import group16.smartflightcheckinkiosk.Jumpto;
 import group16.smartflightcheckinkiosk.StageManager;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.stage.Stage;
 
 import java.net.URL;
 import java.util.HashMap;
@@ -162,11 +164,18 @@ public class SeatChooseController implements Initializable {
      * @param event click on
      */
     @FXML
-public void ButtonClicked(ActionEvent event){
+public void ButtonClicked(ActionEvent event) throws Exception {
         System.out.println("213213");
     SeatChooseController(event);
+        gotoSuccess(event);
 }
-
+    @FXML
+    public void gotoSuccess(ActionEvent event) throws Exception {
+        Jumpto jumpto = new Jumpto();
+        jumpto.set("Success.fxml", "Success!");
+        Stage stage = new Stage();
+        jumpto.start(stage);
+    }
 
 
 

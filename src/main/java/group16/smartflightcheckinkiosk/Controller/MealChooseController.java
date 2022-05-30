@@ -109,8 +109,9 @@ public class MealChooseController implements Initializable {
      * @param event click on
      */
     @FXML
-    public void orderButtonClicked(ActionEvent event){
+    public void orderButtonClicked(ActionEvent event) throws Exception {
         MealChooseController(event);
+        gotoSuccess(event);
     }
 
     /**
@@ -119,12 +120,10 @@ public class MealChooseController implements Initializable {
      * @throws Exception click no response
      */
     @FXML
-    public void gotoMainMenu(ActionEvent event) throws Exception {
+    public void gotoSuccess(ActionEvent event) throws Exception {
         Jumpto jumpto = new Jumpto();
-        jumpto.set("MainMenu.fxml", "MainMenu");
+        jumpto.set("Success.fxml", "Success!");
         Stage stage = new Stage();
-        Stage stage_old = (Stage) mealpane.getScene().getWindow();
-        stage_old.close();
         jumpto.start(stage);
     }
 
