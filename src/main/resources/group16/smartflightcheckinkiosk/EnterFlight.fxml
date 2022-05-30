@@ -23,7 +23,7 @@
                   <RowConstraints maxHeight="151.0" minHeight="10.0" prefHeight="98.0" vgrow="SOMETIMES" />
            </rowConstraints>
             <children>
-               <Button fx:id="b3" mnemonicParsing="false" onAction="#gotoStaffLogin" text="Go back" GridPane.halignment="LEFT" GridPane.rowIndex="2">
+               <Button fx:id="b3" mnemonicParsing="false" onAction="#gotoStaffLogin" text="  Back  " GridPane.halignment="LEFT" GridPane.rowIndex="2">
                   <GridPane.margin>
                      <Insets left="80.0" />
                   </GridPane.margin>
