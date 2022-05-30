@@ -213,6 +213,8 @@ after the meeting.
 3. Don't Repeat Yourself (DRY)
 
    To avoid duplication, we always create a separate class to implement a function used frequently, such as the Jumpto class which is used by all the GUI controller to jump to other GUI. So if there is any change to this function, just modify the Jumpto class, for example.
+### 4.3 Design Quality
+We meet all the needed requirements and our application is well structured. Our structure is modular, and contains distinct representations of data, architecture, and components. Since we manage the project on QMplus hub, the project is maintainable, traceable and well documented. And we smoothly debug, it’s debug free.
 ## 5.Implementation and Testing
 ### 5.1 Implementation
 #### 5.1.1 Implementation Strategy
