@@ -1,6 +1,6 @@
 package group16.smartflightcheckinkiosk.Controller;
 
-import group16.smartflightcheckinkiosk.Passager.service.OrderInfo;
+import group16.smartflightcheckinkiosk.Data.Passager.service.OrderInfo;
 import group16.smartflightcheckinkiosk.StageManager;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -48,7 +48,7 @@ public class BoardingpassTicketController implements Initializable {
         name = orderInfo.orders.get(orderInfo.orderIndex).getSurname();
         //String name= SurnameController.global_name;
         //read passenger csv
-        String csvFile = "src/main/resources/group16/smartflightcheckinkiosk/data.csv";
+        String csvFile = "csv/data.csv";
         String line = "";
         String cvsSplitBy = ",";
         String[] passenger= new String[16];
@@ -73,7 +73,7 @@ public class BoardingpassTicketController implements Initializable {
             e.printStackTrace();
         }
         //read flight csv
-        String csvFile1 = "src/main/resources/group16/smartflightcheckinkiosk/Luggage.csv";
+        String csvFile1 = "csv/luggage.csv";
         String[] luggage= new String[8];
         //match the flight
         try (BufferedReader br = new BufferedReader(new FileReader(csvFile1))) {

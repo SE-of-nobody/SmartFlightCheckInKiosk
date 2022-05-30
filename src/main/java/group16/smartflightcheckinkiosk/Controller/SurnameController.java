@@ -1,7 +1,7 @@
 package group16.smartflightcheckinkiosk.Controller;
 
 import group16.smartflightcheckinkiosk.Jumpto;
-import group16.smartflightcheckinkiosk.Passager.service.OrderInfo;
+import group16.smartflightcheckinkiosk.Data.Passager.service.OrderInfo;
 import group16.smartflightcheckinkiosk.StageManager;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -59,7 +59,7 @@ public class SurnameController {
         Jumpto jumpto = new Jumpto();
         //登录失败
         if((orderInfo.orderIndex = orderInfo.checkUsernameAndID(Surname, IDnumber)) < 0){
-            System.out.println("登录失败");
+            System.out.println("Log in Failed");
             id_numField.setText("");
             jumpto.set("Warning.fxml", "WARNING");
             Stage stage = new Stage();

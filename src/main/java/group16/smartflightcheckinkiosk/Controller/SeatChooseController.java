@@ -1,7 +1,7 @@
 package group16.smartflightcheckinkiosk.Controller;
 
-import group16.smartflightcheckinkiosk.Passager.util.PlaneUtil;
-import group16.smartflightcheckinkiosk.Passager.service.OrderInfo;
+import group16.smartflightcheckinkiosk.Data.Passager.util.PlaneUtil;
+import group16.smartflightcheckinkiosk.Data.Passager.service.OrderInfo;
 import group16.smartflightcheckinkiosk.StageManager;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -71,11 +71,11 @@ public class SeatChooseController implements Initializable {
         String type = (String) button.getId();
 
         String seat = getText(type).getText();
-        if (seat == null) System.out.println("不存在的座位");
+        if (seat == null) System.out.println("no seat here");
 
         //传来的用户数据
         OrderInfo orderInfo = (OrderInfo) StageManager.CONTROLLER.get("myLoginUserInfo");
-        if (orderInfo == null) System.out.println("非法登录!!!");
+        if (orderInfo == null) System.out.println("invaid!!!");
 
         //用户选择座位号
         String seatName = seat.substring(0, seat.indexOf("$"));
@@ -84,7 +84,7 @@ public class SeatChooseController implements Initializable {
         orderInfo.orders.get(orderInfo.orderIndex).setSeatFee(seatPrice);
         //选择正确的路径
         PlaneUtil.setOrdersToCsv(orderInfo.orders, "csv/data.csv", "UTF-8");
-        System.out.println("选择座位成功");
+        System.out.println("got it!");
     }
 
     /**

@@ -1,8 +1,8 @@
 package group16.smartflightcheckinkiosk.Controller;
 
 import group16.smartflightcheckinkiosk.Jumpto;
-import group16.smartflightcheckinkiosk.Passager.util.PlaneUtil;
-import group16.smartflightcheckinkiosk.Passager.service.OrderInfo;
+import group16.smartflightcheckinkiosk.Data.Passager.util.PlaneUtil;
+import group16.smartflightcheckinkiosk.Data.Passager.service.OrderInfo;
 import group16.smartflightcheckinkiosk.StageManager;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -30,12 +30,6 @@ public class MealChooseController implements Initializable {
     private Label LabelMeal2;
     @FXML
     private Label LabelMeal3;
-    @FXML
-    private Label LabelMealPic1;
-    @FXML
-    private Label LabelMealPic2;
-    @FXML
-    private Label LabelMealPic3;
     @FXML
     private TabPane mealpane;
 
@@ -75,7 +69,7 @@ public class MealChooseController implements Initializable {
         //选择正确的路径
         PlaneUtil.setOrdersToCsv(orderInfo.orders , "csv/data.csv", "UTF-8");
 
-        System.out.println("选择餐品成功");
+        System.out.println("Got it！");
     }
 
 
@@ -87,7 +81,7 @@ public class MealChooseController implements Initializable {
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
         // TODO Auto-generated method stub
-        setMeal(1, "Tomato", 123.0);
+        setMeal(1, "Tomato", 12.0);
         setMeal(2, "Meat", 3.0);
         setMeal(3, "Cucunumber", 55.0);
     }

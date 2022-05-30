@@ -1,7 +1,7 @@
 package group16.smartflightcheckinkiosk.Controller;
 
 import group16.smartflightcheckinkiosk.Jumpto;
-import group16.smartflightcheckinkiosk.Passager.service.OrderInfo;
+import group16.smartflightcheckinkiosk.Data.Passager.service.OrderInfo;
 import group16.smartflightcheckinkiosk.StageManager;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -44,12 +44,11 @@ public class IDdocController {
     @FXML
     void ok(ActionEvent event) throws Exception{
         Boolean ID_doc = id_docField.isSelected();
-        System.out.println("ID Documnet: " + ID_doc);
         Jumpto jumpto = new Jumpto();
         Stage stage = new Stage();
         //登录失败
         if((orderInfo.orderIndex = orderInfo.checkWithFile()) < 0||ID_doc==false){
-            System.out.println("登录失败");
+            System.out.println("Log in Failed");
             jumpto.set("Warning.fxml", "WARNING");
             jumpto.start(stage);
             return;

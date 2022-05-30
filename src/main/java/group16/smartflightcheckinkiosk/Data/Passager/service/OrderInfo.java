@@ -1,12 +1,9 @@
-package group16.smartflightcheckinkiosk.Passager.service;
+package group16.smartflightcheckinkiosk.Data.Passager.service;
 
-import group16.smartflightcheckinkiosk.Passager.util.PlaneUtil;
-import group16.smartflightcheckinkiosk.Passager.util.VarUtil;
-import group16.smartflightcheckinkiosk.Passager.service.Order;
+import group16.smartflightcheckinkiosk.Data.Passager.util.PlaneUtil;
+import group16.smartflightcheckinkiosk.Data.Passager.util.VarUtil;
 
-import java.util.Arrays;
 import java.util.List;
-import java.util.ResourceBundle;
 import java.util.Scanner;
 
 public class OrderInfo {

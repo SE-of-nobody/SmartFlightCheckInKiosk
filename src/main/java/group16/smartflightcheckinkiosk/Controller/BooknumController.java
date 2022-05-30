@@ -1,9 +1,9 @@
 package group16.smartflightcheckinkiosk.Controller;
 
 import group16.smartflightcheckinkiosk.Jumpto;
-import group16.smartflightcheckinkiosk.Passager.service.Order;
-import group16.smartflightcheckinkiosk.Passager.service.OrderInfo;
-import group16.smartflightcheckinkiosk.Passager.util.PlaneUtil;
+import group16.smartflightcheckinkiosk.Data.Passager.service.Order;
+import group16.smartflightcheckinkiosk.Data.Passager.service.OrderInfo;
+import group16.smartflightcheckinkiosk.Data.Passager.util.PlaneUtil;
 import group16.smartflightcheckinkiosk.StageManager;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -53,7 +53,7 @@ public class BooknumController {
         Jumpto jumpto = new Jumpto();
         //登录失败
         if((orderInfo.orderIndex = orderInfo.checkBookingNumber(BookingNumber)) < 0){
-            System.out.println("登录失败");
+            System.out.println("Log in Failed");
             booknumField.setText("");
             jumpto.set("Warning.fxml", "WARNING");
             Stage stage = new Stage();

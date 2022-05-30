@@ -1,7 +1,4 @@
-package group16.smartflightcheckinkiosk.Passager.service;
-
-import java.util.Scanner;
-import java.lang.Integer;
+package group16.smartflightcheckinkiosk.Data.Passager.service;
 
 
 public class Order {

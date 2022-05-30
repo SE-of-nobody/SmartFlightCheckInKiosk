@@ -1,7 +1,7 @@
 package group16.smartflightcheckinkiosk.Controller;
 import group16.smartflightcheckinkiosk.Jumpto;
-import group16.smartflightcheckinkiosk.Passager.service.OrderInfo;
-import group16.smartflightcheckinkiosk.Passager.service.Order;
+import group16.smartflightcheckinkiosk.Data.Passager.service.OrderInfo;
+import group16.smartflightcheckinkiosk.Data.Passager.service.Order;
 import group16.smartflightcheckinkiosk.StageManager;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
