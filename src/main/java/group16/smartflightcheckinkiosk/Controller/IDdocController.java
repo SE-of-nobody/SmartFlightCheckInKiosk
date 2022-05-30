@@ -46,7 +46,7 @@ public class IDdocController {
         Boolean ID_doc = id_docField.isSelected();
         Jumpto jumpto = new Jumpto();
         Stage stage = new Stage();
-        //登录失败
+        //log in false
         if((orderInfo.orderIndex = orderInfo.checkWithFile()) < 0||ID_doc==false){
             System.out.println("Log in Failed");
             jumpto.set("Warning.fxml", "WARNING");

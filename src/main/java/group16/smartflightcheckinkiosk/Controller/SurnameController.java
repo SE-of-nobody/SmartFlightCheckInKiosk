@@ -57,7 +57,7 @@ public class SurnameController {
         System.out.println("Surname: " + Surname);
         System.out.println("ID Number: " + IDnumber);
         Jumpto jumpto = new Jumpto();
-        //登录失败
+        //log in false
         if((orderInfo.orderIndex = orderInfo.checkUsernameAndID(Surname, IDnumber)) < 0){
             System.out.println("Log in Failed");
             id_numField.setText("");

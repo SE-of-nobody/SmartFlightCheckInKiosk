@@ -1,7 +1,7 @@
 package group16.smartflightcheckinkiosk.Controller;
-import group16.smartflightcheckinkiosk.Jumpto;
-import group16.smartflightcheckinkiosk.Data.Passager.service.OrderInfo;
 import group16.smartflightcheckinkiosk.Data.Passager.service.Order;
+import group16.smartflightcheckinkiosk.Data.Passager.service.OrderInfo;
+import group16.smartflightcheckinkiosk.Jumpto;
 import group16.smartflightcheckinkiosk.StageManager;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -12,7 +12,6 @@ import javafx.stage.Stage;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.math.BigDecimal;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -80,7 +79,7 @@ public class BoardingpassCheckController implements Initializable {
             return;
         }
         this.orderInfo = orderInfo;
-        //填入用户信息
+        //user information
         Order order = orderInfo.orders.get(orderInfo.orderIndex);
 
         String name = orderInfo.orders.get(orderInfo.orderIndex).getSurname();
@@ -114,7 +113,7 @@ public class BoardingpassCheckController implements Initializable {
         catch (IOException e) {
             e.printStackTrace();
         }
-    //检测有无选座，有无支付
+    //check if choose the seat
         System.out.println(order.getSeat()+", your seat");
         if(order.getSeat().equals("-")){
             next.setDisable(true);
@@ -122,8 +121,10 @@ public class BoardingpassCheckController implements Initializable {
             System.out.println(order.getSeat()+", choose seat first");
         }
         double total_pay1=order.getMealFee() + order.getSeatFee();
-        BigDecimal b=new BigDecimal(total_pay1);
-        double total_pay=b.setScale(2,BigDecimal.ROUND_HALF_UP).doubleValue();
+         String pay_str = String.format("%.2f", total_pay1);
+         double total_pay = Double.parseDouble(pay_str);
+//        BigDecimal b=new BigDecimal(total_pay1);
+//        double total_pay=b.setScale(2,BigDecimal.ROUND_HALF_UP).doubleValue();
         System.out.println(total_pay);
         if((order.getPayed() != 1)&&total_pay!=0){
             next.setDisable(true);next.setPrefWidth(150);

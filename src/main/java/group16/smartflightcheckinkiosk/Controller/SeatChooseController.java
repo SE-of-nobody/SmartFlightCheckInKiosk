@@ -75,16 +75,16 @@ public class SeatChooseController implements Initializable {
         String seat = getText(type).getText();
         if (seat == null) System.out.println("no seat here");
 
-        //传来的用户数据
+        //user information
         OrderInfo orderInfo = (OrderInfo) StageManager.CONTROLLER.get("myLoginUserInfo");
         if (orderInfo == null) System.out.println("invaid!!!");
 
-        //用户选择座位号
+        //choose seat
         String seatName = seat.substring(0, seat.indexOf("$"));
         Double seatPrice = Double.parseDouble(seat.substring(seat.indexOf("$") + 1, seat.length()));
         orderInfo.orders.get(orderInfo.orderIndex).setSeat(seatName);
         orderInfo.orders.get(orderInfo.orderIndex).setSeatFee(seatPrice);
-        //选择正确的路径
+        //set right path
         PlaneUtil.setOrdersToCsv(orderInfo.orders, "csv/data.csv", "UTF-8");
         System.out.println("got it!");
     }
@@ -97,19 +97,7 @@ public class SeatChooseController implements Initializable {
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
 //         TODO Auto-generated method stub
-//        A1.setId("A1");
-//        A1.setText("10.12");
-//        A2.setId("A2");
-//        A2.setText("11.12");
-//        B1.setId("B1");
-//        B1.setText("153.2");
-//        B2.setId("B2");
-//        B2.setText("");
-//        C1.setId("A1");
-//        C1.setText("");
-//        C2.setId("A1");
-//        C2.setText("");
-//
+
         buttonMap.put("A1", A1);
         buttonMap.put("A2", A2);
         buttonMap.put("A3", A3);

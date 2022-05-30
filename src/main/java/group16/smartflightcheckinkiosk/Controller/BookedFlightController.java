@@ -67,7 +67,7 @@ public class BookedFlightController implements Initializable{
         userInfo = new String[7];
         OrderInfo orderInfo = (OrderInfo) StageManager.CONTROLLER.get("myLoginUserInfo");
         if(orderInfo == null){
-            System.out.println("非法登录");
+            System.out.println("The illegal log in");
             return;
         }
         userInfo[0] = orderInfo.orders.get(orderInfo.orderIndex).getBookingFlight();
