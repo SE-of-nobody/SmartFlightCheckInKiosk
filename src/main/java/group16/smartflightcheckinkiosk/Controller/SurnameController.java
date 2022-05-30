@@ -59,7 +59,7 @@ public class SurnameController {
         Jumpto jumpto = new Jumpto();
         //登录失败
         if((orderInfo.orderIndex = orderInfo.checkUsernameAndID(Surname, IDnumber)) < 0){
-            System.out.println("登录失败");
+            System.out.println("Log in Failed");
             id_numField.setText("");
             jumpto.set("Warning.fxml", "WARNING");
             Stage stage = new Stage();
