@@ -4,9 +4,9 @@
 
 ### 0.1 Environment
 
-| maven | junit | javafx | controlsfx | formsfx-core | validatorfx | ikonli-javafx | bootstrapfx-core | tilesfx | maven-compiler-plugin | configuration | javafx-maven-plugin |
-| ----- | ----- | ------ | ---------- | ------------ | ----------- | ------------- | ---------------- | ------- | --------------------- | ------------- | ------------------- |
-| 4.0.0 | 5.8.1 | 15.0.1 | 11.1.0     | 11.3.2       | 0.1.13      | 12.2.0        | 0.4.0            | 11.48   | 3.8.1                 | 15            | 0.0.8               |
+| OS      | maven | junit | javafx | controlsfx | formsfx-core | validatorfx | ikonli-javafx | bootstrapfx-core | tilesfx | maven-compiler-plugin | configuration | javafx-maven-plugin |
+| ------- | ----- | ----- | ------ | ---------- | ------------ | ----------- | ------------- | ---------------- | ------- | --------------------- | ------------- | ------------------- |
+| Win_x64 | 4.0.0 | 5.8.1 | 15.0.1 | 11.1.0     | 11.3.2       | 0.1.13      | 12.2.0        | 0.4.0            | 11.48   | 3.8.1                 | 15            | 0.0.8               |
 
 
 
@@ -26,11 +26,17 @@ To open the system, open the first folder with from your IDE and find the java f
 
 you can doubleclick the "SmartFlightCheckInKiosk.exe" to operate it
 
+or use "cmd" and enter the directory, then run "start SmartFlightCheckInKiosk.exe"
+
 #### 1.3 Open with .jar file
 
 you can doubleclick the "SmartFlightCheckInKiosk.jar" to operate it
 
+or use "cmd" and enter the directory, then run "Java -jar SmartFlightCheckInKiosk.jar"
+
 ## 2. Passenger
+
+![img.png](ReadmeImg/cl.png)
 
 Click passenger and then enter the passenger's login page. On this page, you can choose three ways to check-in
 
@@ -60,7 +66,7 @@ The second method is to click the second button "Surname&ID number" and enter th
 | 03        | TOM     |
 | 04        | MIKE    |
 
-![img.png](ReadmeImg/login-3.png)
+![img.png](ReadmeImg/idcidc.png)
 
 The third method is to click the third button and scan the id-card. We use the "login.csv" in the project as the id-card information entered by the passenger, so you can click ok to directly enter the subsequent interface, and click "back "at the bottom You can go back to the previous ChooseLogin interface.
 
@@ -74,13 +80,13 @@ After logging in,  there is the main menu page, where you can see the booking in
 
 First, you can directly return to the "ChooseLogin" page from Login-Quit. The second tab is "Choose" where passengers can choose meals and seats at Meal and Seat. The selected item button will turn blue.
 
-![img.png](ReadmeImg/mainmenu-meal.png)
+![img.png](ReadmeImg/xhs1.png)
 
-![img.png](ReadmeImg/mainmenu-seat.png)
+![img.png](ReadmeImg/zw.png)
 
 The selected meal and seat and the amount to be paid can be seen in the third tab "Budget", enter the credit card number, click "ok" to pay, if the number is wrong, it will display "sorry, your car number is not correct" , if the balance is insufficient, it will display "sorry, your balance is not enough", if the payment is successful, it will display "successfully paid!O(∩_∩)O", and the text on the "ok" button will be grayed out and cannot be clicked.
 
-![img.png](ReadmeImg/budget.png)
+![img.png](ReadmeImg/bgbgbg.png)
 
  The table below shows passengers and their account numbers and balances
 
@@ -97,7 +103,7 @@ _(If you want to test this function, you can enter the wrong number by entering 
 
 The fourth tab is the last step of the passenger check-in boarding pass. First enter the interface called boardingpass-check, which will display the boarding information including the passenger's selected seat and meal information.
 
-![img.png](ReadmeImg/boardingpass-check.png)
+![img.png](ReadmeImg/bcbcbc.png)
 
 Note that you can click Next and print out the ticket and other information normally only after you have successfully paid the extra cost and selected your seat successfully.
 
