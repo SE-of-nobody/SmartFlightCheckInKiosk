@@ -42,7 +42,7 @@ This is the GUI of the second login way after pressing the "Surname & ID Number"
 
 <img src="User Manual.assets/surname_login.png" alt="surname_login" style="zoom:50%;" />
 
-This is the GUI of the third login way after pressing the "ID Document" button. First, you need to press the "confirm" button to ensure that you want to log in by using ID document otherwise there will be a warning. Then You can just press the "OK" button to jump to teh next GUI since the system has already read the "data.csv" automatically.
+This is the GUI of the third login way after pressing the "ID Document" button. First, you need to press the "confirm" button to ensure that you want to log in by using ID document otherwise there will be a warning. Then You can just press the "OK" button to jump to the next GUI since the system has already read the "data.csv" automatically.
 
 <img src="User Manual.assets/iddoc_login.png" alt="iddoc_login" style="zoom:50%;" />
 
@@ -120,13 +120,13 @@ After entering the staff login window, you can put in your staff ID and password
 
 After entering the back-end system, enter the flight number you want to query.
 
-<img src="User Manual.assets/enterflight.png" alt="tag" style="zoom:50%;" />
+<img src="User Manual.assets/EnterFlight.png" alt="tag" style="zoom:50%;" />
 
 ### 3. Confirm your inquiry
 
 To prevent similar flights from being queried due to incorrect input, please confirm the flight you want to query through the flight details.
 
-<img src="User Manual.assets/checkflight.png" alt="tag" style="zoom:50%;" />
+<img src="User Manual.assets/Checkflight.png" alt="tag" style="zoom:50%;" />
 
 ### 4. View information
 
@@ -146,7 +146,7 @@ Whenever any invalid input including blank spaces, wrong numbers and characters 
 
 At any time, when you need to query for additional information or services, click the "Back" button to return to the previous window.
 
-<img src="User Manual.assets/backbutton.png" alt="tag" style="zoom:50%;" />
+<img src="User Manual.assets/Backbutton.png" alt="tag" style="zoom:50%;" />
 
 ### 3. Quit the application
 
