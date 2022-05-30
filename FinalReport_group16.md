@@ -20,7 +20,7 @@
 Group 16
 </div>
 
- 
+
 <div class="center">
 
 | Name         | BUPTNumber | QMNumber  |
@@ -34,7 +34,7 @@ Group 16
 </div>
 
 ## 1. Introduction
-The aim of this project is to develop a smart kiosks in front of its check-in desks at the London Heathrow Airport. The system is developed with Agile methods. To develop this system, we first have meetings to brainstorm
+The aim of this project is to develop a smart kiosks in front of its check-in desks at the London Heathrow Airport. The system is developed with Agile methods. To develop this system, we first have meetings to brainstorm 
 for specific requirements. Then we use some fact-finding techniques such as interviews, observation,
 questionnaire and so on to make the requirements clear and accurate enough. Then we write java code
 through iterative development. At the end, we improve the user interface and produce some documents like
@@ -159,7 +159,7 @@ Different second digits indicate that they belong to different problems, and the
 | 411      |             Confirm the query | Airport staff want to query the flight number to see the detailed flight information (such as the starting place and time) to confirm the query object is correct. |            1             |
 | 421      |     Check-in status display 1 | Airport staff can check the information of the passengers on a given flight. |            1             |
 | 422      |     Check-in status display 2 | Airport staff can check the check-in status which is updated in real time of the passengers on a given flight. |            1             |
-| 423      |     Check-in status display 3 | Airport staff can easily count and focus on the unchecked passengers on the page. |            3             |
+| 423      |     Check-in status display 3 | Airport staff can easily check the overall check-in status and the number of passengers who have not checked in for that flight. |            3             |
 
 </div>
 <span id="jump"></span>
@@ -202,6 +202,7 @@ more beautiful.
 During the procedure of our project, there are plenty of changes in our initial iteration plan. For example, in the initial brainstorming we only discussed the implementation of the individual feature pages. When we linked the pages together, we realized that there were too many unnecessary page jumps, so we redesigned the main menu.
 In addition, when designing the function of page jump, we also encountered a lot of difficulties, so we designed different schemes.  In the end, we adopted Ruibo Gang's solution to ensure smooth parameter transfer.
 We have a routine meeting every week held by our team leader. During the conference, everyone put forward their opinions toward the current project, for instance, problems meet when implement with code and possible adjust to the requirement analysis. Then, the meeting recorder will log all these confusions and we will have a fierce discussion to them. As a result, we may change in our product backlog and user stories after the meeting.  
+
 
 
 
