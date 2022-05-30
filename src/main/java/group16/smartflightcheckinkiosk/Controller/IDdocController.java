@@ -8,10 +8,13 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-
+/**
+ * ID document login
+ * @author  Ruibo Gang, Zhishang Yu
+ * @version jdk15.0.2
+ */
 public class IDdocController {
 
     @FXML
@@ -28,9 +31,16 @@ public class IDdocController {
 
     @FXML
     private AnchorPane toIDdocPage;
-
+    /**
+     * get passenger information
+     */
     private static final OrderInfo orderInfo = new OrderInfo();
 
+    /**
+     * ok button event
+     * @param event click on
+     * @throws Exception click no response
+     */
     @FXML
     void ok(ActionEvent event) throws Exception{
         Boolean ID_doc = id_docField.isSelected();
@@ -69,6 +79,10 @@ public class IDdocController {
         jumpto.start(stage);
 
     }
+
+    /**
+     * back button event
+     */
     @FXML
     void back(){
         Stage stage = (Stage) back.getScene().getWindow();

@@ -1,14 +1,8 @@
 package group16.smartflightcheckinkiosk.Controller;
 
-import java.net.URL;
-import java.util.List;
-import java.util.Map;
-import java.util.ResourceBundle;
-import java.util.Scanner;
-
 import group16.smartflightcheckinkiosk.Jumpto;
-import group16.smartflightcheckinkiosk.Passager.service.OrderInfo;
 import group16.smartflightcheckinkiosk.Passager.util.PlaneUtil;
+import group16.smartflightcheckinkiosk.Passager.service.OrderInfo;
 import group16.smartflightcheckinkiosk.StageManager;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -18,8 +12,17 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TabPane;
 import javafx.stage.Stage;
 
+import java.net.URL;
+import java.util.ResourceBundle;
+/**
+ * choose meal
+ * @author  Xiaoyi Liang, Zhishang Yu
+ * @version jdk15.0.2
+ */
 public class MealChooseController implements Initializable {
-
+    /**
+     * user information
+     */
     public static String[] userInfo;
     @FXML
     private Label LabelMeal1;
@@ -36,6 +39,10 @@ public class MealChooseController implements Initializable {
     @FXML
     private TabPane mealpane;
 
+    /**
+     * meal choose
+     * @param event click button
+     */
     public void MealChooseController(ActionEvent event) {
         // TODO Auto-generated constructor stub
         Button button = (Button) event.getSource();
@@ -72,7 +79,11 @@ public class MealChooseController implements Initializable {
     }
 
 
-
+    /**
+     * initialize the information
+     * @param arg0 URL
+     * @param arg1 ResourceBundle
+     */
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
         // TODO Auto-generated method stub
@@ -81,7 +92,12 @@ public class MealChooseController implements Initializable {
         setMeal(3, "黄瓜鸭血", 55.0);
     }
 
-
+    /**
+     * set meal
+     * @param type type of meal
+     * @param name meal name
+     * @param price meal price
+     */
     @FXML
     public void setMeal(int type,String name, double price){
         switch(type){
@@ -94,11 +110,20 @@ public class MealChooseController implements Initializable {
         }
     }
 
-
+    /**
+     * button click
+     * @param event click on
+     */
     @FXML
     public void orderButtonClicked(ActionEvent event){
         MealChooseController(event);
     }
+
+    /**
+     * go to main menu
+     * @param event click on
+     * @throws Exception click no response
+     */
     @FXML
     public void gotoMainMenu(ActionEvent event) throws Exception {
         Jumpto jumpto = new Jumpto();

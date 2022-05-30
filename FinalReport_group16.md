@@ -20,7 +20,7 @@
 Group 16
 </div>
 
-
+ 
 <div class="center">
 
 | Name         | BUPTNumber | QMNumber  |
@@ -237,8 +237,13 @@ Finally, we find defects for the system.
 #### 5.2.2 Test techniques
 We use black boxes test to test the software requirements and use white box test to test the internal program logic.
 ##### Black-box test:
-We use partition test, scenario-based testing and regression testing to test the functional requirements for
-the whole system. Then whole test process will be put in Appendix D. Therefore, we only put an example
+For boundary and entity classes, we use the black-box test method. In addition, we use a large and
+extensive set of automated tests. Before we started coding, we compared many test frameworks and
+found out JUnit is the most suitable test framework for us to test the code since it has many advantages.  
+Although we decided to use JUnit, group members had different ideas about which version to use. Some
+ members prefer to use JUnit4 and the other prefer JUnit5. After comparing the difference of
+JUnit4 and JUnit5, combining the code we need to test, we ended up using JUnit4 to test our project.  
+
 here.</br>
 ##### White-box test:
 We use white-box test to test all statements and conditions. Here is one of the examples of our white-box test.   

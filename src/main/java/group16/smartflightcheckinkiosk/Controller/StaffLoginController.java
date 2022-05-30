@@ -11,6 +11,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 /**
+ * staff login
  * @author Ziding Lin, Liya Zhong
  * @version jdk-17
  */
@@ -22,8 +23,13 @@ public class StaffLoginController {
     private TextField staffnumField;
     @FXML
     private TextField passwordfield;
-
+    /**
+     * staff number
+     */
     public String staff_num;
+    /**
+     * junit test parameter
+     */
     public int test=0;
 
     /**

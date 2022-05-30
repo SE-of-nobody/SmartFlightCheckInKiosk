@@ -10,7 +10,11 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-
+/**
+ * surname login
+ * @author  Ruibo Gang, Zhishang Yu
+ * @version jdk15.0.2
+ */
 public class SurnameController {
 
     @FXML
@@ -36,10 +40,16 @@ public class SurnameController {
 
     @FXML
     private AnchorPane toSurnamePage;
-
+    /**
+     * passenger information
+     */
     private static final OrderInfo orderInfo = new OrderInfo();
 
-
+    /**
+     * ok button event
+     * @param event click on
+     * @throws Exception click no response
+     */
     @FXML
     void ok(ActionEvent event) throws Exception{
         String Surname = surnameField.getText();
@@ -80,6 +90,10 @@ public class SurnameController {
         //Open next window
         jumpto.start(stage);
     }
+
+    /**
+     * back button event
+     */
     @FXML
     void back(){
         Stage stage = (Stage) back.getScene().getWindow();

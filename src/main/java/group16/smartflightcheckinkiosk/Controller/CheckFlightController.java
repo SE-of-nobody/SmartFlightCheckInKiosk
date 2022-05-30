@@ -13,6 +13,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 /**
+ * check flight
  * @author Ziding Lin, Liya Zhong
  * @version jdk15.0.2
  */
@@ -29,8 +30,13 @@ public class CheckFlightController implements Initializable {
     private Text Startpoint;
     @FXML
     private Text Destination;
-
+    /**
+     * flight number
+     */
     public String flightNum;
+    /**
+     * junit test parameter
+     */
     public int test=0;
 
     /**

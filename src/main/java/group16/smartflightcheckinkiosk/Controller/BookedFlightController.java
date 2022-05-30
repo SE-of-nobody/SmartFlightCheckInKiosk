@@ -1,22 +1,23 @@
 package group16.smartflightcheckinkiosk.Controller;
 
-import java.io.*;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.ResourceBundle;
-
 import group16.smartflightcheckinkiosk.Passager.service.OrderInfo;
-import group16.smartflightcheckinkiosk.Passager.util.PlaneUtil;
-import group16.smartflightcheckinkiosk.Passager.util.VarUtil;
 import group16.smartflightcheckinkiosk.StageManager;
-//import group16.smartflightcheckinkiosk.ViewAlter;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
-import group16.smartflightcheckinkiosk.Passager.service.Order;
 
+import java.net.URL;
+import java.util.ResourceBundle;
+
+/**
+ * booked flight
+ * @author Zhishang Yu, Xiaoyi Liang
+ * @version jdk15.0.2
+ */
 public class BookedFlightController implements Initializable{
+    /**
+     * user information
+     */
     public static String[] userInfo;
     @FXML
     private Label BookingFlight;
@@ -33,7 +34,9 @@ public class BookedFlightController implements Initializable{
     @FXML
     private Label ArrivingCity;
 
-
+    /**
+     * change the text
+     */
      public void ChangeText(){
          BookingFlight.setText(userInfo[0]);
          BookingNumber.setText(userInfo[1]);
@@ -44,13 +47,20 @@ public class BookedFlightController implements Initializable{
          ArrivingCity.setText(userInfo[6]);
      }
 
-    //private ViewAlter viewAlter;
 
+    /**
+     * constructor
+     */
     public BookedFlightController() {
         // TODO Auto-generated constructor stub
         //there is nothing to write, this page for just showing right?
     }
 
+    /**
+     * initialize the information
+     * @param arg0 URL
+     * @param arg1 ResourceBundle
+     */
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
         // TODO Auto-generated method stub
@@ -70,7 +80,4 @@ public class BookedFlightController implements Initializable{
         ChangeText();
     }
 
-//    public void setApp(ViewAlter viewAlter) {
-//        this.viewAlter = viewAlter;
-//    }
 }

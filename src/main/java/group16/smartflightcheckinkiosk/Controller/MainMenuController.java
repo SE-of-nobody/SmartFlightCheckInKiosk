@@ -7,19 +7,28 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
-import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-
+/**
+ * the main menu
+ * @author  Xiaoyi Liang
+ * @version jdk15.0.2
+ */
 public class MainMenuController  implements Initializable{
 
 
 
     @FXML
     private VBox rootLayout;
+
+    /**
+     * quit the main menu
+     * @param event click on
+     * @throws Exception
+     */
     @FXML
     void quit(ActionEvent event)throws Exception{
         Jumpto jumpto = new Jumpto();
@@ -29,6 +38,12 @@ public class MainMenuController  implements Initializable{
         stage_old.close();
         jumpto.start(stage);
     }
+
+    /**
+     * meal choose
+     * @param event click on
+     * @throws Exception click no response
+     */
     @FXML
     void gotoMealChoose(ActionEvent event) throws Exception {
         Jumpto jumpto = new Jumpto();
@@ -36,6 +51,12 @@ public class MainMenuController  implements Initializable{
         Stage stage = new Stage();
         jumpto.start(stage);
     }
+
+    /**
+     * seat choose
+     * @param event click on
+     * @throws Exception click no response
+     */
     @FXML
     void gotoSeatChoose(ActionEvent event) throws Exception {
         Jumpto jumpto = new Jumpto();
@@ -44,6 +65,11 @@ public class MainMenuController  implements Initializable{
         jumpto.start(stage);
     }
 
+    /**
+     * booked flight
+     * @param event click on
+     * @throws Exception click on response
+     */
     @FXML
     void gotoBookedFlight(ActionEvent event) throws Exception {
         Jumpto jumpto = new Jumpto();
@@ -51,6 +77,12 @@ public class MainMenuController  implements Initializable{
         Stage stage = new Stage();
         jumpto.start(stage);
     }
+
+    /**
+     * check budget
+     * @param event click on
+     * @throws Exception click no response
+     */
     @FXML
     void gotoBudget(ActionEvent event) throws Exception {
         Jumpto jumpto = new Jumpto();
@@ -58,6 +90,12 @@ public class MainMenuController  implements Initializable{
         Stage stage = new Stage();
         jumpto.start(stage);
     }
+
+    /**
+     * Boardingpass check
+     * @param event click on
+     * @throws Exception click no response
+     */
     @FXML
     void gotoBoardingpassCheck(ActionEvent event) throws Exception {
         Jumpto jumpto = new Jumpto();
@@ -66,7 +104,9 @@ public class MainMenuController  implements Initializable{
         jumpto.start(stage);
     }
     ///////主页
-
+    /**
+     * user information
+     */
         public  String[] userInfo;
         @FXML
         private Label BookingFlight;
@@ -83,7 +123,9 @@ public class MainMenuController  implements Initializable{
         @FXML
         private Label ArrivingCity;
 
-
+    /**
+     * change the text
+     */
         public void ChangeText(){
             BookingFlight.setText(userInfo[0]);
             BookingNumber.setText(userInfo[1]);

@@ -41,7 +41,13 @@ public class BoardingpassCheckController implements Initializable {
     @FXML
     private Button next;
     private OrderInfo orderInfo;
+    /**
+     * junit test parameter
+     */
     public int test=0;
+    /**
+     * name of passenger
+     */
     public String name;
 
     /**

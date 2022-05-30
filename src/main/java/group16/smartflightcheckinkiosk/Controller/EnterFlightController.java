@@ -11,6 +11,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 /**
+ * enter flight
  * @author Ziding Lin, Liya Zhong
  * @version jdk15.0.2
  */
@@ -19,15 +20,23 @@ public class EnterFlightController {
     private VBox EnterFlight;
     @FXML
     private TextField FlightnumField;
-
+    /**
+     * flight number
+     */
     public  String flightNum;
+    /**
+     * junit test parameter
+     */
     public  int test=0;
+    /**
+     * flight number use for transporting the parameter
+     */
     public static String flight_num;
-
     /**
      * back button event
      * @throws Exception click no response
      */
+
     @FXML
     void gotoStaffLogin()throws Exception{
         Jumpto jumpto = new Jumpto();

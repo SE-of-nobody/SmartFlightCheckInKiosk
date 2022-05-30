@@ -1,6 +1,7 @@
 package group16.smartflightcheckinkiosk.Controller;
 
 import group16.smartflightcheckinkiosk.Jumpto;
+import group16.smartflightcheckinkiosk.Passager.service.Order;
 import group16.smartflightcheckinkiosk.Passager.service.OrderInfo;
 import group16.smartflightcheckinkiosk.Passager.util.PlaneUtil;
 import group16.smartflightcheckinkiosk.StageManager;
@@ -11,10 +12,13 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import group16.smartflightcheckinkiosk.Passager.service.Order;
-
 import java.util.List;
 
+/**
+ * book number login
+ * @author Zhishang Yu, Xiaoyi Liang
+ * @version jdk15.0.2
+ */
 public class BooknumController {
 
     @FXML
@@ -31,11 +35,17 @@ public class BooknumController {
 
     @FXML
     private AnchorPane toBookNumPage;
-
+    /**
+     * get passenger information
+     */
     private static final OrderInfo orderInfo = new OrderInfo();
 
 
-
+    /**
+     * ok button event
+     * @param event click event
+     * @throws Exception click no response
+     */
     @FXML
     void ok(ActionEvent event) throws Exception{
         String BookingNumber = booknumField.getText();
@@ -76,6 +86,10 @@ public class BooknumController {
         //Open next window
         jumpto.start(stage);
     }
+
+    /**
+     * back button event
+     */
     @FXML
     void back() {
         Stage stage = (Stage) back.getScene().getWindow();
