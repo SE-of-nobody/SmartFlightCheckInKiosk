@@ -20,6 +20,8 @@
 Group 16
 </div>
 
+[toc]
+
 
 <div class="center">
 
@@ -34,18 +36,12 @@ Group 16
 </div>
 
 ## 1. Introduction
-The aim of this project is to develop a smart kiosks in front of its check-in desks at the London Heathrow Airport. The system is developed with Agile methods. To develop this system, we first have meetings to brainstorm 
-for specific requirements. Then we use some fact-finding techniques such as interviews, observation,
-questionnaire and so on to make the requirements clear and accurate enough. Then we write java code
-through iterative development. At the end, we improve the user interface and produce some documents like
-user manuals. We hope every user of this software and our customer can be satisfied with this software.
+The aim of this project is to develop a smart kiosks in front of its check-in desks at the London Heathrow Airport. The system is developed with Agile methods. To develop this system, we first have meetings to brainstorm for specific requirements. Then we use some fact-finding techniques such as interviews, observation, questionnaire and so on to make the requirements clear and accurate enough. Then we write java code through iterative development. At the end, we improve the user interface and produce some documents like user manuals. We hope every user of this software and our customer can be satisfied with this software.
 
-## 2.Project management
+## 2. Project management
 ### 2.1 Project Planning
 This project adopts agile development method and agile project management process.Our development work is carried out according the recommendations in [Handout](https://qmplus.qmul.ac.uk/pluginfile.php/2604460/mod_resource/content/3/EBU6304_GroupProjectHandout_2022.pdf)
-There maybe a little error of a few days when truly implement each iteration.Before beginning of each iteration, we took a group meeting to review the dependency analysis and the
-activity network in project planning step to double check the dependencies between each task which is vital
-in making a schedule. And you could get our meeting minutesin detail from our [QMplus hub Journals](https://hub.qmplus.qmul.ac.uk/artefact/blog/index.php?group=3633)
+There maybe a little error of a few days when truly implement each iteration.Before beginning of each iteration, we took a group meeting to review the dependency analysis and theactivity network in project planning step to double check the dependencies between each task which is vitalin making a schedule. And you could get our meeting minutesin detail from our [QMplus hub Journals](https://hub.qmplus.qmul.ac.uk/artefact/blog/index.php?group=3633)
 In this project, we used [JavaFX](https://openjfx.io/) to complete the GUI design, [Maven](https://maven.apache.org/) to manage the project and related packages, and [Github](https://github.com/SE-of-nobody/SmartFlightCheckInKiosk) to complete the team collaboration, version control and contribution statistics of the code.
 
 <div class="center">
@@ -63,6 +59,7 @@ In this project, we used [JavaFX](https://openjfx.io/) to complete the GUI desig
 
 It is easy to see that a significant periodicity in our submissions from [Github's](https://github.com/SE-of-nobody/SmartFlightCheckInKiosk) code frequency
 <div style="text-align: center;">
+
 ![img.png](ReportImg/github2.png)
 </div>
 
@@ -102,21 +99,13 @@ Otherwise, we use [Github](https://github.com/SE-of-nobody/SmartFlightCheckInKio
 It is just the contribution from Mar 13, 2022 to May 8, 2022. Contribution in [Github](https://github.com/SE-of-nobody/SmartFlightCheckInKiosk) has a delay in counting submissions from the last two weeks, which means The data in the table is for reference only.
 
 ### 2.3 Risk Management
-In this project, we may encounter project risks and product risks. For the project risks, the approach we
-took was to give the team members enough time. If one person can't get things done on time, others have
-plenty of time to take over and get things done. Therefore, our schedule is slightly different from the
-recommended schedule. For the product risks, we take the approach of multiple iterations + multiple
-evaluations. At the end of each iteration, we would discuss the shortcomings of this iteration in the Wechat and evaluate our design and implementation. Once a problem is identified, it will be improved in
-the next iteration. If a serious problem is found during the iteration, we do not change the plan in the
-middle of the iteration, but choose to fix the problem in the next iteration. In fact, we did encounter a
-serious problem and solved it using this method. Please see our weekly journals for details.
+In this project, we may encounter project risks and product risks. For the project risks, the approach we took was to give the team members enough time. If one person can't get things done on time, others have plenty of time to take over and get things done. Therefore, our schedule is slightly different from the recommended schedule. For the product risks, we take the approach of multiple iterations + multiple evaluations. At the end of each iteration, we would discuss the shortcomings of this iteration in the Wechat and evaluate our design and implementation. Once a problem is identified, it will be improved in the next iteration. If a serious problem is found during the iteration, we do not change the plan in the middle of the iteration, but choose to fix the problem in the next iteration. In fact, we did encounter a serious problem and solved it using this method. Please see our weekly journals for details.
 
 ## 3. Requirements
 ### 3.1 Apply the requirements finding techniques
 In this project, we used [JavaFX](https://openjfx.io/) to complete the GUI design, [Maven](https://maven.apache.org/) to manage the project and related packages, and [Github](https://github.com/SE-of-nobody/SmartFlightCheckInKiosk) to complete the team collaboration, version control and contribution statistics of the code.
 ### 3.2 User stories
-In terms of user stories, we produce a large number of user stories, delete a batch through meetings, and
-then evaluate and priorities the remaining parts.
+In terms of user stories, we produce a large number of user stories, delete a batch through meetings, and then evaluate and priorities the remaining parts.
 We chose a different ID for each story.  According to the Specification in Handout, we chose different three-digit numbers.  Where the leading number indicates which part they belong to:
 
 <div class="center">
@@ -164,8 +153,7 @@ Different second digits indicate that they belong to different problems, and the
 <span id="jump"></span>
 
 ### 3.3 Iterations planning
-We plan our iterations according to the suggested Timeline in handout. There is error of a few days when
-truly implement each iteration.
+We plan our iterations according to the suggested Timeline in handout. There is error of a few days when truly implement each iteration.
 <div class="center">
 
 | Date             |                                                     Task                                                     |
@@ -192,10 +180,7 @@ Depending on each person's job assignment, we will design the relevant GUI ourse
 </center>
 
 
-As development progressed, our requirements changed, so the prototype was modified or redone many times. With these prototypes, developers can feel comfortable knowing what the software should be designed
-to look like. Interactive prototypes allow developers to understand the logical structure of the user
-interface. Moreover, these prototypes contain art materials and color schemes. This makes our software
-more beautiful.
+As development progressed, our requirements changed, so the prototype was modified or redone many times. With these prototypes, developers can feel comfortable knowing what the software should be designed to look like. Interactive prototypes allow developers to understand the logical structure of the user interface. Moreover, these prototypes contain art materials and color schemes. This makes our software more beautiful.
 
 ### 3.5 Adapt to changes
 During the procedure of our project, there are plenty of changes in our initial iteration plan. For example, in the initial brainstorming we only discussed the implementation of the individual feature pages. When we linked the pages together, we realized that there were too many unnecessary page jumps, so we redesigned the main menu.
@@ -206,13 +191,27 @@ We have a routine meeting every week held by our team leader. During the confere
 
 ## 4. Analysis and Design
 
-### 4.1 Class Diagram
+### 4.1 Class Diagram and Analysis
+
+This is the UML diagram that demonstrates the class relationship in our project.
 
 ![img.png](ReportImg/classdiagram1.png)
 
 ![img.png](ReportImg/classdiagram2.png)
 
-### 4.2 Design Principle
+We use JavaFX to do GUI development, each fxml file corresponds to a controller for control, first the project's entry App.java calls ChooseLogin's fxml and controller, this controller can lead to the controller of passengers and employees
+
+The entity class "Order" is the class in which all the operations on a table in data.csv are written. It has Constructors and properties for the parameters "booking number, id number surname, meal, credit number, balance, seat, luggage fee, whether is paid, meal fee, seat fee, flight number" of the passenger information. It is open to extensions and closed to modifications.
+
+### 4.2 Reusability
+
+The reusability during our system is high because we make full use of the JumpTo, Warning, Mainmenu classes to achieve a variety of jump functions between modules and within modules and sent warning.  And Csvreader and Csvwrite classes is used in the whole program for data entry and reading.
+
+Instead copy and past the codes to different parts, contributing to the high reusability of our codes. 
+
+This significantly reduced our workload since we don’t need to change many times if one part needs to be changed for bugs or changes.
+
+### 4.3 Design Principle
 
 1. Single Responsibility Principle (SRP)
 
@@ -223,13 +222,13 @@ We have a routine meeting every week held by our team leader. During the confere
 3. Don't Repeat Yourself (DRY)
 
    To avoid duplication, we always create a separate class to implement a function used frequently, such as the Jumpto class which is used by all the GUI controller to jump to other GUI. So if there is any change to this function, just modify the Jumpto class, for example.
-### 4.3 Design Quality
-We meet all the needed requirements and our application is well structured. Our structure is modular, and contains distinct representations of data, architecture, and components. Since we manage the project on QMplus hub, the project is maintainable, traceable and well documented. And we smoothly debug, it’s debug free.
-## 5.Implementation and Testing
+### 4.4 Design Quality
+Our program meet all the requirements and our application is well structured. Our structure is modular, and contains distinct representations of data, architecture, and components. And since we manage the project on Github and illustrate real-time progress on QMhub, the project is maintainable, traceable and well documented. After we finished the project, we spent a whole week removing redundancies, modifying the file structure, writing reports, and testing the project.
+## 5. Implementation and Testing
 ### 5.1 Implementation
 #### 5.1.1 Implementation Strategy
 We have divided the back-end code into two parts: passenger and staff, which will be introduced to you in turn below. At the beginning of the code, we unified the variable name and function name in the code.  
-We use object-oriented programming (Java language), which includes class definition and methods’ definition.  
+We use object-oriented programming (Java language), which includes class definition and methods’ definition. 
 We use different kinds of mapping, such as association (including one-to-one and one-to-many) and  inheritance.  
 
 #### 5.1.2 Iteration Plan
@@ -244,12 +243,8 @@ Finally, we find defects for the system.
 #### 5.2.2 Test techniques
 We use black boxes test to test the software requirements and use white box test to test the internal program logic.
 ##### Black-box test:
-For boundary and entity classes, we use the black-box test method. In addition, we use a large and
-extensive set of automated tests. Before we started coding, we compared many test frameworks and
-found out JUnit is the most suitable test framework for us to test the code since it has many advantages.  
-Although we decided to use JUnit, group members had different ideas about which version to use. Some
- members prefer to use JUnit4 and the other prefer JUnit5. After comparing the difference of
-JUnit4 and JUnit5, combining the code we need to test, we ended up using JUnit4 to test our project.  
+For boundary and entity classes, we use the black-box test method. In addition, we use a large and extensive set of automated tests. Before we started coding, we compared many test frameworks and found out JUnit is the most suitable test framework for us to test the code since it has many advantages.  
+Although we decided to use JUnit, group members had different ideas about which version to use. Some members prefer to use JUnit4 and the other prefer JUnit5. After comparing the difference of JUnit4 and JUnit5, combining the code we need to test, we ended up using JUnit4 to test our project.  
 
 ##### White-box test:
 We use white-box test to test all statements and conditions. Here is one of the examples of our white-box test.   
@@ -284,7 +279,7 @@ Here are examples about our code passing the test.
 </div>
 
 
-## 6.Appendix
+## 6. Appendix
 ### Appendix-1 References
 [1] [Github](https://github.com/SE-of-nobody/SmartFlightCheckInKiosk)  
 [2] [Intro of Software Engineering by QMUL](https://qmplus.qmul.ac.uk/pluginfile.php/2574097/mod_resource/content/8/EBU6304_W1_Live_Introduction%20to%20Software%20Engineering_student.pdf)  
@@ -299,3 +294,19 @@ Here are examples about our code passing the test.
 [11] [Maven](https://maven.apache.org/)  
 
 ### Appendix-2 Main Screenshots
+
+![img.png](ReportImg/login-3.png) 
+![](ReportImg/mainmenu.png) 
+![](ReportImg/xhs1.png) 
+![](ReportImg/zw.png) 
+![](ReportImg/bcbcbc.png) 
+![](ReportImg/bgbgbg.png) 
+![](ReportImg/boardingpass-check.png)
+![](ReportImg/boardingpass-final.png) 
+![](ReportImg/budget.png)
+![](ReportImg/chooselogin.png) 
+![](ReportImg/cl.png) 
+![](ReportImg/idcidc.png) 
+![](ReportImg/login.png) 
+![](ReportImg/login-1.png) 
+![](ReportImg/login-2.png) 

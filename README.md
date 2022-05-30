@@ -1,38 +1,43 @@
 # Readme
 
 ## 0.Introduction
-
+***We do recommend you to read the README file in markdown [here](README.md).***
 ### 0.1 Environment
 
-| OS      | maven | junit | javafx | controlsfx | formsfx-core | validatorfx | ikonli-javafx | bootstrapfx-core | tilesfx | maven-compiler-plugin | configuration | javafx-maven-plugin |
-| ------- | ----- | ----- | ------ | ---------- | ------------ | ----------- | ------------- | ---------------- | ------- | --------------------- | ------------- | ------------------- |
-| Win_x64 | 4.0.0 | 5.8.1 | 15.0.1 | 11.1.0     | 11.3.2       | 0.1.13      | 12.2.0        | 0.4.0            | 11.48   | 3.8.1                 | 15            | 0.0.8               |
+| OS      | maven | junit | javafx | controlsfx | formsfx-core | validatorfx | ikonli-javafx | bootstrapfx-core | tilesfx | maven-compiler-plugin |  jdk| javafx-maven-plugin |configuration |
+| ------- | ----- | ----- | ------ | ---------- | ------------ | ----------- | ------------- | ---------------- | ------- | --------------------- | ------------- | ------------------- |------------------- |
+| Win_x64 | 4.0.0 | 5.8.1 | 15.0.1 | 11.1.0     | 11.3.2       | 0.1.13      | 12.2.0        | 0.4.0            | 11.48   | 3.8.1                 | 18.0.1            | 0.0.8               |15 |
 
 
 
 ## 1. Open
 
+
 ![1653916681802](ReadmeImg/run.png)
 
 There are three ways to operate the program
 
-#### 1.1Open with source code
+#### 1.1 Open with source code
 
 To open the system, open the first folder with from your IDE and find the java file 'src/main/java/group16/smartflightcheckinkiosk/APP.java' and run it.
 
-![APPshoot](User Manual.assets/APPshoot.png)
+![img.png](ReadmeImg/APPshoot.png)
 
-#### 1.2 Open with .exe file
+
+#### 1.2 Open with executable file 
+<span style="color:red">You could get the executable file in our [release](https://github.com/SE-of-nobody/SmartFlightCheckInKiosk/releases ) in Github, which will help you enjoy the software without any commanline input. </span>
+
+#### 1.2.1 Open with .exe file
 
 you can doubleclick the "SmartFlightCheckInKiosk.exe" to operate it
 
-or use "cmd" and enter the directory, then run "start SmartFlightCheckInKiosk.exe"
+or use "cmd" and enter the directory, then run "start SmartFlightCheckInKiosk.exe" .
 
-#### 1.3 Open with .jar file
+#### 1.2.2 Open with .jar file
 
 you can doubleclick the "SmartFlightCheckInKiosk.jar" to operate it
 
-or use "cmd" and enter the directory, then run "Java -jar SmartFlightCheckInKiosk.jar"
+or use "cmd" and enter the directory, then run "Java -jar SmartFlightCheckInKiosk.jar". While you have to make sure your jdk version is openjdk18.0.1.
 
 ## 2. Passenger
 
@@ -148,7 +153,7 @@ This module allows staff to enter back-end system and inquire the information an
 
 After entering the staff login window, you can put in your staff ID and password to access the Back-end system.
 
-<img src="User Manual.assets/stafflogin.png" alt="tag" style="zoom:50%;" />
+<img src="ReadmeImg/stafflogin.png" alt="tag" style="zoom:50%;" />
 
 You can use the following account to log in:
 
@@ -162,7 +167,7 @@ You can use the following account to log in:
 
 After entering the back-end system, enter the flight number you want to query.
 
-<img src="User Manual.assets/enterflight.png" alt="tag" style="zoom:50%;" />
+<img src="ReadmeImg/enterflight.png" alt="tag" style="zoom:50%;" />
 
 You can check the following flights:
 
@@ -177,10 +182,10 @@ You can check the following flights:
 
 To prevent similar flights from being queried due to incorrect input, please confirm the flight you want to query through the flight details.
 
-<img src="User Manual.assets/checkflight.png" alt="tag" style="zoom:50%;" />
+<img src="ReadmeImg/checkflight.png" alt="tag" style="zoom:50%;" />
 
 ### 3.4 Passenger list
 
 After confirming the flight, check the passenger information and check-in status in the back-end  system. In order to check the overall check-in status, the kiosk will put the number of unchecked passengers in this flight at the bottom.
 
-<img src="User Manual.assets/flightlist.png" alt="tag" style="zoom:50%;" />
+<img src="ReadmeImg/flightlist.png" alt="tag" style="zoom:50%;" />
