@@ -33,6 +33,8 @@ public class FlightListController implements Initializable {
     private Text Seatfield1, Seatfield2, Seatfield3, Seatfield4;
     @FXML
     private Text Statusfield1, Statusfield2, Statusfield3, Statusfield4;
+    @FXML
+    private Text UncheckNum;
 
     public String flightNum;
     public int test=0;
@@ -83,6 +85,7 @@ public class FlightListController implements Initializable {
         String cvsSplitBy = ",";
         String[] passenger = new String[16];
         int i = 0;
+
         //match the information
         try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
 
