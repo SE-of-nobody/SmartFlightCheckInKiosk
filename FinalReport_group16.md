@@ -205,6 +205,7 @@ We have a routine meeting every week held by our team leader. During the confere
 
 
 
+
 ## 4. Analysis and Design
 ### 4.2 Design Principle
 1. Single Responsibility Principle (SRP)
