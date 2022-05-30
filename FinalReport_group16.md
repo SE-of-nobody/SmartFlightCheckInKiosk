@@ -135,30 +135,30 @@ Different second digits indicate that they belong to different problems, and the
 
 <div class="center">
 
-| Story ID |                    Story Name |                         Description                          | Iteration version number |
-| :------- | ----------------------------: | :----------------------------------------------------------: | :----------------------: |
-| 111      |                    check in 1 |             information by input booking number              |            1             |
-| 112      |                    check in 2 | passengers can get their flight booking information by input surname and ID number |            1             |
-| 113      |                    check in 3 | passengers can get their flight booking information by scanning the ID document |            1             |
-| 114      |                    check in 4 | passengers can get their flight booking information by input booking number |            3             |
-| 121      |                flight summary | system will show the summary of the flight booking information |            1             |
-| 131      |                 choose seat 1 |      passengers can choose the seat through the screen       |            1             |
-| 132      |                 choose seat 2 |                   the seat has been chosen                   |            1             |
-| 133      |                   choose meal |                passengers can choose the meal                |            1             |
-| 134      |                       confirm |         passengers scan the ID document and confirm          |            1             |
-| 211      |               Extra options 1 | choose special seating（ seat with extra legroom，gourmet menu） |            1             |
-| 212      |               Extra options 2 | ·Payment interface（ enter the details of customer's credit card) |            2             |
-| 213      |               Extra options 3 |    ·final confirmation screen(information confirmation）     |            1             |
-| 221      |                Payment method |                  ·Multiple payment methods                   |            3             |
-| 231      | Operation interface interface |                      ·Visual seat style                      |            1             |
-| 241      |         Service Customization |               ·Service types can be customized               |            1             |
-| 311      |               Boarding pass 1 | Passenger wants to get her/his boarding pass so she/he can get on the plane |            1             |
-| 321      |                    Check-in 1 | Passenger wants to know where should she/he drop her/his check-in packages |            2             |
-| 322      |                    Check-in 2 | passenger wants to change the number of the checkin packages because she/he hadn't count them correctly when booking the tickets |            3             |
+| Story ID |                    Story Name |                                                                            Description                                                                             | Iteration version number |
+|:---------|------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------:|
+| 111      |                    check in 1 |                                                                information by input booking number                                                                 |            1             |
+| 112      |                    check in 2 |                                         passengers can get their flight booking information by input surname and ID number                                         |            1             |
+| 113      |                    check in 3 |                                          passengers can get their flight booking information by scanning the ID document                                           |            1             |
+| 114      |                    check in 4 |                                            passengers can get their flight booking information by input booking number                                             |            3             |
+| 121      |                flight summary |                                                   system will show the summary of the flight booking information                                                   |            1             |
+| 131      |                 choose seat 1 |                                                         passengers can choose the seat through the screen                                                          |            1             |
+| 132      |                 choose seat 2 |                                                                      the seat has been chosen                                                                      |            1             |
+| 133      |                   choose meal |                                                                   passengers can choose the meal                                                                   |            1             |
+| 134      |                       confirm |                                                            passengers scan the ID document and confirm                                                             |            1             |
+| 211      |               Extra options 1 |                                                   choose special seating（ seat with extra legroom，gourmet menu）                                                    |            1             |
+| 212      |               Extra options 2 |                                                  ·Payment interface（ enter the details of customer's credit card)                                                  |            2             |
+| 213      |               Extra options 3 |                                                        ·final confirmation screen(information confirmation）                                                        |            1             |
+| 221      |                Payment method |                                                                     ·Multiple payment methods                                                                      |            3             |
+| 231      | Operation interface interface |                                                                         ·Visual seat style                                                                         |            1             |
+| 241      |         Service Customization |                                                                  ·Service types can be customized                                                                  |            1             |
+| 311      |               Boarding pass 1 |                                            Passenger wants to get her/his boarding pass so she/he can get on the plane                                             |            1             |
+| 321      |                    Check-in 1 |                                             Passenger wants to know where should she/he drop her/his check-in packages                                             |            2             |
+| 322      |                    Check-in 2 |                  passenger wants to change the number of the checkin packages because she/he hadn't count them correctly when booking the tickets                  |            3             |
 | 411      |             Confirm the query | Airport staff want to query the flight number to see the detailed flight information (such as the starting place and time) to confirm the query object is correct. |            1             |
-| 421      |     Check-in status display 1 | Airport staff can check the information of the passengers on a given flight. |            1             |
-| 422      |     Check-in status display 2 | Airport staff can check the check-in status which is updated in real time of the passengers on a given flight. |            1             |
-| 423      |     Check-in status display 3 | Airport staff can easily check the overall check-in status and the number of passengers who have not checked in for that flight. |            3             |
+| 421      |     Check-in status display 1 |                                            Airport staff can check the information of the passengers on a given flight.                                            |            1             |
+| 422      |     Check-in status display 2 |                           Airport staff can check the check-in status which is updated in real time of the passengers on a given flight.                           |            1             |
+| 423      |     Check-in status display 3 |                  Airport staff can easily check the overall check-in status and the number of passengers who have not checked in for that flight.                  |            3             |
 
 </div>
 <span id="jump"></span>
