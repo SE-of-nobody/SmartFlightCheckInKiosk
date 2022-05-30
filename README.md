@@ -1,14 +1,34 @@
 # Readme
 
-To open the system, find the java file 'src/main/java/group16/smartflightcheckinkiosk/APP.java' and run it.
+## 0.Introduction
+
+### 0.1 Environment
+
+| maven | junit | javafx | controlsfx | formsfx-core | validatorfx | ikonli-javafx | bootstrapfx-core | tilesfx | maven-compiler-plugin | configuration | javafx-maven-plugin |
+| ----- | ----- | ------ | ---------- | ------------ | ----------- | ------------- | ---------------- | ------- | --------------------- | ------------- | ------------------- |
+| 4.0.0 | 5.8.1 | 15.0.1 | 11.1.0     | 11.3.2       | 0.1.13      | 12.2.0        | 0.4.0            | 11.48   | 3.8.1                 | 15            | 0.0.8               |
+
+
+
+## 1. Open
+
+![1653916681802](ReadmeImg/run.png)
+
+There are three ways to operate the program
+
+#### 1.1Open with source code
+
+To open the system, open the first folder with from your IDE and find the java file 'src/main/java/group16/smartflightcheckinkiosk/APP.java' and run it.
 
 ![APPshoot](User Manual.assets/APPshoot.png)
 
-## 1. Choose Login
+#### 1.2 Open with .exe file
 
-Chooselogin.java is the first window of the entire project, you can choose to log in as a passenger or as an employee
+you can doubleclick the "SmartFlightCheckInKiosk.exe" to operate it
 
-![img.png](ReadmeImg/chooselogin.png)
+#### 1.3 Open with .jar file
+
+you can doubleclick the "SmartFlightCheckInKiosk.jar" to operate it
 
 ## 2. Passenger
 
