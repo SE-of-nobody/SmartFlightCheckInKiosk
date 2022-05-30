@@ -62,7 +62,7 @@ public class BudgetController implements Initializable {
 
         String cardNum = cardnumField.getText();
         if(orderInfo == null){
-            System.out.println("尚未初始化");
+            System.out.println("Not initialized");
             return;
         }
         Order order = orderInfo.orders.get(orderInfo.orderIndex);
@@ -76,21 +76,21 @@ public class BudgetController implements Initializable {
             not_balance.setText("sorry, your balance is not enough");//如果balance不够执行它
         }
         else if(order.getPayed() == 1){
-            System.out.println("您已经支付过了");
+            System.out.println("You have payed for it");
         }
         else{
-            //支付流程
+            //pay
             order.setBalance(order.getBalance() - (order.getMealFee() + order.getSeatFee()));
             order.setPayed((byte)1);
-            //页面展示
+            //page
             clear();
             cardnumField.setText("");
             success.setText("successfully paid!O(∩_∩)O");
-            System.out.println("支付成功!!");
+            System.out.println("payed successfully!!");
             //取消可点击事件
             ok.setDisable(true);
             ok.setText("paid");
-            //写入到文件
+            //write csv
             PlaneUtil.setOrdersToCsv(orderInfo.orders , "csv/data.csv", "UTF-8");
         }
     }
@@ -120,25 +120,25 @@ public class BudgetController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        //传来的用户数据
+        //user information
         OrderInfo orderInfo = (OrderInfo) StageManager.CONTROLLER.get("myLoginUserInfo");
         if (orderInfo == null) {
-            System.out.println("非法登录!!!");
+            System.out.println("The illegal log in!!!");
             return;
         }
 
         this.orderInfo = orderInfo;
-        //填入用户信息
+        //user information
         Order order = orderInfo.orders.get(orderInfo.orderIndex);
-        //餐品
+        //meal
         meal.setText(order.getMeal());
         meal_pay.setText(String.valueOf(order.getMealFee()));
-        //座位
+        //seat
         seat.setText(order.getSeat());
         seat_pay.setText(String.valueOf(order.getSeatFee()));
-        //总价
+        //price
         total_pay.setText(String.valueOf(order.getMealFee() + order.getSeatFee()));
-        //已支付了
+
         if(order.getPayed() == 1){
             ok.setDisable(true);
             ok.setText("paid");
