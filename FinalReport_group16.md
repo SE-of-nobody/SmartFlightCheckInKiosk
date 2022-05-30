@@ -52,18 +52,17 @@ In this project, we used [JavaFX](https://openjfx.io/) to complete the GUI desig
 
 | Date             |                                                     Task                                                     |
 |:-----------------|:------------------------------------------------------------------------------------------------------------:|
-| 11-15 March      |                         Set up the QMPlus Hub group and discuss the project handout.                         | 
-| 16-18 March      |                       Story writing workshop. Outcomes: product backlog and prototype                        |   
-| 21 March-1 April |                Iteration 1 Complete most basic logic and functionality in the back-end design                |   
-| 4-15 April       |                                 Iteration 2 Complete most of the GUI design                                  |   
-| 18-29 April      |             Iteration 3 Complete building controllers that connect the different stage together              |  
-| 2-13 May         | Iteration 4 Complete the docking work of Boradingpass part and supplement the logical code of the staff part |   
-| 16-30 May        |                             Iteration 5 Complete appearance design and bug fixes                             |    
+| 11-15 March      |                         Set up the QMPlus Hub group and discuss the project handout.                         |
+| 16-18 March      |                       Story writing workshop. Outcomes: product backlog and prototype                        |
+| 21 March-1 April |                Iteration 1 Complete most basic logic and functionality in the back-end design                |
+| 4-15 April       |                                 Iteration 2 Complete most of the GUI design                                  |
+| 18-29 April      |             Iteration 3 Complete building controllers that connect the different stage together              |
+| 2-13 May         | Iteration 4 Complete the docking work of Boradingpass part and supplement the logical code of the staff part |
+| 16-30 May        |                             Iteration 5 Complete appearance design and bug fixes                             |
 </div>
 
 It is easy to see that a significant periodicity in our submissions from [Github's](https://github.com/SE-of-nobody/SmartFlightCheckInKiosk) code frequency
 <div style="text-align: center;">
-
 ![img.png](ReportImg/github2.png)
 </div>
 
@@ -124,11 +123,11 @@ We chose a different ID for each story.  According to the Specification in Hando
 
 | ID  |      Category      |
 |:----|:------------------:|
-| 1   |      Check-in      | 
-| 2   |   Extra options    |   
-| 3   |   Boarding pass    |   
-| 4   |  Passengers list   |   
-| 5   | Other requirements |   
+| 1   |      Check-in      |
+| 2   |   Extra options    |
+| 3   |   Boarding pass    |
+| 4   |  Passengers list   |
+| 5   | Other requirements |
 
 </div>
 
@@ -171,11 +170,11 @@ truly implement each iteration.
 
 | Date             |                                                     Task                                                     |
 |:-----------------|:------------------------------------------------------------------------------------------------------------:|
-| 21 March-1 April |                Iteration 1 Complete most basic logic and functionality in the back-end design                |   
-| 4-15 April       |                                 Iteration 2 Complete most of the GUI design                                  |   
-| 18-29 April      |             Iteration 3 Complete building controllers that connect the different stage together              |  
-| 2-13 May         | Iteration 4 Complete the docking work of Boradingpass part and supplement the logical code of the staff part |   
-| 16-30 May        |                             Iteration 5 Complete appearance design and bug fixes                             |    
+| 21 March-1 April |                Iteration 1 Complete most basic logic and functionality in the back-end design                |
+| 4-15 April       |                                 Iteration 2 Complete most of the GUI design                                  |
+| 18-29 April      |             Iteration 3 Complete building controllers that connect the different stage together              |
+| 2-13 May         | Iteration 4 Complete the docking work of Boradingpass part and supplement the logical code of the staff part |
+| 16-30 May        |                             Iteration 5 Complete appearance design and bug fixes                             |
 </div>
 
 ### 3.4 Prototype
@@ -205,9 +204,16 @@ We have a routine meeting every week held by our team leader. During the confere
 
 
 
-
 ## 4. Analysis and Design
+
+### 4.1 Class Diagram
+
+![img.png](ReportImg/classdiagram1.png)
+
+![img.png](ReportImg/classdiagram2.png)
+
 ### 4.2 Design Principle
+
 1. Single Responsibility Principle (SRP)
 
    Each class in our system fulfills the single responsibility principle. Since we use JavaFX to design the system, our java classes are all distinguished by modules and services. GUI is divdided into two parts, Controller and FXML document. Each control class is only responsible for one action and each FXML is related to only one controller.
