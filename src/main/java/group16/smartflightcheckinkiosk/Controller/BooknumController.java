@@ -53,7 +53,7 @@ public class BooknumController {
         Jumpto jumpto = new Jumpto();
         //登录失败
         if((orderInfo.orderIndex = orderInfo.checkBookingNumber(BookingNumber)) < 0){
-            System.out.println("登录失败");
+            System.out.println("Log in Failed");
             booknumField.setText("");
             jumpto.set("Warning.fxml", "WARNING");
             Stage stage = new Stage();
