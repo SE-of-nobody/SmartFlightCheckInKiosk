@@ -79,7 +79,7 @@ public class BoardingpassCheckController implements Initializable {
             return;
         }
         this.orderInfo = orderInfo;
-        //填入用户信息
+        //user information
         Order order = orderInfo.orders.get(orderInfo.orderIndex);
 
         String name = orderInfo.orders.get(orderInfo.orderIndex).getSurname();
