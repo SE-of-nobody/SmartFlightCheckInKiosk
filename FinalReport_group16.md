@@ -86,12 +86,22 @@ of consistency, respect, inclusion and honesty for team members.
 
 Otherwise, we use [Github](https://github.com/SE-of-nobody/SmartFlightCheckInKiosk)   recording everyone's commit.Of course, we also made a submission on QMhub
 
-<div style="text-align: center;">
+<div class="center">
 
-![img.png](ReportImg/GITHUB1.png)
+| Name         | Addition | Deletion |
+|:-------------|---------:|:--------:|
+| Xiaoyi Liang |     2753 |   1773   |
+| Ziding Lin   |     3323 |    91    |
+| Ruoqi Zhang  |      693 |    38    |
+| Ruibo Gang   |      391 |    58    |
+| Liya Zhong   |      884 |   414    |
+| Zhishang Yu  |      632 |    0     |
+
 </div>
+<span style="color: red; "> Pay attention:  </span>
 
-Contribution in [Github](https://github.com/SE-of-nobody/SmartFlightCheckInKiosk) has a delay in counting submissions from the last two weeks, which means The data in the picture is for reference only.
+It is just the contribution from Mar 13, 2022 to May 8, 2022. Contribution in [Github](https://github.com/SE-of-nobody/SmartFlightCheckInKiosk) has a delay in counting submissions from the last two weeks, which means The data in the table is for reference only.
+
 ### 2.3 Risk Management
 In this project, we may encounter project risks and product risks. For the project risks, the approach we
 took was to give the team members enough time. If one person can't get things done on time, others have
@@ -155,7 +165,7 @@ Different second digits indicate that they belong to different problems, and the
 </div>
 
 ### 3.3 Iterations planning
-We plan our iterations according to the suggested Timeline in handout. There is error of a few days when
+<span id="jump"></span>We plan our iterations according to the suggested Timeline in handout. There is error of a few days when
 truly implement each iteration.
 <div class="center">
 
@@ -211,27 +221,7 @@ We use object-oriented programming (Java language), which includes class definit
 We use different kinds of mapping, such as association (including one-to-one and one-to-many) and  inheritance.  
 
 #### 5.1.2 Iteration Plan
-##### Iteration 1:  
-In this version, we implemented the first version of the back-end code. In this version of the back-end code, most functions can be realized, including customer login, meal selection, seat selection, credit card verification and settlement, etc.  
-However, in this version, we use the database to complete the interactive transfer of various data and the storage of user data. The existence of database makes the back-end code of the whole program become miscellaneous and cumbersome, which is not suitable for the combination of back-end and front-end. At the same time, it does not meet the requirements of our course.  
-Therefore, we abandoned this version of back-end design in subsequent iterations and adopted better back-end code.  
-
-##### Iteration 2:  
-In this version, we complete the GUI design of the front end. We designed the GUI according to the functions implemented by the back-end code in the first iteration. At this time, the connection jump problem of the front-end GUI has been solved. And try to connect and merge the back-end and front-end code.  
-During the connection, we found some problems with the back-end code, such as the monotonous login mode and the transmission of user data with the front-end, such as selecting meals and seats. We have summarized many problems and put forward improvement measures for these problems.  
-
-##### Iteration 3:  
-In this version, we follow up the back-end code to make the back-end code simple and easy to call. We have rewritten the back-end code, discarding most of the code in the first and second iterations and the way of data transmission. In the new back-end code, we have implemented a variety of login methods for users, including logging in through booking number; Log in through surname and ID number; And login through the ID document. At the same time, we also realize the function of user's personal information query. After the user selects the meal and seat, the data will be returned to the CSV file for modification. Users can also query through the front end.  
-For the front-end part, we have improved the GUI style and basically solved the connection problem between GUIs. At the same time, we added the code of the controller part to facilitate the integration of the back end and the addition of functions in the next iteration.  
-
-##### Iteration 4:  
-In this version, we have added some new user data, including the arrival time of the flight, the user's round-trip City, etc. These data can be displayed through the information query function, and the user can directly see these data, so that they can verify their own information. At the same time, we have also added the bill function. Users can view their seats, meals and other information on the bill.  
-We also improved the settlement interface. In the settlement interface, users can see the types and prices of meals and seats they have selected. The program will provide a credit card input box for the user. The user only needs to input his credit card number to complete the payment. Of course, if the card number is entered incorrectly or the balance in the card is insufficient, an error will be reported.   
-In the GUI interface, we added a error prompt. For example, when a user logs in, if he enters the wrong booking number, an error prompt window will pop up. At this time, the user needs to re-enter. We also beautify the entire operation interface to make it look more concise and beautiful.  
-
-##### Iteration 5:
-In this version, we have improved some code and tested it to improve the jump and display between pages. We also completed the testing and adjustment of the whole system.   
-
+You could see this part above in [3.3](#jump).
 ### 5.2 Testing
 #### 5.2.1 Test Strategy
 Our strategy is to divide the code into front-end and back-end parts, which are completed by 4 students and 2 students respectively.Our aim is to verify the results from the implementation stage by testing each software build. We test the software in both component level and integration level.   
