@@ -163,9 +163,10 @@ Different second digits indicate that they belong to different problems, and the
 | 423      | Urgent reminder of late check-in 3 |  Airport check-in staff can remind the uncheck-in passengers on departing flights within 30 minutes to check in by  broadcast.   |            4             |
 
 </div>
+<span id="jump"></span>
 
 ### 3.3 Iterations planning
-<span id="jump"></span>We plan our iterations according to the suggested Timeline in handout. There is error of a few days when
+We plan our iterations according to the suggested Timeline in handout. There is error of a few days when
 truly implement each iteration.
 <div class="center">
 
@@ -181,11 +182,16 @@ truly implement each iteration.
 ### 3.4 Prototype
 Depending on each person's job assignment, we will design the relevant GUI ourselves. Most of Prototype's designs were hand-drawn, which made our designs easier and more creative.
 
-<div style="text-align: center;">
-
-![img.png](ReportImg/protitype.png)  
-Some screenshots of Prototype
-</div>
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="ReportImg/protitype.png">
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">Some screenshots of Prototype</div>
+</center>
 
 
 As development progressed, our requirements changed, so the prototype was modified or redone many times. With these prototypes, developers can feel comfortable knowing what the software should be designed
@@ -246,16 +252,27 @@ We use Test Driven Development to develop the entity and control part of our sys
 to write the production code. Then we write codes, execute the test, make change of the codes and execute
 the test again until pass all the tests.  
 Here are examples about our code passing the test.  
-<div style="text-align: center;">
 
-![img.png](ReportImg/test_false.png)  
-example of false input
+<div style="text-align: center;">
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="ReportImg/test_true.png">
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">Example of true input</div>
 </div>
-
+<br>
 <div style="text-align: center;">
-
-![img.png](ReportImg/test_true.png)  
-example of true input
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="ReportImg/test_false.png">
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">Example of false input</div>
 </div>
 
 ## 6.Appendix
