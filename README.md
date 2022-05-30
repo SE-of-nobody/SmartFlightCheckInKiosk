@@ -153,4 +153,6 @@ To prevent similar flights from being queried due to incorrect input, please con
 
 ### 3.4 Passenger list
 
-First enter the employee password "123" (if the input is wrong, an error message will appear) and then select a flight (you can enter CA1343 or EC3434), click "next" to enter the page that displays the flight information you are looking for, click "next" to display Passenger list for this flight
+After confirming the flight, check the passenger information and check-in status in the back-end  system. In order to check the overall check-in status, the kiosk will put the number of unchecked passengers in this flight at the bottom.
+
+<img src="User Manual.assets/flightlist.png" alt="tag" style="zoom:50%;" />
