@@ -20,8 +20,4 @@ public class StaffLogin extends Application {
         launch(args);
     }
 
-    public void  showWindow() throws Exception {
-        start(stage);
-    }
-
 }

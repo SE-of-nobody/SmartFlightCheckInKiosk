@@ -20,8 +20,4 @@ public class EnterFlight extends Application {
         launch(args);
     }
 
-    public void  showWindow() throws Exception {
-        start(stage);
-    }
-
 }
