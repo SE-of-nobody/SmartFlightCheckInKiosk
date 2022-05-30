@@ -44,7 +44,6 @@ public class IDdocController {
     @FXML
     void ok(ActionEvent event) throws Exception{
         Boolean ID_doc = id_docField.isSelected();
-        System.out.println("ID Documnet: " + ID_doc);
         Jumpto jumpto = new Jumpto();
         Stage stage = new Stage();
         //登录失败
