@@ -31,12 +31,6 @@ public class MealChooseController implements Initializable {
     @FXML
     private Label LabelMeal3;
     @FXML
-    private Label LabelMealPic1;
-    @FXML
-    private Label LabelMealPic2;
-    @FXML
-    private Label LabelMealPic3;
-    @FXML
     private TabPane mealpane;
 
     /**
@@ -75,7 +69,7 @@ public class MealChooseController implements Initializable {
         //选择正确的路径
         PlaneUtil.setOrdersToCsv(orderInfo.orders , "csv/data.csv", "UTF-8");
 
-        System.out.println("选择餐品成功");
+        System.out.println("Got it！");
     }
 
 
