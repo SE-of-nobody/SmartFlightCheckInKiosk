@@ -24,12 +24,22 @@ public class BoardingpassController {
     private Button label_ok;
     @FXML
     private Button label_help;
-
+    /**
+     * calculate tickets number
+     */
     public static int ticket_index=1;
+    /**
+     * calculate tags number
+     */
     public static int tag_index=1;
+    /**
+     * junit test parameter
+     */
     public int test=0;
+    /**
+     * name of passenger
+     */
     public String name;
-
     /**
      * Help button event
      * @throws Exception Click no response

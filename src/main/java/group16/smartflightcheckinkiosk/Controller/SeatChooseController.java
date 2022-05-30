@@ -1,23 +1,27 @@
 package group16.smartflightcheckinkiosk.Controller;
 
-import java.net.URL;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.ResourceBundle;
-
-import group16.smartflightcheckinkiosk.Jumpto;
-import group16.smartflightcheckinkiosk.Passager.service.OrderInfo;
 import group16.smartflightcheckinkiosk.Passager.util.PlaneUtil;
+import group16.smartflightcheckinkiosk.Passager.service.OrderInfo;
 import group16.smartflightcheckinkiosk.StageManager;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.fxml.Initializable;
-import javafx.stage.Stage;
+import javafx.scene.control.Button;
 
+import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.ResourceBundle;
 
+/**
+ * choose seat
+ * @author  Xiaoyi Liang, Zhishang Yu
+ * @version jdk15.0.2
+ */
 public class SeatChooseController implements Initializable {
+    /**
+     * user information
+     */
     public static String[] userInfo;
     @FXML
     private Button A1;
@@ -51,11 +55,16 @@ public class SeatChooseController implements Initializable {
     private Button D3;
     @FXML
     private Button D4;
-
+    /**
+     * button
+     */
     static  final Map<String, Button> buttonMap = new HashMap<>();
 
 
-
+    /**
+     * choose seat
+     * @param event click button
+     */
     public void SeatChooseController(ActionEvent event) {
         // TODO Auto-generated constructor stub
         Button button = (Button) event.getSource();
@@ -78,6 +87,11 @@ public class SeatChooseController implements Initializable {
         System.out.println("选择座位成功");
     }
 
+    /**
+     * initialize the information
+     * @param arg0 URL
+     * @param arg1 ResourceBundle
+     */
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
 //         TODO Auto-generated method stub
@@ -130,6 +144,11 @@ public class SeatChooseController implements Initializable {
 
     }
 
+    /**
+     * set seat
+     * @param type type of seat
+     * @param price price of seat
+     */
     public void setSeat(String type, double price){
         buttonMap.get(type).setText(type + "$" + String.valueOf(price) );
     }
@@ -138,8 +157,11 @@ public class SeatChooseController implements Initializable {
         return buttonMap.get(type);
     }
 
-
-@FXML
+    /**
+     * button click
+     * @param event click on
+     */
+    @FXML
 public void ButtonClicked(ActionEvent event){
         System.out.println("213213");
     SeatChooseController(event);

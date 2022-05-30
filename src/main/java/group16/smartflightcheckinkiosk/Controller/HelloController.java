@@ -2,16 +2,14 @@ package group16.smartflightcheckinkiosk.Controller;
 
 import group16.smartflightcheckinkiosk.Jumpto;
 import javafx.fxml.FXML;
-
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
-import javafx.event.ActionEvent;
-import javafx.scene.control.Label;
 import javafx.stage.Stage;
-
-import java.util.concurrent.TimeUnit;
-
+/**
+ * @author  Xiaoyi Liang
+ * @version jdk15.0.2
+ */
 public class HelloController {
     @FXML
     private Text Sign;
@@ -22,6 +20,10 @@ public class HelloController {
     @FXML
     private PasswordField passwordField;
 
+    /**
+     * button click event
+     * @throws Exception click no response
+     */
     @FXML
     protected void onSignButtonClick() throws Exception {
         Sign.setText("login failed");

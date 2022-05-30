@@ -30,8 +30,13 @@ public class BoardingpassBoardingpassController implements Initializable {
     private Text Destination;
     @FXML
     private Text SeatNumber;
-
+    /**
+     * name of passenger
+     */
     public String name;
+    /**
+     * junit test parameter
+     */
     public int test=0;//
 
     /**

@@ -22,8 +22,13 @@ public class BoardingpassTagController implements Initializable{
     private Text FlightNumber;
     @FXML
     private Text Tag;
-
+    /**
+     * name of passenger
+     */
     public String name;
+    /**
+     * junit test parameter
+     */
     public int test=0;
 
     /**

@@ -1,20 +1,21 @@
 package group16.smartflightcheckinkiosk.Controller;
 
+import group16.smartflightcheckinkiosk.Jumpto;
 import group16.smartflightcheckinkiosk.StageManager;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import group16.smartflightcheckinkiosk.Jumpto;
-
-import java.io.IOException;
-
+/**
+ * choose login ways
+ * @author Ruoqi Zhang
+ * @version jdk15.0.2
+ */
 public class LoginController {
+    /**
+     * the label confirm
+     */
     public Label confirm;
     @FXML
     private Button booknum_button;
@@ -24,6 +25,12 @@ public class LoginController {
     private Button surname_button;
     @FXML
     private Button back;
+
+    /**
+     * choose book number
+     * @param event click on
+     * @throws Exception click no response
+     */
     @FXML
     void toBookNumPage(ActionEvent event) throws Exception {
         Jumpto jumpto = new Jumpto();
@@ -32,7 +39,11 @@ public class LoginController {
         StageManager.STAGE.put("login", stage);
         jumpto.start(stage);
     }
-
+    /**
+     * choose surname login
+     * @param event click on
+     * @throws Exception click no response
+     */
     @FXML
     void toSurnamePage(ActionEvent event) throws Exception {
         Jumpto jumpto = new Jumpto();
@@ -41,7 +52,11 @@ public class LoginController {
         StageManager.STAGE.put("login", stage);
         jumpto.start(stage);
     }
-
+    /**
+     * choose ID document login
+     * @param event click on
+     * @throws Exception click no response
+     */
     @FXML
     void toIDdocPage(ActionEvent event) throws Exception{
         Jumpto jumpto = new Jumpto();
@@ -51,7 +66,10 @@ public class LoginController {
         jumpto.start(stage);
     }
 
-
+    /**
+     * back button event
+     * @throws Exception click no response
+     */
     @FXML
     void back()throws Exception{
         Jumpto jumpto = new Jumpto();

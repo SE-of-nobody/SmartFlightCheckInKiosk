@@ -35,8 +35,13 @@ public class FlightListController implements Initializable {
     private Text Statusfield1, Statusfield2, Statusfield3, Statusfield4;
     @FXML
     private Text UncheckNum;
-
+    /**
+     * flight number
+     */
     public String flightNum;
+    /**
+     * junit test parameter
+     */
     public int test=0;
 
     /**
@@ -85,6 +90,7 @@ public class FlightListController implements Initializable {
         String cvsSplitBy = ",";
         String[] passenger = new String[16];
         int i = 0;
+        int uncheck=0;
 
         //match the information
         try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
@@ -100,6 +106,7 @@ public class FlightListController implements Initializable {
                     if (passenger[3] != null && passenger[6] != null && passenger[8].equals("1")) {
                         statuslist.get(i).setText("yes");
                     } else {
+                        uncheck++;
                         statuslist.get(i).setText("no");
                     }
                     i++;
@@ -107,6 +114,7 @@ public class FlightListController implements Initializable {
                 }
             }
             System.out.println("over");
+            UncheckNum.setText(String.valueOf(uncheck));
         } catch (IOException e) {
             e.printStackTrace();
         }

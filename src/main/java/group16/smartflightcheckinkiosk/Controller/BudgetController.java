@@ -1,6 +1,6 @@
 package group16.smartflightcheckinkiosk.Controller;
 
-import group16.smartflightcheckinkiosk.Jumpto;
+import group16.smartflightcheckinkiosk.Passager.service.Order;
 import group16.smartflightcheckinkiosk.Passager.service.OrderInfo;
 import group16.smartflightcheckinkiosk.Passager.util.PlaneUtil;
 import group16.smartflightcheckinkiosk.StageManager;
@@ -8,17 +8,18 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-import group16.smartflightcheckinkiosk.Passager.service.Order;
 
 import java.net.URL;
-import java.util.List;
 import java.util.ResourceBundle;
 
+/**
+ * check budget
+ * @author Zhishang Yu, Xiaoyi Liang
+ * @version jdk15.0.2
+ */
 public class BudgetController implements Initializable {
     @FXML
     private Text meal;
@@ -46,10 +47,16 @@ public class BudgetController implements Initializable {
 
     @FXML
     private Button ok;
-
+    /**
+     * get passenger information
+     */
     private OrderInfo orderInfo;
 
-
+    /**
+     * ok button event
+     * @param event click event
+     * @throws Exception click no response
+     */
     @FXML
     void ok(ActionEvent event) throws Exception{
 
@@ -88,19 +95,29 @@ public class BudgetController implements Initializable {
         }
     }
 
+    /**
+     * clear the text
+     */
     private void clear(){
         not_balance.setText("");
         not_correct.setText("");
         success.setText("");
     }
 
-
+    /**
+     * back button event
+     */
     @FXML
     void back() {
         Stage stage = (Stage) back.getScene().getWindow();
         stage.close();
     }
 
+    /**
+     * initialize the information
+     * @param url URL
+     * @param resourceBundle ResourceBundle
+     */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         //传来的用户数据

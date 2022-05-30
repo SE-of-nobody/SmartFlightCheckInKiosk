@@ -1,31 +1,24 @@
 package group16.smartflightcheckinkiosk.Controller;
 
-import group16.smartflightcheckinkiosk.CsvReader;
 import group16.smartflightcheckinkiosk.Jumpto;
 import group16.smartflightcheckinkiosk.StageManager;
-//import group16.smartflightcheckinkiosk.ViewAlter;
 import javafx.fxml.FXML;
-import javafx.scene.text.Text;
-import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
-
+/**
+ * choose staff or passenger
+ * @author Ruoqi Zhang
+ * @version jdk15.0.2
+ */
 public class ChooseLoginController {
 
-//    private ViewAlter viewAlter;
-
-    //    @FXML
-//    private Label Passenger;
     @FXML
     private Label confirm4;
-    /*
-    @FXML
-    protected void onPassengerClick() {
-        viewAlter.gotoPassengerLogin();}
-    @FXML
-    protected void onStaffClick() {
-        viewAlter.gotostaffLogin();}
-    */
+
+    /**
+     * choose passenger login
+     * @throws Exception click no response
+     */
     @FXML
     public void gotoPassengerLogin() throws Exception {
         Jumpto jumpto = new Jumpto();
@@ -37,6 +30,10 @@ public class ChooseLoginController {
         stage_old.close();
     }
 
+    /**
+     * choose staff login
+     * @throws Exception click no response
+     */
     @FXML
     public void gotoStaffLogin() throws Exception {
         Jumpto jumpto = new Jumpto();
@@ -48,9 +45,7 @@ public class ChooseLoginController {
         stage_old.close();
     }
 
-//    public void setApp(ViewAlter viewAlter) {
-//        this.viewAlter = viewAlter;
-//    }
+
 }
 
 
