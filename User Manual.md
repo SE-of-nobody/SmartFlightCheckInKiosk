@@ -6,7 +6,7 @@ This is the user manual of the smart flight check-in kiosk. You can log in as a 
 
 As a passenger, you have three ways to check in to retrieve your flight booking information, and you can also choose special seating or meal and have an additional payment. 
 
-As a staff, after logging in the system by your staff ID and password, you can enter the Back-end System. In this system, you can check the passengers information and check-in status in a particular flight.
+As an airport staff, after logging in the system by your staff ID and password, you can enter the Back-end System. In this system, you can check the passengers information and check-in status in a particular flight.
 
 ## II. Start
 
@@ -108,6 +108,8 @@ Press the "OK" button to print. Here is the boardingpass, ticket and tag.
 
 Above is all the operations you can do in the passenger part of our flight system.
 
+
+
 ## Ⅳ. Staff manual
 
 ### 1. Log in
@@ -130,7 +132,13 @@ To prevent similar flights from being queried due to incorrect input, please con
 
 ### 4. View information
 
-After confirming the flight, check the passenger information and check-in status in the back-end  system. In order to confirm the number of unchecked passengers and their details, the platform will put unchecked passengers at the top.
+After confirming the flight, check the passenger information and check-in status in the back-end  system. In order to check the overall check-in status, the kiosk will put the number of unchecked passengers in this flight at the bottom.
+
+
+
+<img src="User Manual.assets/flightlist.png" alt="tag" style="zoom:50%;" />
+
+
 
 ## Ⅴ. Other tips
 
@@ -156,4 +164,4 @@ At any time, click the cross button in the upper right corner to exit the progra
 
 End.
 
-#### Thank you for using our Smart Flight Check Kiosk~
+#### Thank you for using our Smart Flight Check Kiosk ~
