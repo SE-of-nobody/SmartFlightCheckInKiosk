@@ -30,9 +30,7 @@ We have store the information of passenger in the data.csv 'src/main/resources/g
 
 ![passenger_login](User Manual.assets/passenger_login.png)
 
-For these three login ways, any invalid input including blank spaces, wrong numbers and characters will cause a warning and you have to reinput until you type in the right number.
 
-<img src="User Manual.assets/warning.png" alt="warning" style="zoom:50%;" />
 
 This is the GUI of the first login way after pressing the "Booking Number" button. The available input are 123456, 123457, 123458, 123459 which you can check in the data.csv. 
 
@@ -52,7 +50,7 @@ After logging in the system successfully, the main menu of the system will be sh
 
 ![MainMenu](User Manual.assets/MainMenu.png)
 
-<img src="User Manual.assets/login_message.png" alt="login_message" style="zoom: 67%;" />
+
 
 Here are four buttons on the top-left corner of the panel. Ats for he first "Login" button, you can use it to go back to the very first login GUI.
 
@@ -102,9 +100,9 @@ Press the "OK" button to print. Here is the boardingpass, ticket and tag.
 
 <img src="User Manual.assets/ticket.png" alt="ticket" style="zoom:50%;" />
 
-<img src="User Manual.assets/boardingpass_ticket.png" alt="boardingpass_ticket" style="zoom:50%;" />
+<img src="User Manual.assets/boardingpass_ticket.png" alt="boardingpass_ticket" style="zoom:30%;" />
 
-<img src="User Manual.assets/tag.png" alt="tag" style="zoom:50%;" />
+<img src="User Manual.assets/tag.png" alt="tag" style="zoom:30%;" />
 
 Above is all the operations you can do in the passenger part of our flight system.
 
@@ -116,23 +114,27 @@ Above is all the operations you can do in the passenger part of our flight syste
 
 After entering the staff login window, you can put in your staff ID and password to access the Back-end system.
 
+You can put 123 in Staff ID, 456 in Password for test.
+
 <img src="User Manual.assets/stafflogin.png" alt="tag" style="zoom:50%;" />
 
 ### 2. Check flight information
 
 After entering the back-end system, enter the flight number you want to query.
 
+You can enter CA1343 for test.
+
 <img src="User Manual.assets/EnterFlight.png" alt="tag" style="zoom:50%;" />
 
 ### 3. Confirm your inquiry
 
-To prevent similar flights from being queried due to incorrect input, please confirm the flight you want to query through the flight details.
+To prevent similar flights from being queried due to incorrect input, please confirm the flight you want to query through the flight details. Click "next" to confirm your query.
 
 <img src="User Manual.assets/Checkflight.png" alt="tag" style="zoom:50%;" />
 
 ### 4. View information
 
-After confirming the flight, check the passenger information and check-in status in the back-end  system. In order to check the overall check-in status, the kiosk will put the number of unchecked passengers in this flight at the bottom.
+After confirming the flight, check the passenger information and check-in status in the back-end  system. In order to check the overall check-in status, the kiosk will put the number of unchecked passengers in this flight at the bottom. 
 
 
 
@@ -149,6 +151,8 @@ Whenever any invalid input including blank spaces, wrong numbers and characters 
 
 
 <img src="User Manual.assets/wronginput.png" alt="tag" style="zoom:50%;" />
+
+
 
 ### 2. Back button
 
