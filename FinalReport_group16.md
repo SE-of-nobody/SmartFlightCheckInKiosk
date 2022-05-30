@@ -40,7 +40,7 @@ questionnaire and so on to make the requirements clear and accurate enough. Then
 through iterative development. At the end, we improve the user interface and produce some documents like
 user manuals. We hope every user of this software and our customer can be satisfied with this software.
 
-## 2.Project management
+## 2. Project management
 ### 2.1 Project Planning
 This project adopts agile development method and agile project management process.Our development work is carried out according the recommendations in [Handout](https://qmplus.qmul.ac.uk/pluginfile.php/2604460/mod_resource/content/3/EBU6304_GroupProjectHandout_2022.pdf)
 There maybe a little error of a few days when truly implement each iteration.Before beginning of each iteration, we took a group meeting to review the dependency analysis and the
@@ -206,13 +206,27 @@ We have a routine meeting every week held by our team leader. During the confere
 
 ## 4. Analysis and Design
 
-### 4.1 Class Diagram
+### 4.1 Class Diagram and Analysis
+
+This is the UML diagram that demonstrates the class relationship in our project.
 
 ![img.png](ReportImg/classdiagram1.png)
 
 ![img.png](ReportImg/classdiagram2.png)
 
-### 4.2 Design Principle
+一只猪猪琦琦会在这里补充两句话。
+
+The entity class "Order" is the class in which all the operations on a table in data.csv are written. It has Constructors and properties for the parameters "booking number, id number surname, meal, credit number, balance, seat, luggage fee, whether is paid, meal fee, seat fee, flight number" of the passenger information. It is open to extensions and closed to modifications.
+
+### 4.2 Reusability
+
+The reusability during our system is high because we make full use of the JumpTo, Warning, Mainmenu classes to achieve a variety of jump functions between modules and within modules and sent warning.  And Csvreader and Csvwrite classes is used in the whole program for data entry and reading.
+
+Instead copy and past the codes to different parts, contributing to the high reusability of our codes. 
+
+This significantly reduced our workload since we don’t need to change many times if one part needs to be changed for bugs or changes.
+
+### 4.3 Design Principle
 
 1. Single Responsibility Principle (SRP)
 
@@ -223,13 +237,13 @@ We have a routine meeting every week held by our team leader. During the confere
 3. Don't Repeat Yourself (DRY)
 
    To avoid duplication, we always create a separate class to implement a function used frequently, such as the Jumpto class which is used by all the GUI controller to jump to other GUI. So if there is any change to this function, just modify the Jumpto class, for example.
-### 4.3 Design Quality
-We meet all the needed requirements and our application is well structured. Our structure is modular, and contains distinct representations of data, architecture, and components. Since we manage the project on QMplus hub, the project is maintainable, traceable and well documented. And we smoothly debug, it’s debug free.
-## 5.Implementation and Testing
+### 4.4 Design Quality
+Our program meet all the requirements and our application is well structured. Our structure is modular, and contains distinct representations of data, architecture, and components. And since we manage the project on Github and illustrate real-time progress on QMhub, the project is maintainable, traceable and well documented. After we finished the project, we spent a whole week removing redundancies, modifying the file structure, writing reports, and testing the project.
+## 5. Implementation and Testing
 ### 5.1 Implementation
 #### 5.1.1 Implementation Strategy
 We have divided the back-end code into two parts: passenger and staff, which will be introduced to you in turn below. At the beginning of the code, we unified the variable name and function name in the code.  
-We use object-oriented programming (Java language), which includes class definition and methods’ definition.  
+We use object-oriented programming (Java language), which includes class definition and methods’ definition. 
 We use different kinds of mapping, such as association (including one-to-one and one-to-many) and  inheritance.  
 
 #### 5.1.2 Iteration Plan
@@ -284,7 +298,7 @@ Here are examples about our code passing the test.
 </div>
 
 
-## 6.Appendix
+## 6. Appendix
 ### Appendix-1 References
 [1] [Github](https://github.com/SE-of-nobody/SmartFlightCheckInKiosk)  
 [2] [Intro of Software Engineering by QMUL](https://qmplus.qmul.ac.uk/pluginfile.php/2574097/mod_resource/content/8/EBU6304_W1_Live_Introduction%20to%20Software%20Engineering_student.pdf)  
@@ -299,3 +313,4 @@ Here are examples about our code passing the test.
 [11] [Maven](https://maven.apache.org/)  
 
 ### Appendix-2 Main Screenshots
+
