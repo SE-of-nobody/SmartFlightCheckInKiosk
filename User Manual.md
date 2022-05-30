@@ -42,7 +42,7 @@ This is the GUI of the second login way after pressing the "Surname & ID Number"
 
 <img src="User Manual.assets/surname_login.png" alt="surname_login" style="zoom:50%;" />
 
-This is the GUI of the third login way after pressing the "ID Document" button. You just press the "OK" button to jump to teh next GUI since the system has already read the "data.csv" automatically.
+This is the GUI of the third login way after pressing the "ID Document" button. First, you need to press the "confirm" button to ensure that you want to log in by using ID document otherwise there will be a warning. Then You can just press the "OK" button to jump to teh next GUI since the system has already read the "data.csv" automatically.
 
 <img src="User Manual.assets/iddoc_login.png" alt="iddoc_login" style="zoom:50%;" />
 
