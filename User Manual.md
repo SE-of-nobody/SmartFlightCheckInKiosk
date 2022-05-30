@@ -153,3 +153,7 @@ At any time, when you need to query for additional information or services, clic
 At any time, click the cross button in the upper right corner to exit the program.
 
 <img src="User Manual.assets/quitapp.png" alt="tag" style="zoom:50%;" />
+
+End.
+
+#### Thank you for using our Smart Flight Check Kiosk~
