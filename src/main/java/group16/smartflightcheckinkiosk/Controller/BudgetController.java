@@ -91,7 +91,7 @@ public class BudgetController implements Initializable {
             ok.setDisable(true);
             ok.setText("paid");
             //写入到文件
-            PlaneUtil.setOrdersToCsv(orderInfo.orders , "src/main/resources/group16/smartflightcheckinkiosk/data.csv", "UTF-8");
+            PlaneUtil.setOrdersToCsv(orderInfo.orders , "csv/data.csv", "UTF-8");
         }
     }
 

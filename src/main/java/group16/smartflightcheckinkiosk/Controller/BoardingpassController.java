@@ -70,7 +70,7 @@ public class BoardingpassController {
         OrderInfo orderInfo = (OrderInfo) StageManager.CONTROLLER.get("myLoginUserInfo");
         name = orderInfo.orders.get(orderInfo.orderIndex).getSurname();
         //read flight csv
-        String csvFile = "src/main/resources/group16/smartflightcheckinkiosk/Luggage.csv";
+        String csvFile = "csv/Luggage.csv";
         String line = "";
         String cvsSplitBy = ",";
         String[] luggage= new String[8];

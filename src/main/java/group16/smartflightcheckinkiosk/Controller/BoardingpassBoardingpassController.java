@@ -50,7 +50,7 @@ public class BoardingpassBoardingpassController implements Initializable {
         OrderInfo orderInfo = (OrderInfo) StageManager.CONTROLLER.get("myLoginUserInfo");
         name = orderInfo.orders.get(orderInfo.orderIndex).getSurname();
         //read passenger csv
-        String csvFile = "src/main/resources/group16/smartflightcheckinkiosk/data.csv";
+        String csvFile = "csv/data.csv";
         String line = "";
         String cvsSplitBy = ",";
         String[] passenger= new String[16];

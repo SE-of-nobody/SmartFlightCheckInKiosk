@@ -62,7 +62,7 @@ public class CheckFlightController implements Initializable {
         flightNum = EnterFlightController.flight_num;
 
         //read passenger csv
-        String csvFile = "src/main/resources/group16/smartflightcheckinkiosk/data.csv";
+        String csvFile = "csv/data.csv";
         String line = "";
         String cvsSplitBy = ",";
         String[] passenger = new String[16];

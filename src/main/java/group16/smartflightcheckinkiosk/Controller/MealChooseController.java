@@ -73,7 +73,7 @@ public class MealChooseController implements Initializable {
         orderInfo.orders.get(orderInfo.orderIndex).setMeal(mealName);
         orderInfo.orders.get(orderInfo.orderIndex).setMealFee(mealPrice);
         //选择正确的路径
-        PlaneUtil.setOrdersToCsv(orderInfo.orders , "src/main/resources/group16/smartflightcheckinkiosk/data.csv", "UTF-8");
+        PlaneUtil.setOrdersToCsv(orderInfo.orders , "csv/data.csv", "UTF-8");
 
         System.out.println("选择餐品成功");
     }
@@ -87,9 +87,9 @@ public class MealChooseController implements Initializable {
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
         // TODO Auto-generated method stub
-        setMeal(1, "西红柿炒蛋", 123.0);
-        setMeal(2, "香菜肉丝", 3.0);
-        setMeal(3, "黄瓜鸭血", 55.0);
+        setMeal(1, "Tomato", 123.0);
+        setMeal(2, "Meat", 3.0);
+        setMeal(3, "Cucunumber", 55.0);
     }
 
     /**

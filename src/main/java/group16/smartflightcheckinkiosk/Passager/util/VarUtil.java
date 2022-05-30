@@ -6,9 +6,9 @@ import java.util.ResourceBundle;
 //存放静态变量的类
 public class VarUtil {
     //csv文件路径，和编码
-    public static final String DATAPATH = "src/main/resources/group16/smartflightcheckinkiosk/data.csv";
-    public static final String LOGINPATH = "src/main/resources/group16/smartflightcheckinkiosk/login.csv";
-    public static final String SAVEPATH = "src/main/resources/group16/smartflightcheckinkiosk/data.csv";
+    public static final String DATAPATH = "csv/data.csv";
+    public static final String LOGINPATH = "csv/login.csv";
+    public static final String SAVEPATH = "csv/data.csv";
     public static final String CHARSET = "UTF-8";
 
     //各种座位和食物类型的价格

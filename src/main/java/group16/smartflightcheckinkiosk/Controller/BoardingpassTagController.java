@@ -44,7 +44,7 @@ public class BoardingpassTagController implements Initializable{
         OrderInfo orderInfo = (OrderInfo) StageManager.CONTROLLER.get("myLoginUserInfo");
         name = orderInfo.orders.get(orderInfo.orderIndex).getSurname();
         //read passenger csv
-        String csvFile = "src/main/resources/group16/smartflightcheckinkiosk/data.csv";
+        String csvFile = "csv/data.csv";
         String line = "";
         String cvsSplitBy = ",";
         String[] passenger= new String[16];
@@ -69,7 +69,7 @@ public class BoardingpassTagController implements Initializable{
             e.printStackTrace();
         }
         //read flight csv
-        String csvFile1 = "src/main/resources/group16/smartflightcheckinkiosk/Luggage.csv";
+        String csvFile1 = "csv/Luggage.csv";
         String[] luggage= new String[8];
         //match the flight
         try (BufferedReader br = new BufferedReader(new FileReader(csvFile1))) {

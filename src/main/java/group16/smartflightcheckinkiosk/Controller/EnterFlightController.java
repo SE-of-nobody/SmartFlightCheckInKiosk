@@ -56,7 +56,7 @@ public class EnterFlightController {
         flightNum=FlightnumField.getText();
         flight_num=flightNum;
         //read passenger csv
-        String csvFile = "src/main/resources/group16/smartflightcheckinkiosk/data.csv";
+        String csvFile = "csv/data.csv";
         String line = "";
         String cvsSplitBy = ",";
         String[] flight= new String[16];

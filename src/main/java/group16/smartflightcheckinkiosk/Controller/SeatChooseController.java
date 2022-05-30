@@ -83,7 +83,7 @@ public class SeatChooseController implements Initializable {
         orderInfo.orders.get(orderInfo.orderIndex).setSeat(seatName);
         orderInfo.orders.get(orderInfo.orderIndex).setSeatFee(seatPrice);
         //选择正确的路径
-        PlaneUtil.setOrdersToCsv(orderInfo.orders, "src/main/resources/group16/smartflightcheckinkiosk/data.csv", "UTF-8");
+        PlaneUtil.setOrdersToCsv(orderInfo.orders, "csv/data.csv", "UTF-8");
         System.out.println("选择座位成功");
     }
 

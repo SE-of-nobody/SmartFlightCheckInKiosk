@@ -55,7 +55,7 @@ public class StaffLoginController {
         staff_num = staffnumField.getText();
         String password = passwordfield.getText();
         //read the csv
-        String csvFile = "src/main/resources/group16/smartflightcheckinkiosk/Staff.csv";
+        String csvFile = "csv/Staff.csv";
         String line = "";
         String cvsSplitBy = ",";
         String[] staff = new String[2];
