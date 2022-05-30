@@ -84,6 +84,8 @@ If your budget is enough and pay the money successfully, the system will send yo
 
 <img src="User Manual.assets/budget_success.png" alt="budget_success" style="zoom:50%;" />
 
+Check-in is complete when you have selected your seat and lunch and have completed payment. At this point, you can't choose a seat again and pay for it (the button will show "paid" after check-in is completed), but you can go into Boarding to see the information.
+
 ### 5. Boarding
 
 Press the "Boarding" button to check your boarding information.
