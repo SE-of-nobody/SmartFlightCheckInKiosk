@@ -94,7 +94,7 @@ public class FlightListController implements Initializable {
                     namelist.get(i).setText(passenger[2]);
                     seatlist.get(i).setText(passenger[6]);
                     IDnumberlist.get(i).setText(passenger[1]);
-                    if (passenger[3] != null && passenger[6] != null && passenger[8].equals(1)) {
+                    if (passenger[3] != null && passenger[6] != null && passenger[8].equals("1")) {
                         statuslist.get(i).setText("yes");
                     } else {
                         statuslist.get(i).setText("no");
