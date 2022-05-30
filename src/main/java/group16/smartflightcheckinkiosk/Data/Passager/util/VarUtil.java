@@ -1,6 +1,5 @@
-package group16.smartflightcheckinkiosk.Passager.util;
+package group16.smartflightcheckinkiosk.Data.Passager.util;
 
-import java.util.HashMap;
 import java.util.ResourceBundle;
 
 //存放静态变量的类
