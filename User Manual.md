@@ -2,7 +2,11 @@
 
 ## I. Introduction
 
-This is the user manual of the smart flight check-in kiosk. You can log in as a passenger or an airline staff to operate the system. As a passenger, you have three ways to check in to retrieve your flight booking information, and you can also choose special seating or meal and have an additional payment. As a staff, after logging in the system, you can check the passengers list.
+This is the user manual of the smart flight check-in kiosk. You can log in as a passenger or an airline staff to operate the system. 
+
+As a passenger, you have three ways to check in to retrieve your flight booking information, and you can also choose special seating or meal and have an additional payment. 
+
+As a staff, after logging in the system by your staff ID and password, you can enter the Back-end System. In this system, you can check the passengers information and check-in status in a particular flight.
 
 ## II. Start
 
@@ -16,9 +20,9 @@ The output is the login GUI.
 
 Press the Passenger button you will enter the passenger login GUI; press the Staff button you will enter the staff login GUI.
 
-## III. Passenger Uer Manual
+## III. Passenger Manual
 
-### 1. Login in
+### 1. Log in
 
 After pressing the Passenger button, here is the passenger login GUI. The first three buttons are for the passenger to login, and if you want to quit this window, just press the 'back' button to go back to the first Login GUI.
 
@@ -102,11 +106,50 @@ Press the "OK" button to print. Here is the boardingpass, ticket and tag.
 
 <img src="User Manual.assets/tag.png" alt="tag" style="zoom:50%;" />
 
-### 6. End
-
 Above is all the operations you can do in the passenger part of our flight system.
 
+## Ⅳ. Staff manual
+
+### 1. Log in
+
+After entering the staff login window, you can put in your staff ID and password to access the Back-end system.
+
+<img src="User Manual.assets/stafflogin.png" alt="tag" style="zoom:50%;" />
+
+### 2. Check flight information
+
+After entering the back-end system, enter the flight number you want to query.
+
+<img src="User Manual.assets/enterflight.png" alt="tag" style="zoom:50%;" />
+
+### 3. Confirm your inquiry
+
+To prevent similar flights from being queried due to incorrect input, please confirm the flight you want to query through the flight details.
+
+<img src="User Manual.assets/checkflight.png" alt="tag" style="zoom:50%;" />
+
+### 4. View information
+
+After confirming the flight, check the passenger information and check-in status in the back-end  system. In order to confirm the number of unchecked passengers and their details, the platform will put unchecked passengers at the top.
+
+## Ⅴ. Other tips
+
+### 1. Warning of input error
+
+Whenever any invalid input including blank spaces, wrong numbers and characters is entered, a warning window will pop up to remind you and empty the input message. In this case, check the input information and enter it again.
 
 
 
+<img src="User Manual.assets/wronginput.png" alt="tag" style="zoom:50%;" />
 
+### 2. Back button
+
+At any time, when you need to query for additional information or services, click the "Back" button to return to the previous window.
+
+<img src="User Manual.assets/backbutton.png" alt="tag" style="zoom:50%;" />
+
+### 3. Quit the application
+
+At any time, click the cross button in the upper right corner to exit the program.
+
+<img src="User Manual.assets/quitapp.png" alt="tag" style="zoom:50%;" />

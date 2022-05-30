@@ -1,19 +1,21 @@
-# SmartFlightCheckInKiosk
+# Readme
 
-## 1.Choose Login
+## 1. Choose Login
 
-Chooselogin.java is the entry point of the entire project. By running this class, you can choose to log in as a passenger or as an employee
+Chooselogin.java is the entry point of the entire project. 
+
+By running this class, you can choose to log in as a passenger or as an employee
 
 ![img.png](ReadmeImg/chooselogin.png)
 
-## 2.Passenger
+## 2. Passenger
 
 Click passenger and then enter the passenger's login page. On this page, you can choose three ways to check-in
 
 ![img.png](ReadmeImg/login.png))
 
 
-### 2.1Log in
+### 2.1 Log in
 
 The first method is to click the first button" Booking Number" and you can enter the check-in of different people through the book number in the following table:
 
@@ -104,10 +106,51 @@ The following table shows the " owner, tag name, counter number, category" of ea
 | TOM   | CI6  | 01      | 1                           |
 | TOM   | CO5  |         | 2                           |
 
-## 3.Staff
 
-Go back to the ChooseLogin page, and then click on "Staff" to enter the staff pages. This back-end system allows staff to inquire the information of a certain flight and the"passenger list" of all passengers who have booked this flight. The passenger list includes: Passenger's name, passenger's seat, whether the passenger have checked in
 
-### 3.1 Passenger list
+## 3. Staff
+
+Click "Back" buttons until go back to the ChooseLogin page. Then click on "Staff" button to enter the first window of the staff system (Staff Login window).
+
+The Staff system including StaffLogin, EnterFlight, CheckFlight and FlightList window.
+
+This module allows staff to enter back-end system and inquire the information and check-in status of all passengers who have booked this flight. 
+
+### 3.1 Staff login
+
+After entering the staff login window, you can put in your staff ID and password to access the Back-end system.
+
+<img src="User Manual.assets/stafflogin.png" alt="tag" style="zoom:50%;" />
+
+You can use the following account to log in:
+
+| Staff ID | Password |
+| -------- | -------- |
+| 123      | 456      |
+
+
+
+### 3.2 Check flight information
+
+After entering the back-end system, enter the flight number you want to query.
+
+<img src="User Manual.assets/enterflight.png" alt="tag" style="zoom:50%;" />
+
+You can check the following flights:
+
+| Flight number |
+| ------------- |
+| CA1343        |
+| EC3434        |
+
+
+
+### 3.3 Confirm your inquiry
+
+To prevent similar flights from being queried due to incorrect input, please confirm the flight you want to query through the flight details.
+
+<img src="User Manual.assets/checkflight.png" alt="tag" style="zoom:50%;" />
+
+### 3.4 Passenger list
 
 First enter the employee password "123" (if the input is wrong, an error message will appear) and then select a flight (you can enter CA1343 or EC3434), click "next" to enter the page that displays the flight information you are looking for, click "next" to display Passenger list for this flight
