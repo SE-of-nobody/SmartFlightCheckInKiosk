@@ -81,7 +81,7 @@ public class MealChooseController implements Initializable {
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
         // TODO Auto-generated method stub
-        setMeal(1, "Tomato", 123.0);
+        setMeal(1, "Tomato", 12.0);
         setMeal(2, "Meat", 3.0);
         setMeal(3, "Cucunumber", 55.0);
     }
