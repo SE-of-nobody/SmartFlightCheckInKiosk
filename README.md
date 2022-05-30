@@ -1,10 +1,12 @@
 # Readme
 
+To open the system, find the java file 'src/main/java/group16/smartflightcheckinkiosk/APP.java' and run it.
+
+![APPshoot](User Manual.assets/APPshoot.png)
+
 ## 1. Choose Login
 
-Chooselogin.java is the entry point of the entire project. 
-
-By running this class, you can choose to log in as a passenger or as an employee
+Chooselogin.java is the first window of the entire project, you can choose to log in as a passenger or as an employee
 
 ![img.png](ReadmeImg/chooselogin.png)
 
