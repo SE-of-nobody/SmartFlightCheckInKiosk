@@ -295,6 +295,8 @@ Here are examples about our code passing the test.
 
 ### Appendix-2 Main Screenshots
 
+<center>
+
 ![img.png](ReportImg/login-3.png) 
 ![](ReportImg/mainmenu.png) 
 ![](ReportImg/xhs1.png) 
@@ -310,3 +312,5 @@ Here are examples about our code passing the test.
 ![](ReportImg/login.png) 
 ![](ReportImg/login-1.png) 
 ![](ReportImg/login-2.png) 
+
+</center>
