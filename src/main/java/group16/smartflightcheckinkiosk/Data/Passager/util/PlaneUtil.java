@@ -16,30 +16,30 @@ public class PlaneUtil {
 
     //设置座位
     public static void setSeat(Order order, Scanner scanner){
-        System.out.println("请输入您改之后的座位样式(A-D):");
+        System.out.println("choose your seat:");
         String newType =scanner.nextLine();
         if(!inspect(newType)) {
-            System.out.println("无效座位样式");
+            System.out.println("invalid seat");
             return;
         }
         order.setSeat(newType.toUpperCase());
         //记得修改价格
         setSeatPrice(order);
-        System.out.println("修改座位样式成功！");
+        System.out.println("choose seat successfully！");
     }
 
     //设置餐品
     public static void setMeal(Order order, Scanner scanner){
-        System.out.println("请输入您改之后的餐品样式(A-D):");
+        System.out.println("choose your meal:");
         String newType =scanner.nextLine();
         if(!inspect(newType)) {
-            System.out.println("无效餐品样式");
+            System.out.println("invalid meal");
             return;
         }
         order.setMeal(newType.toUpperCase());
         //记得修改价格
         setMealPrice(order);
-        System.out.println("修改餐品类别成功");
+        System.out.println("choose meal successfully");
     }
 
 
@@ -47,10 +47,10 @@ public class PlaneUtil {
     public static void payment(Order order, Scanner scanner){
         //判断是否已支付
         if(order.getPayed() == 1){
-            System.out.println("您已经支付过了哦!!");
+            System.out.println("You have paid for it already!!");
             return;
         }
-        System.out.println("请输入您买票时的卡号:");
+        System.out.println("Please input your credit card:");
         String idCard = scanner.nextLine();
         //判断输入的是否等于该订单的卡号
         if(order.getCreditNumber().equals(idCard)){
@@ -63,22 +63,22 @@ public class PlaneUtil {
                 order.setBalance(balance-totalCost);
                 //修改为已支付
                 order.setPayed((byte) 1);
-                System.out.println("支付成功! O(∩_∩)O");
+                System.out.println("Pay for it successfully! O(∩_∩)O");
             }
-            else System.out.println("余额不足!");
+            else System.out.println("Your balance is not enough!");
         }
-        else System.out.println("卡号有误!");
+        else System.out.println("Your card number is wrong!");
     }
 
     //读取到文件
     public static void writeDisk(List<Order> orders, String path, String charset, Scanner scanner){
-        System.out.println("您确认要存档吗(输入\"yes\": 确认, else: 取消)");
+        System.out.println("do you (input\"yes\": confirm, else: cancel)");
         String operation = scanner.nextLine();
         if ("yes".equals(operation)){
-            if(setOrdersToCsv(orders, path, charset)) System.out.println("存档成功!");
-            else System.out.println("存档失败 o(╥﹏╥)o");
+            if(setOrdersToCsv(orders, path, charset)) System.out.println("store successfully!");
+            else System.out.println("store failure ");
         }
-        else System.out.println("已取消存档操作");
+        else System.out.println("cancel storing");
     }
 
     //检查输入的餐品和座位种类是否合法

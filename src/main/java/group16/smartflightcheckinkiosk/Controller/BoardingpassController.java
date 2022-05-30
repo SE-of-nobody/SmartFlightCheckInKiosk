@@ -48,7 +48,7 @@ public class BoardingpassController {
     void onHelpClick() throws Exception {
         System.out.println("you choose prev");
         Jumpto jumpto = new Jumpto();
-        jumpto.set("boardingpass-check.fxml", "MainMenu");
+        jumpto.set("BoardingpassCheck.fxml", "MainMenu");
         Stage stage = new Stage();System.out.println("Stage stage = new Stage();");
         Stage stage_old = (Stage) label_help.getScene().getWindow();
         stage_old.close();
@@ -62,7 +62,7 @@ public class BoardingpassController {
     @FXML
     void onOKClick() throws Exception{
         Jumpto jumpto1 = new Jumpto();
-        jumpto1.set("boardingpass-boardingpass.fxml", "Boarding pass");
+        jumpto1.set("BoardingpassBoardingpass.fxml", "Boarding pass");
         Stage stage1 = new Stage();
         jumpto1.start(stage1);
 
@@ -98,14 +98,14 @@ public class BoardingpassController {
 
         for(int i=0;i<total_tag_luggage;i++) {
             Jumpto jumpto2 = new Jumpto();
-            jumpto2.set("boardingpass-tag.fxml", "Carry-on Luggage");
+            jumpto2.set("BoardingpassTag.fxml", "Carry-on Luggage");
             Stage stage2 = new Stage();
             jumpto2.start(stage2);
             tag_index++;
         }
         for(int j=0;j<total_ticket_luggage;j++) {
             Jumpto jumpto3 = new Jumpto();
-            jumpto3.set("boardingpass-ticket.fxml", "Check-in Luggage");
+            jumpto3.set("BoardingpassTicket.fxml", "Check-in Luggage");
             Stage stage3 = new Stage();
             jumpto3.start(stage3);
             ticket_index++;

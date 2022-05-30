@@ -21,11 +21,11 @@ public class OrderInfo {
     //业务方法
     public void startService(){
         Scanner scanner =new Scanner(System.in);
-        System.out.println("请选择登陆模式(1 booking number, 2 用户名和ID, 3 核对csv文件): ");
+        System.out.println("Please choose your login way(1 booking number, 2 Surname和ID, 3 ID document): ");
         String choose = scanner.nextLine();
         //调用选择登陆模式的方法
         while(!chooseWays(choose, scanner)){
-            System.out.println("\n登录失败，请重新选择(1/2/3)，或输入\"exit\"退出: ");
+            System.out.println("\nYou log in failed(1/2/3)，or input\"exit\"to exit: ");
             choose = scanner.nextLine();
             if("exit".equals(choose)){
                 System.exit(0);
@@ -56,12 +56,12 @@ public class OrderInfo {
                     break;
                 }
                 case "6":{
-                    System.out.println("bye bye (ಥ﹏ಥ)");
+                    System.out.println("bye bye ");
                     System.exit(0);
                     break;
                 }
                 default:
-                    System.out.println("不要乱输，谢谢");
+                    System.out.println("Your input is wrong");
                     break;
             }
         }
@@ -69,13 +69,13 @@ public class OrderInfo {
 
     //总菜单显示
     void menu(){
-        System.out.println("** 请选择您需要的服务编号(1-6): ");
-        System.out.println("*** 1 修改座位样式");
-        System.out.println("*** 2 修改飞机餐种类");
-        System.out.println("*** 3 结算价格");
-        System.out.println("*** 4 保存到文件");
-        System.out.println("*** 5 查看当前用户信息");
-        System.out.println("*** 6 退出程序");
+        System.out.println("** Please choose your service number(1-6): ");
+        System.out.println("*** 1 choose seat");
+        System.out.println("*** 2 choose meal");
+        System.out.println("*** 3 check budget");
+        System.out.println("*** 4 store");
+        System.out.println("*** 5 check information");
+        System.out.println("*** 6 exit");
     }
 
     //修改座位样式
@@ -116,9 +116,9 @@ public class OrderInfo {
                 return orderIndex > -1;
             //根据用户名和ID查找
             case "2":
-                System.out.println("请输入您的用户名:");
+                System.out.println("Please enter your surname:");
                 String username = scanner.nextLine();
-                System.out.println("请输入您的ID:");
+                System.out.println("Please enter your ID number:");
                 String id = scanner.nextLine();
                 orderIndex = checkUsernameAndID(username, id);
                 return orderIndex > -1;
@@ -128,7 +128,7 @@ public class OrderInfo {
                 return orderIndex > -1;
             //不合法的输入
             default:
-                System.out.println("不合法的输入，只能输入1-3的数字");
+                System.out.println("invalid input");
                 return false;
         }
     }
@@ -150,7 +150,7 @@ public class OrderInfo {
             }
         }
         //没找到则返回-1
-        System.out.println("有户名或密码或booking number错误");
+        System.out.println("surname or password is wrong");
         return -1;
     }
 
@@ -165,7 +165,7 @@ public class OrderInfo {
             }
         }
         //没找到则返回-1
-        System.out.println("对不起，有户名或密码可能不存在或错误");
+        System.out.println("Sorry, surname or password does not exit");
         return -1;
     }
 
@@ -180,7 +180,7 @@ public class OrderInfo {
             }
         }
         //没找到则返回-1
-        System.out.println("对不起，没有找到该booking number");
+        System.out.println("Sorry, booking number is not found");
         return -1;
     }
 
@@ -193,6 +193,6 @@ public class OrderInfo {
 
     //登陆成功欢迎提升
     private void loginSuccessMsg(String username){
-        System.out.println("登陆成功! 尊敬的("+username+"), 欢迎使用本飞行服务系统");
+        System.out.println("Log in successfully! Dear "+username+" , welcome to the flight system");
     }
 }
