@@ -55,18 +55,18 @@ public class MealChooseController implements Initializable {
                 break;
         }
 
-        //传来的用户数据
+        //user information
         OrderInfo orderInfo = (OrderInfo) StageManager.CONTROLLER.get("myLoginUserInfo");
-        if (orderInfo == null) System.out.println("非法登录!!!");
+        if (orderInfo == null) System.out.println("The illegal log in!!!");
 
 
-        //获取用户选择的餐品名和价格
+        //get meal and price
         String mealName = meal.substring(0, meal.indexOf("$"));
         Double mealPrice = Double.parseDouble(meal.substring(meal.indexOf("$") + 1, meal.length()));
 
         orderInfo.orders.get(orderInfo.orderIndex).setMeal(mealName);
         orderInfo.orders.get(orderInfo.orderIndex).setMealFee(mealPrice);
-        //选择正确的路径
+        //set right path
         PlaneUtil.setOrdersToCsv(orderInfo.orders , "csv/data.csv", "UTF-8");
 
         System.out.println("Got it！");

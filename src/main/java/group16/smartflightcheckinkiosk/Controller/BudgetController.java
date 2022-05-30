@@ -69,11 +69,11 @@ public class BudgetController implements Initializable {
 
         if(cardNum == null || !cardNum.equals(order.getCreditNumber())){
             clear();
-            not_correct.setText("sorry, your car number is not correct");//如果card number 不对执行它
+            not_correct.setText("sorry, your car number is not correct");//if card number is wrong
         }
         else if(order.getBalance() < order.getMealFee() + order.getSeatFee()){
             clear();
-            not_balance.setText("sorry, your balance is not enough");//如果balance不够执行它
+            not_balance.setText("sorry, your balance is not enough");//if balance is not enough
         }
         else if(order.getPayed() == 1){
             System.out.println("You have payed for it");
@@ -87,7 +87,6 @@ public class BudgetController implements Initializable {
             cardnumField.setText("");
             success.setText("successfully paid!O(∩_∩)O");
             System.out.println("payed successfully!!");
-            //取消可点击事件
             ok.setDisable(true);
             ok.setText("paid");
             //write csv

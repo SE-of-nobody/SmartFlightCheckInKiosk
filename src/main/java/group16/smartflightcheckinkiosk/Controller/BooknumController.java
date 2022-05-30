@@ -51,7 +51,7 @@ public class BooknumController {
         String BookingNumber = booknumField.getText();
         System.out.println("Booking Number: " + BookingNumber);
         Jumpto jumpto = new Jumpto();
-        //登录失败
+        //log in false
         if((orderInfo.orderIndex = orderInfo.checkBookingNumber(BookingNumber)) < 0){
             System.out.println("Log in Failed");
             booknumField.setText("");
