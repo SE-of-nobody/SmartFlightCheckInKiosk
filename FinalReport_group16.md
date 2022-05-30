@@ -214,7 +214,7 @@ This is the UML diagram that demonstrates the class relationship in our project.
 
 ![img.png](ReportImg/classdiagram2.png)
 
-一只猪猪琦琦会在这里补充两句话。
+We use JavaFX to do GUI development, each fxml file corresponds to a controller for control, first the project's entry App.java calls ChooseLogin's fxml and controller, this controller can lead to the controller of passengers and employees
 
 The entity class "Order" is the class in which all the operations on a table in data.csv are written. It has Constructors and properties for the parameters "booking number, id number surname, meal, credit number, balance, seat, luggage fee, whether is paid, meal fee, seat fee, flight number" of the passenger information. It is open to extensions and closed to modifications.
 
