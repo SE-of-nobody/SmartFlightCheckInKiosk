@@ -56,10 +56,10 @@ public class EnterFlightController {
         flightNum=FlightnumField.getText();
         flight_num=flightNum;
         //read passenger csv
-        String csvFile = "src/main/resources/group16/smartflightcheckinkiosk/PassengerInfo.csv";
+        String csvFile = "src/main/resources/group16/smartflightcheckinkiosk/data.csv";
         String line = "";
         String cvsSplitBy = ",";
-        String[] flight= new String[6];
+        String[] flight= new String[16];
         //match the information
         try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
 
@@ -68,12 +68,12 @@ public class EnterFlightController {
                 // use comma as separator
                 flight = line.split(cvsSplitBy);
                 // check the name
-                if (flight[3].equals(flightNum)) {
+                if (flight[11].equals(flightNum)) {
                     break;
                 }
             }
             //input valid flight number
-            if(flight[3].equals(flightNum)){
+            if(flight[11].equals(flightNum)){
                 Jumpto jumpto = new Jumpto();
                 jumpto.set("CheckFlight.fxml", "Check Flight");
                 Stage stage = new Stage();

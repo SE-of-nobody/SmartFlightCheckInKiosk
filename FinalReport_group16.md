@@ -244,7 +244,6 @@ Although we decided to use JUnit, group members had different ideas about which 
  members prefer to use JUnit4 and the other prefer JUnit5. After comparing the difference of
 JUnit4 and JUnit5, combining the code we need to test, we ended up using JUnit4 to test our project.  
 
-here.</br>
 ##### White-box test:
 We use white-box test to test all statements and conditions. Here is one of the examples of our white-box test.   
 Normal user login test: We use white-box test technology to test all the paths.   
