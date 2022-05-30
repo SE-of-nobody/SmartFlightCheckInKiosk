@@ -54,17 +54,17 @@ After logging in the system successfully, the main menu of the system will be sh
 
 Here are four buttons on the top-left corner of the panel. Ats for he first "Login" button, you can use it to go back to the very first login GUI.
 
-<img src="User Manual.assets/quit.png" alt="quit" style="zoom:50%;" />
+<img src="User Manual.assets/quit01.png" alt="quit" style="zoom:50%;" />
 
 ### 3. Order
 
 In the second block, there are two operations for you to choose special seat or meal.
 
-<img src="User Manual.assets/meal&meal.png" alt="meal&meal" style="zoom:50%;" />
+<img src="User Manual.assets/meal.png" alt="meal&meal" style="zoom:50%;" />
 
 Press the "Meal" button, and you can order food and close the window if you finish. The system will send you a message in the terminal if you order the food successfully.
 
-<img src="User Manual.assets/meal.png" alt="meal" style="zoom:50%;" />
+<img src="User Manual.assets/meal01.png" alt="meal" style="zoom:50%;" />
 
 Press the "Seat" button, and you can order seat and close the window if you finish. The system will send you a message in the terminal if you order the seat successfully.
 
@@ -96,13 +96,13 @@ Press the "OK" button in the boarding check panel to the boardingpass loading pa
 
 <img src="User Manual.assets/BoardingpassPrint.png" alt="BoardingpassPrint" style="zoom:50%;" />
 
-Press the "OK" button to print. Here is the boardingpass, ticket and tag.
+Press the "OK" button to print. Here is the boardingpass, ticket and tag. There may be several tags and tickets when passengers have some luggage.
 
 <img src="User Manual.assets/ticket.png" alt="ticket" style="zoom:50%;" />
 
-<img src="User Manual.assets/boardingpass_ticket.png" alt="boardingpass_ticket" style="zoom:30%;" />
+<img src="User Manual.assets/boardingpass_ticket.png" alt="boardingpass_ticket" style="zoom:50%;" />
 
-<img src="User Manual.assets/tag.png" alt="tag" style="zoom:30%;" />
+<img src="User Manual.assets/tag.png" alt="tag" style="zoom:50%;" />
 
 Above is all the operations you can do in the passenger part of our flight system.
 
