@@ -20,7 +20,7 @@
 Group 16
 </div>
 
- 
+
 <div class="center">
 
 | Name         | BUPTNumber | QMNumber  |
@@ -159,7 +159,7 @@ Different second digits indicate that they belong to different problems, and the
 | 411      |             Confirm the query | Airport staff want to query the flight number to see the detailed flight information (such as the starting place and time) to confirm the query object is correct. |            1             |
 | 421      |     Check-in status display 1 | Airport staff can check the information of the passengers on a given flight. |            1             |
 | 422      |     Check-in status display 2 | Airport staff can check the check-in status which is updated in real time of the passengers on a given flight. |            1             |
-| 423      |     Check-in status display 3 | Airport staff can easily count and focus on the unchecked passengers on the page. |            3             |
+| 423      |     Check-in status display 3 | Airport staff can easily check the overall check-in status and the number of passengers who have not checked in for that flight. |            3             |
 
 </div>
 <span id="jump"></span>
